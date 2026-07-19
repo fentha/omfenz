@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>99.000++ Lembar Aktivitas Anak - Omfenz Digital</title>
     <meta name="description" content="99.000++ lembar aktivitas anak super lengkap, siap print, akses selamanya, dan bisa dijual lagi.">
+    <link rel="icon" type="image/png" href="{{ url('assets/brand/omfenz-logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ url('assets/brand/omfenz-logo.png') }}">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
