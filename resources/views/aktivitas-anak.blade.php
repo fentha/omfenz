@@ -400,6 +400,29 @@
             color: #166534;
         }
 
+        .payment-tip {
+            background: #ecfdf5;
+            border: 1px solid #86efac;
+            border-radius: 14px;
+            padding: 18px;
+            color: #14532d;
+            margin: 18px 0;
+        }
+
+        .payment-tip strong {
+            display: block;
+            color: #166534;
+            font-size: 16px;
+            line-height: 1.35;
+            margin-bottom: 6px;
+        }
+
+        .payment-tip p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
         .price-box {
             background: #ffffff;
             border: 2px solid #dd6b20;
@@ -700,6 +723,11 @@
 
             <div class="guarantee-box">
                 <strong>Aman setelah pembayaran:</strong> jika link produk tidak masuk email atau file sulit diakses, tim kami bantu sampai produk bisa dibuka.
+            </div>
+
+            <div class="payment-tip">
+                <strong>Rekomendasi pembayaran: QRIS, ShopeePay, OVO, atau DANA</strong>
+                <p>Biaya admin biasanya jauh lebih murah, bahkan bisa nyaris nol. Sebagai gambaran, Virtual Account bank bisa sekitar Rp4.000, sedangkan QRIS/e-wallet bisa sekitar Rp200 tergantung metode yang dipilih.</p>
             </div>
 
             <div class="price-box">
