@@ -221,6 +221,24 @@
             position: absolute;
             left: 0;
             top: 0;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #ebf8ff;
+            color: #2b6cb0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feature-list svg {
+            width: 14px;
+            height: 14px;
+            stroke: currentColor;
+            stroke-width: 2.4;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
         }
 
         .benefit-card {
@@ -479,12 +497,12 @@
 
             <h2 class="section-title">Materi Lengkap yang Didapat:</h2>
             <ul class="feature-list">
-                <li><span>&#9203;</span><strong>Kids Planners:</strong> Melatih kemandirian dan manajemen waktu anak sejak dini.</li>
-                <li><span>&#128214;</span><strong>Cerita Anak, Flashcard &amp; Poster:</strong> Visual menarik untuk memaksimalkan daya ingat dan imajinasi.</li>
-                <li><span>&#128288;</span><strong>Bahasa Inggris &amp; Menulis:</strong> Latihan menebalkan huruf, angka, mewarnai, hingga <em>puzzle</em> asik.</li>
-                <li><span>&#9986;</span><strong>Origami &amp; Busy Book:</strong> Melatih motorik halus anak lewat aktivitas seru menggunting dan menempel.</li>
-                <li><span>&#129504;</span><strong>Worksheet Komprehensif:</strong> Alfabet, Matematika, Mencocokkan, Teka-teki, Sains &amp; Membaca.</li>
-                <li><span>&#127757;</span><strong>Mengenal Lingkungan:</strong> Hewan, Buah, Sayur, Profesi, Waktu, Kendaraan, dll.</li>
+                <li><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="9"></circle></svg></span><strong>Kids Planners:</strong> Melatih kemandirian dan manajemen waktu anak sejak dini.</li>
+                <li><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19.5V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-1.5z"></path><path d="M8 7h6"></path><path d="M8 11h7"></path></svg></span><strong>Cerita Anak, Flashcard &amp; Poster:</strong> Visual menarik untuk memaksimalkan daya ingat dan imajinasi.</li>
+                <li><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19h16"></path><path d="M7 16l5-12 5 12"></path><path d="M9 11h6"></path></svg></span><strong>Bahasa Inggris &amp; Menulis:</strong> Latihan menebalkan huruf, angka, mewarnai, hingga <em>puzzle</em> asik.</li>
+                <li><span aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"></circle><circle cx="6" cy="18" r="2"></circle><path d="M20 4 8 15"></path><path d="M8 9l12 11"></path></svg></span><strong>Origami &amp; Busy Book:</strong> Melatih motorik halus anak lewat aktivitas seru menggunting dan menempel.</li>
+                <li><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4"></path><path d="M15 3a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4"></path><path d="M9 7h6"></path><path d="M9 12h6"></path><path d="M9 17h6"></path></svg></span><strong>Worksheet Komprehensif:</strong> Alfabet, Matematika, Mencocokkan, Teka-teki, Sains &amp; Membaca.</li>
+                <li><span aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a14 14 0 0 1 0 18"></path><path d="M12 3a14 14 0 0 0 0 18"></path></svg></span><strong>Mengenal Lingkungan:</strong> Hewan, Buah, Sayur, Profesi, Waktu, Kendaraan, dll.</li>
                 <li class="fst-italic text-secondary">...dan ribuan aktivitas seru lainnya!</li>
             </ul>
 
