@@ -726,8 +726,8 @@
             </div>
 
             <div class="payment-tip">
-                <strong>Rekomendasi pembayaran: QRIS, ShopeePay, OVO, atau DANA</strong>
-                <p>Biaya admin biasanya jauh lebih murah, bahkan bisa nyaris nol. Sebagai gambaran, Virtual Account bank bisa sekitar Rp4.000, sedangkan QRIS/e-wallet bisa sekitar Rp200 tergantung metode yang dipilih.</p>
+                <strong>Tips Pembayaran</strong>
+                <p>Pilih QRIS, ShopeePay, OVO, atau DANA agar biaya admin lebih ringan. Biasanya metode ini lebih hemat dibandingkan Virtual Account bank.</p>
             </div>
 
             <div class="price-box">
