@@ -657,7 +657,7 @@
             <div class="hero-offer">
                 <div class="hero-price-label">Sekali Bayar, Akses Selamanya</div>
                 <p class="hero-price">Rp 39.000</p>
-                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button">AMBIL PROMONYA SEKARANG</a>
+                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 39000, currency: 'IDR'});">AMBIL PROMONYA SEKARANG</a>
                 <div class="trust-strip">
                     <div class="trust-item">Akses Instan</div>
                     <div class="trust-item">Siap Cetak</div>
@@ -740,7 +740,7 @@
 
             <div class="text-center my-4">
                 <p class="fw-bold mb-3 text-danger">Mulai isi waktu anak dengan aktivitas yang lebih bermanfaat hari ini.</p>
-                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button">AMBIL PROMONYA SEKARANG</a>
+                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 39000, currency: 'IDR'});">AMBIL PROMONYA SEKARANG</a>
                 <p class="small text-secondary mt-3 mb-0"><strong>Akses Instan:</strong> Selesai bayar, link otomatis terkirim ke email.</p>
             </div>
 
@@ -781,7 +781,7 @@
     </main>
 
     <div class="sticky-cta">
-        <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button">AMBIL PROMONYA SEKARANG</a>
+        <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 39000, currency: 'IDR'});">AMBIL PROMONYA SEKARANG</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
