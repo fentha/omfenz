@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="id">
 <head>
     <meta charset="utf-8">
@@ -37,6 +37,7 @@
         .row > * { width: 100%; max-width: 100%; padding-right: .5rem; padding-left: .5rem; }
         .g-3 { row-gap: 1rem; }
         .col-12 { flex: 0 0 auto; width: 100%; }
+        .mt-3 { margin-top: 1rem !important; }
 
         .carousel { position: relative; }
         .carousel-inner { position: relative; width: 100%; overflow: hidden; }
@@ -137,17 +138,17 @@
         }
 
         .promo-badge {
-            background: linear-gradient(135deg, #fff5f5 0%, #ffe3e3 100%);
-            color: #c53030;
+            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+            color: #9a3412;
             padding: 10px 15px;
             text-align: center;
             font-weight: 900;
             border-radius: 999px;
-            margin-bottom: 24px;
+            margin-bottom: 18px;
             font-size: 14px;
             line-height: 1.35;
             letter-spacing: .4px;
-            border: 1px solid #feb2b2;
+            border: 1px solid #fed7aa;
         }
 
         .main-title {
@@ -170,7 +171,57 @@
             font-size: 16px;
             text-align: center;
             color: #4a5568;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
+        }
+
+        .hero-offer {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 18px;
+            padding: 18px;
+            margin: 20px 0 18px;
+            text-align: center;
+        }
+
+        .hero-price-label {
+            color: #64748b;
+            font-size: 13px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .hero-price {
+            color: #c05621;
+            font-size: clamp(38px, 12vw, 56px);
+            font-weight: 900;
+            line-height: 1;
+            margin: 0 0 12px;
+        }
+
+        .trust-strip {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 15px 0 0;
+        }
+
+        .trust-item {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 9px 6px;
+            color: #334155;
+            font-size: 12px;
+            font-weight: 900;
+            line-height: 1.25;
+        }
+
+        .mini-note {
+            color: #64748b;
+            font-size: 13px;
+            line-height: 1.45;
+            margin: 12px 0 0;
         }
 
         .hook-box {
@@ -186,6 +237,57 @@
             font-weight: 800;
             color: #276749;
             margin: 0;
+        }
+
+        .problem-box {
+            background: #fff7ed;
+            border: 1px solid #fed7aa;
+            border-radius: 14px;
+            padding: 18px;
+            color: #7c2d12;
+            margin-bottom: 22px;
+        }
+
+        .problem-box strong {
+            color: #9a3412;
+        }
+
+        .proof-box {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 16px;
+            padding: 18px;
+            color: #0f172a;
+            margin: 22px 0;
+        }
+
+        .proof-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-top: 14px;
+        }
+
+        .proof-stat {
+            background: #ffffff;
+            border: 1px solid #dbeafe;
+            border-radius: 12px;
+            padding: 12px 8px;
+            text-align: center;
+        }
+
+        .proof-stat strong {
+            display: block;
+            color: #1d4ed8;
+            font-size: 18px;
+            line-height: 1.1;
+        }
+
+        .proof-stat span {
+            color: #64748b;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1.25;
         }
 
         .divider {
@@ -285,6 +387,19 @@
         .plr-box h4 { color: #2c5282; }
         .plr-box p { color: #2a4365; }
 
+        .guarantee-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 14px;
+            padding: 18px;
+            color: #14532d;
+            margin: 20px 0;
+        }
+
+        .guarantee-box strong {
+            color: #166534;
+        }
+
         .price-box {
             background: #ffffff;
             border: 2px solid #dd6b20;
@@ -382,6 +497,33 @@
 
         .order-box strong { color: #2d3748; }
 
+        .faq-list {
+            display: grid;
+            gap: 10px;
+            margin-top: 4px;
+        }
+
+        .faq-item {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 14px;
+            background: #ffffff;
+        }
+
+        .faq-item strong {
+            display: block;
+            color: #1e3a8a;
+            line-height: 1.35;
+            margin-bottom: 4px;
+        }
+
+        .faq-item p {
+            color: #475569;
+            font-size: 14px;
+            line-height: 1.55;
+            margin: 0;
+        }
+
         .sticky-cta {
             position: fixed;
             left: 50%;
@@ -407,6 +549,8 @@
             }
             .price-box { padding-inline: 14px; }
             .trust-pill { font-size: 11px; }
+            .trust-strip,
+            .proof-grid { grid-template-columns: 1fr; }
             .sticky-cta { padding-inline: 10px; }
         }
 
@@ -476,24 +620,50 @@
         </section>
 
         <section class="content-wrap">
-            <div class="promo-badge">PROMO TERBATAS: SISA 1 SLOT!</div>
+            <div class="promo-badge">PROMO DIGITAL HARI INI: DARI Rp99.000 JADI Rp39.000</div>
 
             <h1 class="main-title">
-                99.000++ Lembar Aktivitas Anak Super Lengkap
-                <span>Rahasia Anak Cerdas &amp; Fokus Belajar Tanpa Disuruh!</span>
+                99.000++ Lembar Aktivitas Anak Siap Cetak
+                <span>Bantu Anak Belajar, Menulis, Berhitung &amp; Fokus Tanpa Terus Main Gadget</span>
             </h1>
 
             <p class="lead-copy">
-                Sering pusing mencari materi belajar tambahan untuk anak di rumah? Ingin mengalihkan perhatian anak dari <em>gadget</em> ke aktivitas yang lebih bermanfaat dan edukatif?
+                Paket digital super lengkap untuk Bunda &amp; Ayah yang ingin punya stok aktivitas edukatif anak di rumah tanpa harus beli buku satu-satu.
             </p>
 
+            <div class="hero-offer">
+                <div class="hero-price-label">Sekali Bayar, Akses Selamanya</div>
+                <p class="hero-price">Rp 39.000</p>
+                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button">AMBIL PROMONYA SEKARANG</a>
+                <div class="trust-strip">
+                    <div class="trust-item">Akses Instan</div>
+                    <div class="trust-item">Siap Cetak</div>
+                    <div class="trust-item">Bisa Dijual Lagi</div>
+                </div>
+                <p class="mini-note">Selesai bayar, link produk otomatis dikirim ke email. Bisa dibuka dari HP, laptop, atau tablet.</p>
+            </div>
+
+            <div class="problem-box">
+                <strong>Kalau anak cepat bosan belajar, bukan berarti anaknya malas.</strong><br>
+                Seringnya anak hanya butuh aktivitas yang lebih variatif, berwarna, dan terasa seperti bermain. Paket ini membantu orang tua punya banyak pilihan materi tanpa harus cari file satu per satu.
+            </div>
+
             <div class="hook-box">
-                <p>Ini adalah solusi praktis dan super hemat yang Bunda &amp; Ayah butuhkan!</p>
+                <p>Bayangkan setiap hari Bunda tinggal pilih worksheet, print, lalu anak punya aktivitas baru yang edukatif.</p>
             </div>
 
             <p class="text-secondary mb-0">
-                Hanya dengan satu paket eksklusif ini, Anda akan mendapatkan <strong>99.000++ Lembar Aktivitas Anak Terlengkap &amp; Terupdate</strong> yang dirancang khusus agar anak betah belajar sambil bermain.
+                Di dalamnya ada kumpulan worksheet, flashcard, poster, planner, aktivitas menulis, berhitung, mewarnai, puzzle, busy book, origami, dan materi edukatif lain yang bisa dipakai berulang.
             </p>
+
+            <div class="proof-box">
+                <strong>Yang membuat paket ini terasa hemat:</strong>
+                <div class="proof-grid">
+                    <div class="proof-stat"><strong>99.000++</strong><span>lembar aktivitas</span></div>
+                    <div class="proof-stat"><strong>1x</strong><span>bayar saja</span></div>
+                    <div class="proof-stat"><strong>PLR</strong><span>bisa dijual lagi</span></div>
+                </div>
+            </div>
 
             <div class="divider"></div>
 
@@ -512,34 +682,60 @@
 
             <h2 class="section-title">Mengapa Harus Punya Paket Ini?</h2>
             <div class="row g-3 mb-4">
-                <div class="col-12 col-sm-6"><div class="benefit-card"><p><strong>Praktis &amp; Fleksibel</strong><br>Siap dicetak atau dimainkan langsung di HP/Tablet.</p></div></div>
-                <div class="col-12 col-sm-6"><div class="benefit-card"><p><strong>Akses Seumur Hidup</strong><br>Bayar sekali, manfaatnya sampai anak besar.</p></div></div>
-                <div class="col-12 col-sm-6"><div class="benefit-card"><p><strong>Desain Premium</strong><br>Penuh warna, interaktif, 100% disukai anak.</p></div></div>
-                <div class="col-12 col-sm-6"><div class="benefit-card"><p><strong>Super Hemat</strong><br>Pangkas anggaran beli buku &amp; les jutaan rupiah!</p></div></div>
+                <div class="col-12 col-sm-6"><div class="benefit-card"><p><strong>Praktis untuk Orang Tua</strong><br>Tinggal pilih materi, cetak, lalu pakai untuk aktivitas anak di rumah.</p></div></div>
+                <div class="col-12 col-sm-6"><div class="benefit-card"><p><strong>Anak Tidak Cepat Bosan</strong><br>Materinya banyak, jadi aktivitas bisa diganti sesuai mood dan usia anak.</p></div></div>
+                <div class="col-12 col-sm-6"><div class="benefit-card"><p><strong>Lebih Hemat</strong><br>Tidak perlu sering beli buku aktivitas satuan atau cari worksheet gratis yang acak-acakan.</p></div></div>
+                <div class="col-12 col-sm-6"><div class="benefit-card"><p><strong>Peluang Tambahan</strong><br>Karena ada hak PLR, file dapat dipakai untuk kebutuhan pribadi atau dijual kembali.</p></div></div>
             </div>
 
             <div class="bonus-box">
-                <h4>BONUS SPESIAL BUNDA:</h4>
-                <p class="mb-0">Modul Kumon, Buku Mewarnai Dinosaurus, Kumpulan Cerita Seru, E-Book Edukatif, hingga Resep Masakan Keluarga!</p>
+                <h4>BONUS SPESIAL:</h4>
+                <p class="mb-0">Termasuk Modul Kumon, Buku Mewarnai Dinosaurus, Kumpulan Cerita Anak, E-Book Edukatif, dan bonus tambahan untuk aktivitas keluarga di rumah.</p>
             </div>
 
             <div class="plr-box">
-                <h4>PELUANG CUAN (100% PLR):</h4>
-                <p class="mb-0">Produk ini <em>Reseller Friendly!</em> Anda mendapat Hak Jual Kembali. Beli sekali, jual berkali-kali, <strong>100% keuntungan masuk kantong Anda.</strong></p>
+                <h4>BISA DIPAKAI SENDIRI ATAU DIJUAL LAGI:</h4>
+                <p class="mb-0">Produk ini dilengkapi hak PLR. Cocok untuk orang tua, guru, pemilik les kecil, atau reseller produk digital edukasi.</p>
+            </div>
+
+            <div class="guarantee-box">
+                <strong>Aman setelah pembayaran:</strong> jika link produk tidak masuk email atau file sulit diakses, tim kami bantu sampai produk bisa dibuka.
             </div>
 
             <div class="price-box">
-                <div class="price-label">HARI INI SAJA</div>
+                <div class="price-label">PROMO AKTIF</div>
                 <p class="normal-price">Harga Normal: <del>Rp 99.000</del></p>
                 <p class="promo-price">Rp 39.000</p>
-                <p class="fw-bold text-secondary mb-3">(Sekali Bayar, Akses Seumur Hidup)</p>
-                <p class="trust-pill">TERMURAH &nbsp; | &nbsp; LENGKAP &nbsp; | &nbsp; BISA DIJUAL LAGI</p>
+                <p class="fw-bold text-secondary mb-3">Sekali bayar, akses selamanya, bisa dipakai berulang.</p>
+                <p class="trust-pill">AKSES INSTAN &nbsp; | &nbsp; SIAP CETAK &nbsp; | &nbsp; BISA DIJUAL LAGI</p>
             </div>
 
             <div class="text-center my-4">
-                <p class="fw-bold mb-3 text-danger">Amankan Produknya Sebelum Promo Berakhir!</p>
-                <a href="http://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button">AMBIL PROMONYA SEKARANG</a>
+                <p class="fw-bold mb-3 text-danger">Mulai isi waktu anak dengan aktivitas yang lebih bermanfaat hari ini.</p>
+                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button">AMBIL PROMONYA SEKARANG</a>
                 <p class="small text-secondary mt-3 mb-0"><strong>Akses Instan:</strong> Selesai bayar, link otomatis terkirim ke email.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <h2 class="section-title">Pertanyaan yang Sering Ditanyakan:</h2>
+            <div class="faq-list mb-4">
+                <div class="faq-item">
+                    <strong>Apakah ini produk fisik?</strong>
+                    <p>Bukan. Ini produk digital. Setelah pembayaran, Bunda/Ayah menerima link akses file melalui email.</p>
+                </div>
+                <div class="faq-item">
+                    <strong>Bisa dipakai untuk usia berapa?</strong>
+                    <p>Materinya beragam, cocok untuk anak usia dini sampai sekolah dasar awal. Tinggal pilih worksheet sesuai kemampuan anak.</p>
+                </div>
+                <div class="faq-item">
+                    <strong>Apakah harus dicetak?</strong>
+                    <p>Tidak harus. Bisa dicetak untuk aktivitas menulis dan mewarnai, atau dilihat dari HP/tablet untuk flashcard, poster, dan materi visual.</p>
+                </div>
+                <div class="faq-item">
+                    <strong>Benarkah bisa dijual lagi?</strong>
+                    <p>Ya, paket ini menyertakan hak PLR sehingga dapat digunakan sendiri atau dijual kembali sesuai kebutuhan.</p>
+                </div>
             </div>
 
             <div class="order-box">
@@ -557,7 +753,7 @@
     </main>
 
     <div class="sticky-cta">
-        <a href="http://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button">AMBIL PROMONYA SEKARANG</a>
+        <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button">AMBIL PROMONYA SEKARANG</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
