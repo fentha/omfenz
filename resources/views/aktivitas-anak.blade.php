@@ -421,13 +421,22 @@
             <div id="aktivitasSlider" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
                 <div class="carousel-inner rounded-4 overflow-hidden shadow-sm">
                     <div class="carousel-item active">
-                        <img src="{{ url('assets/aktivitas-anak/worksheet-anak-1.png') }}" alt="99.000 lembar worksheet anak">
+                        <picture>
+                            <source srcset="{{ url('assets/aktivitas-anak/worksheet-anak-1.webp') }}" type="image/webp">
+                            <img src="{{ url('assets/aktivitas-anak/worksheet-anak-1.png') }}" alt="99.000 lembar worksheet anak" width="900" height="900" fetchpriority="high">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ url('assets/aktivitas-anak/worksheet-anak-2.png') }}" alt="Paket lengkap aktivitas anak">
+                        <picture>
+                            <source srcset="{{ url('assets/aktivitas-anak/worksheet-anak-2.webp') }}" type="image/webp">
+                            <img src="{{ url('assets/aktivitas-anak/worksheet-anak-2.png') }}" alt="Paket lengkap aktivitas anak" width="900" height="900" loading="lazy">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ url('assets/aktivitas-anak/worksheet-anak-3.png') }}" alt="Testimoni pembeli worksheet anak">
+                        <picture>
+                            <source srcset="{{ url('assets/aktivitas-anak/worksheet-anak-3.webp') }}" type="image/webp">
+                            <img src="{{ url('assets/aktivitas-anak/worksheet-anak-3.png') }}" alt="Testimoni pembeli worksheet anak" width="900" height="900" loading="lazy">
+                        </picture>
                     </div>
                 </div>
 
