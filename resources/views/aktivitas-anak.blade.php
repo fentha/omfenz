@@ -199,6 +199,42 @@
             margin: 0 0 12px;
         }
 
+        .coupon-banner {
+            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+            border: 1px solid #fdba74;
+            border-radius: 14px;
+            color: #7c2d12;
+            padding: 14px;
+            margin: 14px 0;
+            text-align: center;
+        }
+
+        .coupon-banner strong {
+            color: #9a3412;
+            display: block;
+            font-size: 15px;
+            line-height: 1.35;
+            margin-bottom: 4px;
+        }
+
+        .coupon-banner p {
+            font-size: 14px;
+            line-height: 1.45;
+            margin: 0;
+        }
+
+        .coupon-code {
+            background: #ffffff;
+            border: 1px dashed #f97316;
+            border-radius: 8px;
+            color: #c2410c;
+            display: inline-block;
+            font-weight: 900;
+            letter-spacing: .8px;
+            padding: 2px 8px;
+            white-space: nowrap;
+        }
+
         .trust-strip {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -657,7 +693,11 @@
             <div class="hero-offer">
                 <div class="hero-price-label">Sekali Bayar, Akses Selamanya</div>
                 <p class="hero-price">Rp 39.000</p>
-                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 39000, currency: 'IDR'});">AMBIL PROMONYA SEKARANG</a>
+                <div class="coupon-banner">
+                    <strong>Promo Tambahan untuk Bunda</strong>
+                    <p>Pakai kupon <span class="coupon-code">DISKON10</span> saat checkout, harga turun jadi hanya <strong>Rp 29.000</strong>.</p>
+                </div>
+                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 29000, currency: 'IDR'});">AMBIL PROMONYA SEKARANG</a>
                 <div class="trust-strip">
                     <div class="trust-item">Akses Instan</div>
                     <div class="trust-item">Siap Cetak</div>
@@ -734,13 +774,17 @@
                 <div class="price-label">PROMO AKTIF</div>
                 <p class="normal-price">Harga Normal: <del>Rp 99.000</del></p>
                 <p class="promo-price">Rp 39.000</p>
+                <div class="coupon-banner">
+                    <strong>Masukkan kupon <span class="coupon-code">DISKON10</span></strong>
+                    <p>Harga promo bisa turun lagi menjadi hanya <strong>Rp 29.000</strong> sebelum pembayaran.</p>
+                </div>
                 <p class="fw-bold text-secondary mb-3">Sekali bayar, akses selamanya, bisa dipakai berulang.</p>
                 <p class="trust-pill">AKSES INSTAN &nbsp; | &nbsp; SIAP CETAK &nbsp; | &nbsp; BISA DIJUAL LAGI</p>
             </div>
 
             <div class="text-center my-4">
                 <p class="fw-bold mb-3 text-danger">Mulai isi waktu anak dengan aktivitas yang lebih bermanfaat hari ini.</p>
-                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 39000, currency: 'IDR'});">AMBIL PROMONYA SEKARANG</a>
+                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 29000, currency: 'IDR'});">AMBIL PROMONYA SEKARANG</a>
                 <p class="small text-secondary mt-3 mb-0"><strong>Akses Instan:</strong> Selesai bayar, link otomatis terkirim ke email.</p>
             </div>
 
@@ -771,6 +815,7 @@
                 <ol class="mb-0 ps-3">
                     <li>Klik tombol hijau <strong>AMBIL PROMONYA SEKARANG</strong> di atas.</li>
                     <li>Masukkan alamat email aktif Bunda/Ayah dengan benar.</li>
+                    <li>Masukkan kode kupon <strong>DISKON10</strong> di halaman pembayaran Lynk.id agar harga menjadi <strong>Rp 29.000</strong>.</li>
                     <li>Pilih metode pembayaran (ShopeePay, DANA, OVO, QRIS, dll).</li>
                     <li>Ceklis 2 kotak persetujuan keamanan.</li>
                     <li>Klik <strong>Buy Now</strong> dan selesaikan pembayaran.</li>
@@ -781,7 +826,7 @@
     </main>
 
     <div class="sticky-cta">
-        <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 39000, currency: 'IDR'});">AMBIL PROMONYA SEKARANG</a>
+        <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 29000, currency: 'IDR'});">AMBIL PROMONYA SEKARANG</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
