@@ -694,8 +694,8 @@
                 <div class="hero-price-label">Sekali Bayar, Akses Selamanya</div>
                 <p class="hero-price">Rp 39.000</p>
                 <div class="coupon-banner">
-                    <strong>Promo Tambahan untuk Bunda</strong>
-                    <p>Pakai kupon <span class="coupon-code">DISKON10</span> saat checkout, harga turun jadi hanya <strong>Rp 29.000</strong>.</p>
+                    <strong>Mau lebih hemat Rp10.000?</strong>
+                    <p>Masukkan kode kupon <span class="coupon-code">DISKON10</span> saat checkout di Lynk.id. Setelah kupon digunakan, total bayar menjadi <strong>Rp 29.000</strong>.</p>
                 </div>
                 <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 29000, currency: 'IDR'});">AMBIL PROMONYA SEKARANG</a>
                 <div class="trust-strip">
@@ -775,8 +775,8 @@
                 <p class="normal-price">Harga Normal: <del>Rp 99.000</del></p>
                 <p class="promo-price">Rp 39.000</p>
                 <div class="coupon-banner">
-                    <strong>Masukkan kupon <span class="coupon-code">DISKON10</span></strong>
-                    <p>Harga promo bisa turun lagi menjadi hanya <strong>Rp 29.000</strong> sebelum pembayaran.</p>
+                    <strong>Gunakan kupon <span class="coupon-code">DISKON10</span> di Lynk.id</strong>
+                    <p>Dapatkan potongan Rp10.000 dari harga promo Rp39.000. Total bayar setelah kupon menjadi <strong>Rp 29.000</strong>.</p>
                 </div>
                 <p class="fw-bold text-secondary mb-3">Sekali bayar, akses selamanya, bisa dipakai berulang.</p>
                 <p class="trust-pill">AKSES INSTAN &nbsp; | &nbsp; SIAP CETAK &nbsp; | &nbsp; BISA DIJUAL LAGI</p>
@@ -815,7 +815,8 @@
                 <ol class="mb-0 ps-3">
                     <li>Klik tombol hijau <strong>AMBIL PROMONYA SEKARANG</strong> di atas.</li>
                     <li>Masukkan alamat email aktif Bunda/Ayah dengan benar.</li>
-                    <li>Masukkan kode kupon <strong>DISKON10</strong> di halaman pembayaran Lynk.id agar harga menjadi <strong>Rp 29.000</strong>.</li>
+                    <li>Masukkan kode kupon <strong>DISKON10</strong> di halaman pembayaran Lynk.id untuk mendapatkan potongan <strong>Rp10.000</strong>.</li>
+                    <li>Pastikan total bayar berubah dari <strong>Rp 39.000</strong> menjadi <strong>Rp 29.000</strong>.</li>
                     <li>Pilih metode pembayaran (ShopeePay, DANA, OVO, QRIS, dll).</li>
                     <li>Ceklis 2 kotak persetujuan keamanan.</li>
                     <li>Klik <strong>Buy Now</strong> dan selesaikan pembayaran.</li>
