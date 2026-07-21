@@ -235,6 +235,71 @@
             white-space: nowrap;
         }
 
+        .countdown-box {
+            background: #fff1f2;
+            border: 1px solid #fecdd3;
+            border-radius: 14px;
+            color: #881337;
+            margin: 14px 0;
+            padding: 14px;
+            text-align: center;
+        }
+
+        .countdown-box strong {
+            color: #be123c;
+            display: block;
+            font-size: 15px;
+            line-height: 1.35;
+            margin-bottom: 5px;
+        }
+
+        .countdown-box p {
+            font-size: 14px;
+            line-height: 1.45;
+            margin: 0;
+        }
+
+        .countdown-timer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 12px 0;
+        }
+
+        .countdown-unit {
+            background: #ffffff;
+            border: 1px solid #fecdd3;
+            border-radius: 10px;
+            padding: 9px 4px;
+        }
+
+        .countdown-unit span {
+            color: #be123c;
+            display: block;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .countdown-unit small {
+            color: #9f1239;
+            display: block;
+            font-size: 11px;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-top: 4px;
+            text-transform: uppercase;
+        }
+
+        .countdown-note {
+            color: #9f1239;
+            display: block;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1.4;
+            margin-top: 4px;
+        }
+
         .trust-strip {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -697,6 +762,16 @@
                     <strong>Mau lebih hemat Rp10.000?</strong>
                     <p>Masukkan kode kupon <span class="coupon-code">DISKON10</span> saat checkout di Lynk.id. Setelah kupon digunakan, total bayar menjadi <strong>Rp 29.000</strong>.</p>
                 </div>
+                <div class="countdown-box" data-countdown>
+                    <strong>Kupon DISKON10 Berakhir Hari Ini</strong>
+                    <p>Gunakan kode sebelum timer habis agar harga Rp39.000 turun jadi Rp29.000.</p>
+                    <div class="countdown-timer" aria-label="Sisa waktu kupon hari ini">
+                        <div class="countdown-unit"><span data-countdown-hours>00</span><small>Jam</small></div>
+                        <div class="countdown-unit"><span data-countdown-minutes>00</span><small>Menit</small></div>
+                        <div class="countdown-unit"><span data-countdown-seconds>00</span><small>Detik</small></div>
+                    </div>
+                    <span class="countdown-note">Setelah kupon berakhir, pembelian kembali ke harga promo normal Rp39.000.</span>
+                </div>
                 <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 29000, currency: 'IDR'});">AMBIL PROMONYA SEKARANG</a>
                 <div class="trust-strip">
                     <div class="trust-item">Akses Instan</div>
@@ -866,6 +941,39 @@
             if (next) next.addEventListener('click', function () { show(active + 1); });
 
             show(active);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var timers = Array.prototype.slice.call(document.querySelectorAll('[data-countdown]'));
+            if (!timers.length) return;
+
+            function pad(value) {
+                return String(value).padStart(2, '0');
+            }
+
+            function updateCountdown() {
+                var now = new Date();
+                var end = new Date(now);
+                end.setHours(23, 59, 59, 999);
+
+                var diff = Math.max(0, end.getTime() - now.getTime());
+                var hours = Math.floor(diff / 3600000);
+                var minutes = Math.floor((diff % 3600000) / 60000);
+                var seconds = Math.floor((diff % 60000) / 1000);
+
+                timers.forEach(function (timer) {
+                    var hourEl = timer.querySelector('[data-countdown-hours]');
+                    var minuteEl = timer.querySelector('[data-countdown-minutes]');
+                    var secondEl = timer.querySelector('[data-countdown-seconds]');
+
+                    if (hourEl) hourEl.textContent = pad(hours);
+                    if (minuteEl) minuteEl.textContent = pad(minutes);
+                    if (secondEl) secondEl.textContent = pad(seconds);
+                });
+            }
+
+            updateCountdown();
+            window.setInterval(updateCountdown, 1000);
         });
     </script>
 </body>
