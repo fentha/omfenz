@@ -174,6 +174,32 @@
             margin-bottom: 18px;
         }
 
+        .product-cover {
+            background: #fff7ed;
+            border: 1px solid #fed7aa;
+            border-radius: 18px;
+            margin: 18px 0 20px;
+            overflow: hidden;
+            box-shadow: 0 16px 34px rgba(194, 65, 12, .12);
+        }
+
+        .product-cover img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .product-cover-caption {
+            background: #ffffff;
+            color: #7c2d12;
+            font-size: 13px;
+            font-weight: 900;
+            line-height: 1.4;
+            margin: 0;
+            padding: 12px 14px;
+            text-align: center;
+        }
+
         .hero-offer {
             background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
             border: 2px solid #bbf7d0;
@@ -876,6 +902,11 @@
             <p class="lead-copy">
                 Paket digital super lengkap untuk Bunda &amp; Ayah yang ingin punya stok aktivitas edukatif anak di rumah tanpa harus beli buku satu-satu.
             </p>
+
+            <figure class="product-cover">
+                <img src="{{ url('assets/aktivitas-anak/cover-aktivitas-anak.webp') }}" alt="Cover produk 99.000 lembar aktivitas anak siap cetak" width="900" height="900" loading="eager">
+                <figcaption class="product-cover-caption">Produk digital siap download: menulis, berhitung, mewarnai, puzzle, bonus ribuan file, dan bisa dijual lagi.</figcaption>
+            </figure>
 
             <div class="hero-offer">
                 <div class="rating-strip">
