@@ -174,30 +174,80 @@
             margin-bottom: 18px;
         }
 
-        .product-cover {
-            background: #fff7ed;
-            border: 1px solid #fed7aa;
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
             border-radius: 18px;
             margin: 18px 0 20px;
-            overflow: hidden;
             box-shadow: 0 16px 34px rgba(194, 65, 12, .12);
+            border: 1px solid #fed7aa;
+            background: #fff7ed;
         }
-
-        .product-cover img {
-            display: block;
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
+            height: 100%;
+            border: 0;
         }
 
-        .product-cover-caption {
+        .testimonial-box {
             background: #ffffff;
-            color: #7c2d12;
-            font-size: 13px;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 18px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        .testimonial-box::before {
+            content: '\201C';
+            position: absolute;
+            top: 2px;
+            left: 14px;
+            font-size: 60px;
+            color: #dbeafe;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        .testimonial-text {
+            color: #334155;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 1.55;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 12px;
+            padding-top: 10px;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .testimonial-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #bfdbfe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1e3a8a;
             font-weight: 900;
-            line-height: 1.4;
-            margin: 0;
-            padding: 12px 14px;
-            text-align: center;
+            font-size: 16px;
+        }
+        .testimonial-name {
+            font-weight: 800;
+            color: #1e293b;
+            font-size: 14px;
+        }
+        .testimonial-role {
+            color: #64748b;
+            font-size: 12px;
         }
 
         .hero-offer {
@@ -1051,10 +1101,9 @@
                 Paket digital super lengkap untuk Bunda &amp; Ayah yang ingin punya stok aktivitas edukatif anak di rumah tanpa harus beli buku satu-satu.
             </p>
 
-            <figure class="product-cover">
-                <img src="{{ url('assets/aktivitas-anak/cover-aktivitas-anak.webp') }}" alt="Cover produk 99.000 lembar aktivitas anak siap cetak" width="900" height="900" loading="eager">
-                <figcaption class="product-cover-caption">Produk digital siap download: menulis, berhitung, mewarnai, puzzle, bonus ribuan file, dan bisa dijual lagi.</figcaption>
-            </figure>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/hbT_80wq1zQ?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 
             <div class="hero-offer">
                 <div class="rating-strip">
@@ -1120,6 +1169,32 @@
 
             <div class="divider"></div>
 
+            <h2 class="section-title">Apa Kata Bunda yang Sudah Beli?</h2>
+            
+            <div class="testimonial-box">
+                <p class="testimonial-text">"Alhamdulillah sejak ngeprint ini, anakku anteng 2 jam main sambil belajar. Biasanya nangis minta nonton Youtube. Isinya beneran rapi banget di Google Drive, gampang milihnya!"</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">D</div>
+                    <div>
+                        <div class="testimonial-name">Bunda Dian</div>
+                        <div class="testimonial-role">Ibu Rumah Tangga (Anak 4 & 6 tahun)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-box">
+                <p class="testimonial-text">"Harganya nggak masuk akal sih ini murah banget. Aku ke percetakan cuma print 10 lembar sehari, sisanya diliat dari iPad buat flashcard. Sangat ngebantu kalau kehabisan ide mau main apa."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">R</div>
+                    <div>
+                        <div class="testimonial-name">Mama Riska</div>
+                        <div class="testimonial-role">Working Mom</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
             <h2 class="section-title">Materi Lengkap yang Didapat:</h2>
             <ul class="feature-list">
                 <li><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="9"></circle></svg></span><strong>Kids Planners:</strong> Melatih kemandirian dan manajemen waktu anak sejak dini.</li>
@@ -1147,8 +1222,8 @@
             </div>
 
             <div class="plr-box">
-                <h4>BISA DIPAKAI SENDIRI ATAU DIJUAL LAGI:</h4>
-                <p class="mb-0">Produk ini dilengkapi hak PLR. Cocok untuk orang tua, guru, pemilik les kecil, atau reseller produk digital edukasi.</p>
+                <h4>🎁 BONUS KEJUTAN: BISA DIJUAL LAGI!</h4>
+                <p class="mb-0">Paket ini berlisensi PLR (Private Label Rights). Selain dipakai sendiri, Bunda bebas menjual ulang ribuan file ini ke teman atau saudara. <strong>Untungnya 100% buat Bunda!</strong></p>
             </div>
 
             <div class="guarantee-box">
@@ -1187,20 +1262,20 @@
             <h2 class="section-title">Pertanyaan yang Sering Ditanyakan:</h2>
             <div class="faq-list mb-4">
                 <div class="faq-item">
-                    <strong>Apakah ini produk fisik?</strong>
-                    <p>Bukan. Ini produk digital. Setelah pembayaran, Bunda/Ayah menerima link akses file melalui email.</p>
+                    <strong>Apakah memorinya besar? Bikin HP penuh?</strong>
+                    <p>Sama sekali tidak! File tersimpan rapi di Google Drive kami. Bunda tidak perlu download semuanya. Cukup buka linknya dan download 1-2 lembar yang mau diprint hari ini.</p>
                 </div>
                 <div class="faq-item">
-                    <strong>Bisa dipakai untuk usia berapa?</strong>
-                    <p>Materinya beragam, cocok untuk anak usia dini sampai sekolah dasar awal. Tinggal pilih worksheet sesuai kemampuan anak.</p>
+                    <strong>Nge-print 99.000 lembar bikin bangkrut beli tinta?</strong>
+                    <p>Tidak harus diprint semua bund 😊. Ini adalah "stok seumur hidup". Print 1-2 lembar sehari saja. Materi seperti flashcard dan poster juga bisa langsung dilihat dari HP/Tablet.</p>
                 </div>
                 <div class="faq-item">
-                    <strong>Apakah harus dicetak?</strong>
-                    <p>Tidak harus. Bisa dicetak untuk aktivitas menulis dan mewarnai, atau dilihat dari HP/tablet untuk flashcard, poster, dan materi visual.</p>
+                    <strong>Apakah gambarnya pecah kalau diprint?</strong>
+                    <p>Tidak. File-file kami beresolusi tinggi (HD). Terlihat tajam dan cerah saat dicetak di kertas A4 standar sekalipun.</p>
                 </div>
                 <div class="faq-item">
-                    <strong>Benarkah bisa dijual lagi?</strong>
-                    <p>Ya, paket ini menyertakan hak PLR sehingga dapat digunakan sendiri atau dijual kembali sesuai kebutuhan.</p>
+                    <strong>Benarkah bisa dijual lagi? (PLR)</strong>
+                    <p>Betul! Bunda mendapat lisensi untuk menjual kembali file-file ini berkali-kali tanpa harus bagi hasil dengan kami.</p>
                 </div>
             </div>
 
