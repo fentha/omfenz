@@ -808,6 +808,154 @@
             text-align: center;
         }
 
+        .sticky-cta-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .share-btn-sticky {
+            width: 54px;
+            height: 54px;
+            flex-shrink: 0;
+            border: 1px solid #cbd5e1;
+            border-radius: 999px;
+            background: #f8fafc;
+            color: #334155;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all .2s ease;
+        }
+
+        .share-btn-sticky:hover {
+            background: #e2e8f0;
+            color: #0f172a;
+        }
+
+        .share-btn-sticky svg {
+            width: 22px;
+            height: 22px;
+            stroke: currentColor;
+            stroke-width: 2.2;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .share-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, .45);
+            z-index: 36;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .2s ease;
+        }
+
+        .share-backdrop.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .share-sheet {
+            position: fixed;
+            left: 12px;
+            right: 12px;
+            bottom: calc(88px + env(safe-area-inset-bottom));
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 44px rgba(15, 23, 42, .22);
+            padding: 16px;
+            z-index: 37;
+            transform: translateY(18px);
+            opacity: 0;
+            pointer-events: none;
+            transition: transform .2s ease, opacity .2s ease;
+        }
+
+        .share-sheet.active {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .share-sheet-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .share-sheet-title {
+            color: #1e293b;
+            font-size: 16px;
+            font-weight: 900;
+        }
+
+        .share-sheet-close {
+            border: 0;
+            background: #f1f5f9;
+            color: #475569;
+            border-radius: 999px;
+            width: 36px;
+            height: 36px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .share-option {
+            width: 100%;
+            border: 1px solid #e2e8f0;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 800;
+            color: #1f2937;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .share-option:last-child {
+            margin-bottom: 0;
+        }
+
+        .share-option-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            background: #f8fafc;
+            color: #2563eb;
+        }
+
+        .share-option-icon svg {
+            width: 18px;
+            height: 18px;
+            stroke: currentColor;
+            stroke-width: 2;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .share-option small {
+            display: block;
+            color: #64748b;
+            font-size: 12px;
+            font-weight: 700;
+            margin-top: 2px;
+        }
+
         @media (max-width: 360px) {
             .top-slider { padding: 6px !important; }
             .content-wrap { padding: 24px 14px 154px; }
@@ -1073,8 +1221,56 @@
     </main>
 
     <div class="sticky-cta">
-        <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 39000, currency: 'IDR'});">AMBIL PROMO RP 29.000</a>
+        <div class="sticky-cta-row">
+            <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" style="flex: 1;" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 39000, currency: 'IDR'});">AMBIL PROMO RP 29.000</a>
+            <button class="share-btn-sticky" type="button" data-share-trigger aria-label="Bagikan halaman aktivitas anak">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="19" r="3"></circle>
+                    <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
+                    <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
+                </svg>
+            </button>
+        </div>
         <p class="sticky-note">Pakai kupon DISKON10 saat checkout. Akses instan dikirim ke email.</p>
+    </div>
+
+    <div class="share-backdrop" data-share-backdrop hidden></div>
+    <div class="share-sheet" id="shareSheet" role="dialog" aria-label="Pilihan berbagi">
+        <div class="share-sheet-header">
+            <div class="share-sheet-title">Bagikan ke keluarga</div>
+            <button class="share-sheet-close" type="button" data-share-close aria-label="Tutup">×</button>
+        </div>
+        <button class="share-option" type="button" data-share-whatsapp>
+            <span class="share-option-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 19.5A9.5 9.5 0 1 0 6 4.5a9.5 9.5 0 0 0 0 15Z"></path>
+                    <path d="M8.8 15.2c.8.3 1.7.5 2.7.5 2.8 0 5-2.2 5-5 0-2.8-2.3-5-5.1-5-2.8 0-5 2.2-5 5 0 1.2.4 2.3 1.1 3.2l-.8 2.3 2.3-.8Z"></path>
+                </svg>
+            </span>
+            <span>WhatsApp <small>Bagikan ke keluarga atau teman</small></span>
+        </button>
+        <button class="share-option" type="button" data-share-copy>
+            <span class="share-option-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="8" y="4" width="10" height="14" rx="2"></rect>
+                    <path d="M6 8h-1a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1"></path>
+                </svg>
+            </span>
+            <span>Salin link <small>Copy tautan agar cepat dikirim</small></span>
+        </button>
+        <button class="share-option" type="button" data-share-native style="display:none;">
+            <span class="share-option-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3v10"></path>
+                    <path d="m8 7 4-4 4 4"></path>
+                    <path d="M5 13h14"></path>
+                    <path d="M6 19h12"></path>
+                </svg>
+            </span>
+            <span>Bagikan browser <small>Gunakan fitur berbagi sistem</small></span>
+        </button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -1188,6 +1384,115 @@
                     }
                 });
             });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var trigger = document.querySelector('[data-share-trigger]');
+            var sheet = document.getElementById('shareSheet');
+            var backdrop = document.querySelector('[data-share-backdrop]');
+            var closeButton = document.querySelector('[data-share-close]');
+            var whatsappButton = document.querySelector('[data-share-whatsapp]');
+            var copyButton = document.querySelector('[data-share-copy]');
+            var nativeButton = document.querySelector('[data-share-native]');
+            var pageUrl = '{{ url("/aktivitas-anak") }}';
+            var shareTitle = document.title;
+            var shareText = 'Lihat paket 99.000++ lembar aktivitas anak siap cetak yang cocok untuk belajar sambil bermain.';
+
+            function openSheet() {
+                if (!sheet) return;
+                sheet.classList.add('active');
+                if (backdrop) {
+                    backdrop.classList.add('active');
+                    backdrop.hidden = false;
+                }
+            }
+
+            function closeSheet() {
+                if (!sheet) return;
+                sheet.classList.remove('active');
+                if (backdrop) {
+                    backdrop.classList.remove('active');
+                    backdrop.hidden = true;
+                }
+            }
+
+            if (trigger) {
+                trigger.addEventListener('click', openSheet);
+            }
+
+            if (closeButton) {
+                closeButton.addEventListener('click', closeSheet);
+            }
+
+            if (backdrop) {
+                backdrop.addEventListener('click', closeSheet);
+            }
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape') {
+                    closeSheet();
+                }
+            });
+
+            if (whatsappButton) {
+                whatsappButton.addEventListener('click', function () {
+                    var message = encodeURIComponent(shareText + ' ' + pageUrl);
+                    window.open('https://wa.me/?text=' + message, '_blank', 'noopener,noreferrer');
+                    closeSheet();
+                });
+            }
+
+            if (copyButton) {
+                copyButton.addEventListener('click', function () {
+                    var copiedText = pageUrl;
+                    var originalLabel = copyButton.innerHTML;
+
+                    function fallbackCopy(text) {
+                        var input = document.createElement('textarea');
+                        input.value = text;
+                        input.setAttribute('readonly', '');
+                        input.style.position = 'fixed';
+                        input.style.left = '-9999px';
+                        document.body.appendChild(input);
+                        input.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(input);
+                    }
+
+                    function markCopied() {
+                        copyButton.innerHTML = '<span>Link tersalin!</span>';
+                        window.setTimeout(function () {
+                            copyButton.innerHTML = originalLabel;
+                        }, 1800);
+                    }
+
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(copiedText).then(markCopied).catch(function () {
+                            fallbackCopy(copiedText);
+                            markCopied();
+                        });
+                    } else {
+                        fallbackCopy(copiedText);
+                        markCopied();
+                    }
+
+                    closeSheet();
+                });
+            }
+
+            if (nativeButton && navigator.share) {
+                nativeButton.style.display = 'flex';
+                nativeButton.addEventListener('click', function () {
+                    if (navigator.share) {
+                        navigator.share({
+                            title: shareTitle,
+                            text: shareText,
+                            url: pageUrl
+                        }).catch(function () {});
+                    }
+                    closeSheet();
+                });
+            }
         });
     </script>
 </body>
