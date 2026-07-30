@@ -1063,7 +1063,7 @@
                     <div class="carousel-item">
                         <picture>
                             <source srcset="{{ url('assets/aktivitas-anak/slider-baru-2.webp') }}" type="image/webp">
-                            <img src="{{ url('assets/aktivitas-anak/slider-baru-2.webp') }}" alt="Edisi 2026 lembar aktivitas anak lengkap edukatif siap cetak" width="900" height="900" loading="lazy">
+                            <img src="{{ url('assets/aktivitas-anak/slider-baru-2.webp') }}" alt="Isi bundle super lengkap 99.000 lembar aktivitas anak siap cetak" width="900" height="900" loading="lazy">
                         </picture>
                     </div>
                 </div>
