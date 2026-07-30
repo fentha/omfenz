@@ -1056,20 +1056,14 @@
                 <div class="carousel-inner rounded-4 overflow-hidden shadow-sm">
                     <div class="carousel-item active">
                         <picture>
-                            <source srcset="{{ url('assets/aktivitas-anak/worksheet-anak-1.webp') }}" type="image/webp">
-                            <img src="{{ url('assets/aktivitas-anak/worksheet-anak-1.png') }}" alt="99.000 lembar worksheet anak" width="900" height="900" fetchpriority="high">
+                            <source srcset="{{ url('assets/aktivitas-anak/slider-baru-1.webp') }}" type="image/webp">
+                            <img src="{{ url('assets/aktivitas-anak/slider-baru-1.webp') }}" alt="Promo 99.000 lembar aktivitas anak siap cetak harga Rp29.000" width="900" height="900" fetchpriority="high">
                         </picture>
                     </div>
                     <div class="carousel-item">
                         <picture>
-                            <source srcset="{{ url('assets/aktivitas-anak/worksheet-anak-2.webp') }}" type="image/webp">
-                            <img src="{{ url('assets/aktivitas-anak/worksheet-anak-2.png') }}" alt="Paket lengkap aktivitas anak" width="900" height="900" loading="lazy">
-                        </picture>
-                    </div>
-                    <div class="carousel-item">
-                        <picture>
-                            <source srcset="{{ url('assets/aktivitas-anak/worksheet-anak-3.webp') }}" type="image/webp">
-                            <img src="{{ url('assets/aktivitas-anak/worksheet-anak-3.png') }}" alt="Testimoni pembeli worksheet anak" width="900" height="900" loading="lazy">
+                            <source srcset="{{ url('assets/aktivitas-anak/slider-baru-2.webp') }}" type="image/webp">
+                            <img src="{{ url('assets/aktivitas-anak/slider-baru-2.webp') }}" alt="Edisi 2026 lembar aktivitas anak lengkap edukatif siap cetak" width="900" height="900" loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -1084,7 +1078,6 @@
                 <div class="carousel-indicators slider-number-indicators">
                     <button type="button" data-bs-target="#aktivitasSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">1</button>
                     <button type="button" data-bs-target="#aktivitasSlider" data-bs-slide-to="1" aria-label="Slide 2">2</button>
-                    <button type="button" data-bs-target="#aktivitasSlider" data-bs-slide-to="2" aria-label="Slide 3">3</button>
                 </div>
             </div>
         </section>
