@@ -1198,7 +1198,7 @@
 
     <div class="sticky-cta">
         <div class="sticky-cta-row">
-            <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" style="flex: 1;" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 29000, currency: 'IDR'});">AMBIL PROMO RP 29.000</a>
+            <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" style="flex: 1;" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 29000, currency: 'IDR'});">BELI RP29.000</a>
             <button class="share-btn-sticky" type="button" data-share-trigger aria-label="Bagikan halaman aktivitas anak">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                     <circle cx="18" cy="5" r="3"></circle>
