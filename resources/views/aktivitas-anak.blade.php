@@ -299,79 +299,6 @@
             white-space: nowrap;
         }
 
-        .coupon-banner {
-            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
-            border: 1px solid #fdba74;
-            border-radius: 14px;
-            color: #7c2d12;
-            padding: 14px;
-            margin: 14px 0;
-            text-align: center;
-        }
-
-        .coupon-banner strong {
-            color: #9a3412;
-            display: block;
-            font-size: 15px;
-            line-height: 1.35;
-            margin-bottom: 4px;
-        }
-
-        .coupon-banner p {
-            font-size: 14px;
-            line-height: 1.45;
-            margin: 0;
-        }
-
-        .coupon-code {
-            background: #ffffff;
-            border: 1px dashed #f97316;
-            border-radius: 8px;
-            color: #c2410c;
-            display: inline-block;
-            font-weight: 900;
-            letter-spacing: .8px;
-            padding: 2px 8px;
-            white-space: nowrap;
-        }
-
-        .coupon-copy-row {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 8px;
-            margin-top: 12px;
-        }
-
-        .coupon-copy-value {
-            background: #ffffff;
-            border: 1px dashed #f97316;
-            border-radius: 12px;
-            color: #9a3412;
-            font-size: 18px;
-            font-weight: 900;
-            letter-spacing: 1.4px;
-            line-height: 1;
-            padding: 12px 10px;
-            text-align: center;
-        }
-
-        .copy-coupon-btn {
-            background: #f97316;
-            border: 0;
-            border-radius: 12px;
-            color: #ffffff;
-            cursor: pointer;
-            font-size: 13px;
-            font-weight: 900;
-            min-width: 92px;
-            padding: 10px 12px;
-            transition: background .2s ease, transform .2s ease;
-        }
-
-        .copy-coupon-btn:hover {
-            background: #ea580c;
-            transform: translateY(-1px);
-        }
 
         .countdown-box {
             background: #fff1f2;
@@ -1020,7 +947,6 @@
             .trust-badges,
             .proof-grid { grid-template-columns: 1fr; }
             .rating-strip { border-radius: 14px; }
-            .coupon-copy-row { grid-template-columns: 1fr; }
             .sticky-cta { padding-inline: 10px; }
         }
 
@@ -1083,7 +1009,7 @@
         </section>
 
         <section class="content-wrap">
-            <div class="promo-badge">PROMO DIGITAL HARI INI: DARI Rp99.000 JADI Rp39.000</div>
+            <div class="promo-badge">PROMO DIGITAL HARI INI: DARI Rp99.000 JADI Rp29.000</div>
 
             <h1 class="main-title">
                 99.000++ Lembar Aktivitas Anak Siap Cetak
@@ -1104,31 +1030,23 @@
                     <span>Dipilih untuk aktivitas belajar anak di rumah</span>
                 </div>
                 <div class="hero-price-label">Sekali Bayar, Akses Selamanya</div>
-                <p class="hero-price">Rp 39.000</p>
-                <div class="coupon-banner">
-                    <strong>Mau lebih hemat Rp10.000?</strong>
-                    <p>Masukkan kode kupon <span class="coupon-code">DISKON10</span> saat checkout di Lynk.id. Setelah kupon digunakan, total bayar menjadi <strong>Rp 29.000</strong>.</p>
-                    <div class="coupon-copy-row">
-                        <div class="coupon-copy-value" aria-label="Kode kupon DISKON10">DISKON10</div>
-                        <button class="copy-coupon-btn" type="button" data-copy-coupon data-copy-value="DISKON10">Copy Kode</button>
-                    </div>
-                </div>
+                <p class="hero-price">Rp 29.000</p>
                 <div class="countdown-box" data-countdown>
                     <strong>Promo Diskon Rp70.000 Berakhir Dalam:</strong>
-                    <p>Gunakan kode sebelum timer habis agar harga Rp39.000 turun jadi Rp29.000.</p>
-                    <div class="countdown-timer" aria-label="Sisa waktu kupon hari ini">
+                    <p>Ambil sebelum timer habis agar harga spesial Rp29.000 tetap aktif hari ini.</p>
+                    <div class="countdown-timer" aria-label="Sisa waktu promo hari ini">
                         <div class="countdown-unit"><span data-countdown-hours>00</span><small>Jam</small></div>
                         <div class="countdown-unit"><span data-countdown-minutes>00</span><small>Menit</small></div>
                         <div class="countdown-unit"><span data-countdown-seconds>00</span><small>Detik</small></div>
                     </div>
-                    <span class="countdown-note">Setelah kupon berakhir, pembelian kembali ke harga promo normal Rp39.000.</span>
+                    <span class="countdown-note">Setelah promo berakhir, harga dapat kembali ke harga normal Rp99.000.</span>
                 </div>
                 <div class="trust-badges">
                     <div class="trust-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3z"></path><path d="M9 12l2 2 4-5"></path></svg><span>Pembayaran Aman 100%</span></div>
                     <div class="trust-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span>Garansi Akses Selamanya</span></div>
                     <div class="trust-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H5.5L4 17.5V4z"></path><path d="M8 8h8"></path><path d="M8 12h5"></path></svg><span>Dibantu Jika Link Bermasalah</span></div>
                 </div>
-                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 39000, currency: 'IDR'});">AMBIL PROMO RP 29.000</a>
+                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 29000, currency: 'IDR'});">AMBIL PROMO RP 29.000</a>
                 <p class="cta-microcopy">Akses instan langsung dikirim ke email. Bebas virus, siap cetak, dan bisa dibuka dari HP/laptop.</p>
                 <div class="trust-strip">
                     <div class="trust-item">Akses Instan</div>
@@ -1231,23 +1149,15 @@
             <div class="price-box">
                 <div class="price-label">PROMO AKTIF</div>
                 <p class="normal-price">Harga Normal: <del>Rp 99.000</del></p>
-                <p class="promo-price">Rp 39.000</p>
-                <div class="coupon-banner">
-                    <strong>Gunakan kupon <span class="coupon-code">DISKON10</span> di Lynk.id</strong>
-                    <p>Dapatkan potongan Rp10.000 dari harga promo Rp39.000. Total bayar setelah kupon menjadi <strong>Rp 29.000</strong>.</p>
-                    <div class="coupon-copy-row">
-                        <div class="coupon-copy-value" aria-label="Kode kupon DISKON10">DISKON10</div>
-                        <button class="copy-coupon-btn" type="button" data-copy-coupon data-copy-value="DISKON10">Copy Kode</button>
-                    </div>
-                </div>
+                <p class="promo-price">Rp 29.000</p>
                 <p class="fw-bold text-secondary mb-3">Sekali bayar, akses selamanya, bisa dipakai berulang.</p>
                 <p class="trust-pill">AKSES INSTAN &nbsp; | &nbsp; SIAP CETAK &nbsp; | &nbsp; BISA DIJUAL LAGI</p>
             </div>
 
             <div class="text-center my-4">
                 <p class="fw-bold mb-3 text-danger">Mulai isi waktu anak dengan aktivitas yang lebih bermanfaat hari ini.</p>
-                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 39000, currency: 'IDR'});">AMBIL PROMO RP 29.000</a>
-                <p class="small text-secondary mt-3 mb-0"><strong>Jangan lupa:</strong> copy kode DISKON10, lalu masukkan di halaman pembayaran Lynk.id.</p>
+                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 29000, currency: 'IDR'});">AMBIL PROMO RP 29.000</a>
+                <p class="small text-secondary mt-3 mb-0"><strong>Akses Instan:</strong> Selesai bayar, link produk otomatis terkirim ke email.</p>
             </div>
 
             <div class="divider"></div>
@@ -1275,10 +1185,8 @@
             <div class="order-box">
                 <strong class="d-block fs-6 mb-3">Cara Pemesanan Sangat Mudah:</strong>
                 <ol class="mb-0 ps-3">
-                    <li>Klik tombol hijau <strong>AMBIL PROMONYA SEKARANG</strong> di atas.</li>
+                    <li>Klik tombol hijau <strong>AMBIL PROMO RP 29.000</strong> di atas.</li>
                     <li>Masukkan alamat email aktif Bunda/Ayah dengan benar.</li>
-                    <li>Masukkan kode kupon <strong>DISKON10</strong> di halaman pembayaran Lynk.id untuk mendapatkan potongan <strong>Rp10.000</strong>.</li>
-                    <li>Pastikan total bayar berubah dari <strong>Rp 39.000</strong> menjadi <strong>Rp 29.000</strong>.</li>
                     <li>Pilih metode pembayaran (ShopeePay, DANA, OVO, QRIS, dll).</li>
                     <li>Ceklis 2 kotak persetujuan keamanan.</li>
                     <li>Klik <strong>Buy Now</strong> dan selesaikan pembayaran.</li>
@@ -1290,7 +1198,7 @@
 
     <div class="sticky-cta">
         <div class="sticky-cta-row">
-            <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" style="flex: 1;" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 39000, currency: 'IDR'});">AMBIL PROMO RP 29.000</a>
+            <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" style="flex: 1;" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 29000, currency: 'IDR'});">AMBIL PROMO RP 29.000</a>
             <button class="share-btn-sticky" type="button" data-share-trigger aria-label="Bagikan halaman aktivitas anak">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                     <circle cx="18" cy="5" r="3"></circle>
@@ -1301,7 +1209,7 @@
                 </svg>
             </button>
         </div>
-        <p class="sticky-note">Pakai kupon DISKON10 saat checkout. Akses instan dikirim ke email.</p>
+        <p class="sticky-note">Harga promo Rp29.000. Akses instan dikirim ke email.</p>
     </div>
 
     <div class="share-backdrop" data-share-backdrop hidden></div>
@@ -1412,47 +1320,6 @@
             window.setInterval(updateCountdown, 1000);
         });
 
-        document.addEventListener('DOMContentLoaded', function () {
-            var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-copy-coupon]'));
-            if (!buttons.length) return;
-
-            function fallbackCopy(text) {
-                var input = document.createElement('textarea');
-                input.value = text;
-                input.setAttribute('readonly', '');
-                input.style.position = 'fixed';
-                input.style.left = '-9999px';
-                document.body.appendChild(input);
-                input.select();
-                document.execCommand('copy');
-                document.body.removeChild(input);
-            }
-
-            buttons.forEach(function (button) {
-                var originalText = button.textContent;
-
-                button.addEventListener('click', function () {
-                    var code = button.getAttribute('data-copy-value') || 'DISKON10';
-
-                    function markCopied() {
-                        button.textContent = 'Tersalin!';
-                        window.setTimeout(function () {
-                            button.textContent = originalText;
-                        }, 1800);
-                    }
-
-                    if (navigator.clipboard && navigator.clipboard.writeText) {
-                        navigator.clipboard.writeText(code).then(markCopied).catch(function () {
-                            fallbackCopy(code);
-                            markCopied();
-                        });
-                    } else {
-                        fallbackCopy(code);
-                        markCopied();
-                    }
-                });
-            });
-        });
 
         document.addEventListener('DOMContentLoaded', function () {
             var trigger = document.querySelector('[data-share-trigger]');
@@ -1565,6 +1432,3 @@
     </script>
 </body>
 </html>
-
-
-
