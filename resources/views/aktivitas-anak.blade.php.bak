@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>99.000++ Lembar Aktivitas Anak - Omfenz Digital</title>
     <meta name="description"
-        content="99.000++ lembar aktivitas anak super lengkap, siap print, akses selamanya, dan bisa dicetak berulang.">
+        content="99.000++ lembar aktivitas anak super lengkap, siap print, akses selamanya, dan bisa dijual lagi.">
     <link rel="icon" type="image/png" href="{{ url('assets/brand/omfenz-logo.png') }}">
     <link rel="apple-touch-icon" href="{{ url('assets/brand/omfenz-logo.png') }}">
 
@@ -317,22 +317,6 @@
             border: 0;
         }
 
-        .testimonial-img-box {
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 16px;
-            overflow: hidden;
-            margin-bottom: 16px;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-            transition: transform .2s ease;
-        }
-
-        .testimonial-img-box img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
         .testimonial-box {
             background: #ffffff;
             border: 1px solid #e2e8f0;
@@ -395,149 +379,12 @@
             font-size: 12px;
         }
 
-        .value-stack-box {
-            background: #ffffff;
-            border: 2px dashed #3b82f6;
-            border-radius: 18px;
-            padding: 22px 16px 18px;
-            margin: 24px 0 16px;
-            text-align: center;
-            box-shadow: 0 10px 25px rgba(59, 130, 246, .08);
-        }
-
-        .value-stack-badge {
-            background: linear-gradient(135deg, #1d4ed8, #2563eb);
-            color: #ffffff;
-            font-size: 13px;
-            font-weight: 900;
-            padding: 6px 16px;
-            border-radius: 999px;
-            display: inline-block;
-            margin-bottom: 8px;
-            letter-spacing: .3px;
-        }
-
-        .value-stack-sub {
-            color: #64748b;
-            font-size: 13px;
-            margin-bottom: 16px;
-            line-height: 1.4;
-        }
-
-        .value-stack-list {
-            display: flex;
-            flex-direction: column;
-            gap: 9px;
-            margin-bottom: 16px;
-        }
-
-        .value-stack-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 10px 12px;
-            gap: 10px;
-            text-align: left;
-        }
-
-        .value-stack-left {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-        }
-
-        .value-stack-check {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #dcfce7;
-            color: #15803d;
-            font-size: 12px;
-            font-weight: 900;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        .value-stack-left strong {
-            display: block;
-            color: #1e293b;
-            font-size: 13px;
-            line-height: 1.3;
-        }
-
-        .value-stack-left small {
-            display: block;
-            color: #64748b;
-            font-size: 11px;
-            line-height: 1.3;
-            margin-top: 2px;
-        }
-
-        .value-stack-price del {
-            color: #ef4444;
-            font-weight: 800;
-            font-size: 13px;
-            white-space: nowrap;
-        }
-
-        .value-stack-total {
-            border-top: 2px solid #e2e8f0;
-            padding-top: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 8px;
-        }
-
-        .value-total-label {
-            font-size: 12px;
-            font-weight: 900;
-            color: #334155;
-            text-transform: uppercase;
-        }
-
-        .value-total-cross del {
-            font-size: 17px;
-            font-weight: 900;
-            color: #dc2626;
-        }
-
-        .value-stack-discount-note {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-            color: #94a3b8;
-            font-size: 12px;
-            font-weight: 800;
-            text-decoration: line-through;
-            margin-bottom: 10px;
-            flex-wrap: wrap;
-        }
-
-        .value-stack-final-tag {
-            background: #fef2f2;
-            border: 1px solid #fecaca;
-            color: #b91c1c;
-            border-radius: 8px;
-            padding: 5px 12px;
-            font-size: 12px;
-            font-weight: 900;
-            display: inline-block;
-        }
-
         .hero-offer {
             background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
             border: 2px solid #bbf7d0;
             border-radius: 18px;
             padding: 18px;
-            margin: 14px 0 18px;
+            margin: 20px 0 18px;
             text-align: center;
             box-shadow: 0 16px 36px rgba(22, 101, 52, .12);
         }
@@ -1027,90 +874,6 @@
             color: #2d3748;
         }
 
-        .support-box {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 16px;
-            padding: 16px;
-            margin-top: 18px;
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            text-align: left;
-        }
-
-        .support-icon {
-            width: 42px;
-            height: 42px;
-            border-radius: 12px;
-            background: #dcfce7;
-            color: #16a34a;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .support-icon svg {
-            width: 22px;
-            height: 22px;
-            stroke: currentColor;
-            stroke-width: 2;
-            fill: none;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-
-        .support-content {
-            flex: 1;
-        }
-
-        .support-content strong {
-            display: block;
-            color: #1e293b;
-            font-size: 14px;
-            line-height: 1.35;
-            margin-bottom: 3px;
-        }
-
-        .support-content p {
-            color: #64748b;
-            font-size: 12.5px;
-            line-height: 1.45;
-            margin: 0 0 10px;
-        }
-
-        .support-wa-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-            background: #25d366;
-            color: #ffffff;
-            font-size: 12.5px;
-            font-weight: 800;
-            padding: 7px 14px;
-            border-radius: 999px;
-            text-decoration: none;
-            box-shadow: 0 4px 10px rgba(37, 211, 102, .25);
-            transition: all .2s ease;
-        }
-
-        .support-wa-btn:hover {
-            background: #1eb957;
-            color: #ffffff;
-            transform: translateY(-1px);
-        }
-
-        .support-wa-btn svg {
-            width: 15px;
-            height: 15px;
-            stroke: currentColor;
-            stroke-width: 2;
-            fill: none;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-
         .faq-list {
             display: grid;
             gap: 10px;
@@ -1394,34 +1157,51 @@
     <!-- End Meta Pixel Code -->
     <main class="mobile-page">
         <section class="top-slider p-2 p-sm-3">
-            <div class="rounded-4 overflow-hidden shadow-sm">
-                <picture>
-                    <source srcset="{{ url('assets/aktivitas-anak/banner-utama.webp') }}" type="image/webp">
-                    <img src="{{ url('assets/aktivitas-anak/banner-utama.webp') }}"
-                        alt="99.000++ Lembar Aktivitas Anak Siap Cetak Rp49.000" width="1080"
-                        height="1080" fetchpriority="high">
-                </picture>
+            <div id="aktivitasSlider" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                <div class="carousel-inner rounded-4 overflow-hidden shadow-sm">
+                    <div class="carousel-item active">
+                        <picture>
+                            <source srcset="{{ url('assets/aktivitas-anak/slider-baru-1.webp') }}" type="image/webp">
+                            <img src="{{ url('assets/aktivitas-anak/slider-baru-1.webp') }}"
+                                alt="Promo 99.000 lembar aktivitas anak siap cetak harga Rp29.000" width="900"
+                                height="900" fetchpriority="high">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source srcset="{{ url('assets/aktivitas-anak/slider-baru-2.webp') }}" type="image/webp">
+                            <img src="{{ url('assets/aktivitas-anak/slider-baru-2.webp') }}"
+                                alt="Isi bundle super lengkap 99.000 lembar aktivitas anak siap cetak" width="900"
+                                height="900" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#aktivitasSlider"
+                    data-bs-slide="prev" aria-label="Slide sebelumnya">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#aktivitasSlider"
+                    data-bs-slide="next" aria-label="Slide berikutnya">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="carousel-indicators slider-number-indicators">
+                    <button type="button" data-bs-target="#aktivitasSlider" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1">1</button>
+                    <button type="button" data-bs-target="#aktivitasSlider" data-bs-slide-to="1"
+                        aria-label="Slide 2">2</button>
+                </div>
             </div>
         </section>
 
         <section class="content-wrap">
-            <div class="promo-badge">PROMO SPESIAL HARI INI: HEMAT HINGGA 67%!</div>
+            <div class="promo-badge">PROMO DIGITAL HARI INI: DARI Rp99.000 JADI Rp29.000</div>
 
             <h1 class="main-title">
                 99.000++ Lembar Aktivitas Anak Siap Cetak
                 <span>Bantu Anak Belajar, Menulis, Berhitung &amp; Fokus Tanpa Terus Main Gadget</span>
             </h1>
-
-            <div class="problem-box">
-                <strong>Kalau anak cepat bosan belajar, bukan berarti anaknya malas.</strong><br>
-                Seringnya anak hanya butuh aktivitas yang lebih variatif, berwarna, dan terasa seperti bermain. Paket
-                ini membantu orang tua punya banyak pilihan materi tanpa harus cari file satu per satu.
-            </div>
-
-            <div class="hook-box">
-                <p>Bayangkan setiap hari Bunda tinggal pilih worksheet, print, lalu anak punya aktivitas baru yang
-                    edukatif.</p>
-            </div>
 
             <p class="lead-copy">
                 Paket digital super lengkap untuk Bunda &amp; Ayah yang ingin punya stok aktivitas edukatif anak di
@@ -1434,26 +1214,105 @@
                     allowfullscreen></iframe>
             </div>
 
+            <div class="hero-offer">
+                <div class="rating-strip">
+                    <span class="rating-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span>Dipilih untuk aktivitas belajar anak di rumah</span>
+                </div>
+                <div class="hero-price-label">Sekali Bayar, Akses Selamanya</div>
+                <p class="hero-price">Rp 29.000</p>
+                <div class="countdown-box" data-countdown>
+                    <strong>Promo Diskon Rp70.000 Berakhir Dalam:</strong>
+                    <p>Ambil sebelum timer habis agar harga spesial Rp29.000 tetap aktif hari ini.</p>
+                    <div class="countdown-timer" aria-label="Sisa waktu promo hari ini">
+                        <div class="countdown-unit"><span data-countdown-hours>00</span><small>Jam</small></div>
+                        <div class="countdown-unit"><span data-countdown-minutes>00</span><small>Menit</small></div>
+                        <div class="countdown-unit"><span data-countdown-seconds>00</span><small>Detik</small></div>
+                    </div>
+                    <span class="countdown-note">Setelah promo berakhir, harga dapat kembali ke harga normal
+                        Rp99.000.</span>
+                </div>
+                <div class="trust-badges">
+                    <div class="trust-badge"><svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3z"></path>
+                            <path d="M9 12l2 2 4-5"></path>
+                        </svg><span>Pembayaran Aman 100%</span></div>
+                    <div class="trust-badge"><svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20 6L9 17l-5-5"></path>
+                        </svg><span>Garansi Akses Selamanya</span></div>
+                    <div class="trust-badge"><svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4 4h16v12H5.5L4 17.5V4z"></path>
+                            <path d="M8 8h8"></path>
+                            <path d="M8 12h5"></path>
+                        </svg><span>Dibantu Jika Link Bermasalah</span></div>
+                </div>
+                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button"
+                    onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 29000, currency: 'IDR'});">AMBIL
+                    PROMO RP 29.000</a>
+                <p class="cta-microcopy">Akses instan langsung dikirim ke email. Bebas virus, siap cetak, dan bisa
+                    dibuka dari HP/laptop.</p>
+                <div class="trust-strip">
+                    <div class="trust-item">Akses Instan</div>
+                    <div class="trust-item">Siap Cetak</div>
+                    <div class="trust-item">Bisa Dijual Lagi</div>
+                </div>
+                <p class="mini-note">Selesai bayar, link produk otomatis dikirim ke email. Bisa dibuka dari HP, laptop,
+                    atau tablet.</p>
+            </div>
+
+            <div class="problem-box">
+                <strong>Kalau anak cepat bosan belajar, bukan berarti anaknya malas.</strong><br>
+                Seringnya anak hanya butuh aktivitas yang lebih variatif, berwarna, dan terasa seperti bermain. Paket
+                ini membantu orang tua punya banyak pilihan materi tanpa harus cari file satu per satu.
+            </div>
+
+            <div class="hook-box">
+                <p>Bayangkan setiap hari Bunda tinggal pilih worksheet, print, lalu anak punya aktivitas baru yang
+                    edukatif.</p>
+            </div>
+
+            <p class="text-secondary mb-0">
+                Di dalamnya ada kumpulan worksheet, flashcard, poster, planner, aktivitas menulis, berhitung, mewarnai,
+                puzzle, busy book, origami, dan materi edukatif lain yang bisa dipakai berulang.
+            </p>
+
+            <div class="proof-box">
+                <strong>Yang membuat paket ini terasa hemat:</strong>
+                <div class="proof-grid">
+                    <div class="proof-stat"><strong>99.000++</strong><span>lembar aktivitas</span></div>
+                    <div class="proof-stat"><strong>1x</strong><span>bayar saja</span></div>
+                    <div class="proof-stat"><strong>PLR</strong><span>bisa dijual lagi</span></div>
+                </div>
+            </div>
+
             <div class="divider"></div>
 
             <h2 class="section-title">Apa Kata Bunda yang Sudah Beli?</h2>
 
-            <div class="testimonial-img-box">
-                <picture>
-                    <source srcset="{{ url('assets/aktivitas-anak/testimoni-wa-1.webp') }}" type="image/webp">
-                    <img src="{{ url('assets/aktivitas-anak/testimoni-wa-1.webp') }}"
-                        alt="Testimoni WhatsApp Bunda: Filenya banyak banget dan rapi, anak jadi anteng mewarnai dan belajar"
-                        width="800" height="421" loading="lazy">
-                </picture>
+            <div class="testimonial-box">
+                <p class="testimonial-text">"Alhamdulillah sejak ngeprint ini, anakku anteng 2 jam main sambil belajar.
+                    Biasanya nangis minta nonton Youtube. Isinya beneran rapi banget di Google Drive, gampang milihnya!"
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">D</div>
+                    <div>
+                        <div class="testimonial-name">Bunda Dian</div>
+                        <div class="testimonial-role">Ibu Rumah Tangga (Anak 4 & 6 tahun)</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="testimonial-img-box">
-                <picture>
-                    <source srcset="{{ url('assets/aktivitas-anak/testimoni-wa-2.webp') }}" type="image/webp">
-                    <img src="{{ url('assets/aktivitas-anak/testimoni-wa-2.webp') }}"
-                        alt="Testimoni WhatsApp Bunda: Anak saya suka banget, sekarang nggak bingung cari worksheet lagi"
-                        width="800" height="452" loading="lazy">
-                </picture>
+            <div class="testimonial-box">
+                <p class="testimonial-text">"Harganya nggak masuk akal sih ini murah banget. Aku ke percetakan cuma
+                    print 10 lembar sehari, sisanya diliat dari iPad buat flashcard. Sangat ngebantu kalau kehabisan ide
+                    mau main apa."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">R</div>
+                    <div>
+                        <div class="testimonial-name">Mama Riska</div>
+                        <div class="testimonial-role">Working Mom</div>
+                    </div>
+                </div>
             </div>
 
             <div class="divider"></div>
@@ -1504,20 +1363,6 @@
 
             <div class="divider"></div>
 
-            <div class="proof-box">
-                <strong>Yang membuat paket ini terasa hemat:</strong>
-                <div class="proof-grid">
-                    <div class="proof-stat"><strong>99.000++</strong><span>lembar aktivitas</span></div>
-                    <div class="proof-stat"><strong>1x</strong><span>bayar saja</span></div>
-                    <div class="proof-stat"><strong>&#8734;</strong><span>cetak berulang</span></div>
-                </div>
-            </div>
-
-            <p class="text-secondary mb-0">
-                Di dalamnya ada kumpulan worksheet, flashcard, poster, planner, aktivitas menulis, berhitung, mewarnai,
-                puzzle, busy book, origami, dan materi edukatif lain yang bisa dipakai berulang.
-            </p>
-
             <h2 class="section-title">Mengapa Harus Punya Paket Ini?</h2>
             <div class="row g-3 mb-4">
                 <div class="col-12 col-sm-6">
@@ -1540,7 +1385,8 @@
                 </div>
                 <div class="col-12 col-sm-6">
                     <div class="benefit-card">
-                        <p><strong>Bisa Cetak Berulang</strong><br>File digital bisa diprint ulang kapan saja tanpa batas. Satu file, pakai terus sampai anak besar.</p>
+                        <p><strong>Peluang Tambahan</strong><br>Karena ada hak PLR, file dapat dipakai untuk kebutuhan
+                            pribadi atau dijual kembali.</p>
                     </div>
                 </div>
             </div>
@@ -1552,7 +1398,7 @@
             </div>
 
             <div class="plr-box">
-                <h4>🎁 BONUS TAMBAHAN: LISENSI JUAL ULANG</h4>
+                <h4>🎁 BONUS KEJUTAN: BISA DIJUAL LAGI!</h4>
                 <p class="mb-0">Paket ini berlisensi PLR (Private Label Rights). Selain dipakai sendiri, Bunda bebas
                     menjual ulang ribuan file ini ke teman atau saudara. <strong>Untungnya 100% buat Bunda!</strong></p>
             </div>
@@ -1568,140 +1414,22 @@
                     dibandingkan Virtual Account bank.</p>
             </div>
 
-            <div class="value-stack-box">
-                <div class="value-stack-badge">💰 TOTAL NILAI YANG BUNDA DAPATKAN</div>
-                <p class="value-stack-sub">Jika seluruh materi dan modul edukatif ini dibeli atau dicetak terpisah, nilainya mencapai:</p>
-
-                <div class="value-stack-list">
-                    <div class="value-stack-item">
-                        <div class="value-stack-left">
-                            <span class="value-stack-check">✓</span>
-                            <div>
-                                <strong>Kids Planners &amp; Habit Tracker</strong>
-                                <small>Melatih kemandirian &amp; disiplin harian anak sejak dini</small>
-                            </div>
-                        </div>
-                        <div class="value-stack-price"><del>Rp 79.000</del></div>
-                    </div>
-
-                    <div class="value-stack-item">
-                        <div class="value-stack-left">
-                            <span class="value-stack-check">✓</span>
-                            <div>
-                                <strong>Worksheet Calistung, Alfabet &amp; Angka (HD)</strong>
-                                <small>Menebalkan huruf, angka, berhitung, membaca &amp; teka-teki</small>
-                            </div>
-                        </div>
-                        <div class="value-stack-price"><del>Rp 99.000</del></div>
-                    </div>
-
-                    <div class="value-stack-item">
-                        <div class="value-stack-left">
-                            <span class="value-stack-check">✓</span>
-                            <div>
-                                <strong>Cerita Anak, Flashcard &amp; Poster Edukatif</strong>
-                                <small>Mengenal hewan, buah, sayur, profesi, kendaraan &amp; sains</small>
-                            </div>
-                        </div>
-                        <div class="value-stack-price"><del>Rp 89.000</del></div>
-                    </div>
-
-                    <div class="value-stack-item">
-                        <div class="value-stack-left">
-                            <span class="value-stack-check">✓</span>
-                            <div>
-                                <strong>Modul Origami &amp; Busy Book Interaktif</strong>
-                                <small>Melatih sensorik motorik halus lewat gunting &amp; tempel</small>
-                            </div>
-                        </div>
-                        <div class="value-stack-price"><del>Rp 79.000</del></div>
-                    </div>
-
-                    <div class="value-stack-item">
-                        <div class="value-stack-left">
-                            <span class="value-stack-check">✓</span>
-                            <div>
-                                <strong>Paket Mewarnai Dinosaurus &amp; Modul ala Kumon</strong>
-                                <small>Mengasah kreativitas, logika dasar &amp; fokus belajar anak</small>
-                            </div>
-                        </div>
-                        <div class="value-stack-price"><del>Rp 69.000</del></div>
-                    </div>
-
-                    <div class="value-stack-item">
-                        <div class="value-stack-left">
-                            <span class="value-stack-check">✓</span>
-                            <div>
-                                <strong>Bonus Spesial: Lisensi Jual Ulang (PLR)</strong>
-                                <small>Bebas dijual kembali ke teman/saudara, untung 100% milik Bunda</small>
-                            </div>
-                        </div>
-                        <div class="value-stack-price"><del>Rp 89.000</del></div>
-                    </div>
-                </div>
-
-                <div class="value-stack-total">
-                    <span class="value-total-label">TOTAL NILAI KESELURUHAN:</span>
-                    <span class="value-total-cross"><del>Rp 504.000</del></span>
-                </div>
-
-                <div class="value-stack-discount-note">
-                    <span>Bukan Rp 504.000</span>
-                    <span>•</span>
-                    <span>Bukan Rp 199.000</span>
-                    <span>•</span>
-                    <span>Bukan Rp 99.000</span>
-                </div>
-
-                <div class="value-stack-final-tag">
-                    👇 PROMO SPESIAL HARI INI CUMA:
-                </div>
+            <div class="price-box">
+                <div class="price-label">PROMO AKTIF</div>
+                <p class="normal-price">Harga Normal: <del>Rp 99.000</del></p>
+                <p class="promo-price">Rp 29.000</p>
+                <p class="fw-bold text-secondary mb-3">Sekali bayar, akses selamanya, bisa dipakai berulang.</p>
+                <p class="trust-pill">AKSES INSTAN &nbsp; | &nbsp; SIAP CETAK &nbsp; | &nbsp; BISA DIJUAL LAGI</p>
             </div>
 
-            <div class="hero-offer">
-                <div class="rating-strip">
-                    <span class="rating-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <span>Dipilih untuk aktivitas belajar anak di rumah</span>
-                </div>
-                <div class="hero-price-label">Sekali Bayar, Akses Selamanya</div>
-                <p class="hero-price">Rp 49.000</p>
-                <div class="countdown-box" data-countdown>
-                    <strong>Promo Diskon Rp100.000 Berakhir Dalam:</strong>
-                    <p>Ambil sebelum timer habis agar harga spesial Rp49.000 tetap aktif hari ini.</p>
-                    <div class="countdown-timer" aria-label="Sisa waktu promo hari ini">
-                        <div class="countdown-unit"><span data-countdown-hours>00</span><small>Jam</small></div>
-                        <div class="countdown-unit"><span data-countdown-minutes>00</span><small>Menit</small></div>
-                        <div class="countdown-unit"><span data-countdown-seconds>00</span><small>Detik</small></div>
-                    </div>
-                    <span class="countdown-note">Setelah promo berakhir, harga dapat kembali ke harga normal
-                        Rp149.000.</span>
-                </div>
-                <div class="trust-badges">
-                    <div class="trust-badge"><svg viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3z"></path>
-                            <path d="M9 12l2 2 4-5"></path>
-                        </svg><span>Pembayaran Aman 100%</span></div>
-                    <div class="trust-badge"><svg viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M20 6L9 17l-5-5"></path>
-                        </svg><span>Garansi Akses Selamanya</span></div>
-                    <div class="trust-badge"><svg viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M4 4h16v12H5.5L4 17.5V4z"></path>
-                            <path d="M8 8h8"></path>
-                            <path d="M8 12h5"></path>
-                        </svg><span>Dibantu Jika Link Bermasalah</span></div>
-                </div>
+            <div class="text-center my-4">
+                <p class="fw-bold mb-3 text-danger">Mulai isi waktu anak dengan aktivitas yang lebih bermanfaat hari
+                    ini.</p>
                 <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button"
-                    onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 49000, currency: 'IDR'});">AMBIL
-                    PROMO RP 49.000</a>
-                <p class="cta-microcopy">Akses instan langsung dikirim ke email. Bebas virus, siap cetak, dan bisa
-                    dibuka dari HP/laptop.</p>
-                <div class="trust-strip">
-                    <div class="trust-item">Akses Instan</div>
-                    <div class="trust-item">Siap Cetak</div>
-                    <div class="trust-item">Cetak Berulang</div>
-                </div>
-                <p class="mini-note">Selesai bayar, link produk otomatis dikirim ke email. Bisa dibuka dari HP, laptop,
-                    atau tablet.</p>
+                    onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 29000, currency: 'IDR'});">AMBIL
+                    PROMO RP 29.000</a>
+                <p class="small text-secondary mt-3 mb-0"><strong>Akses Instan:</strong> Selesai bayar, link produk
+                    otomatis terkirim ke email.</p>
             </div>
 
             <div class="divider"></div>
@@ -1733,7 +1461,7 @@
             <div class="order-box">
                 <strong class="d-block fs-6 mb-3">Cara Pemesanan Sangat Mudah:</strong>
                 <ol class="mb-0 ps-3">
-                    <li>Klik tombol hijau <strong>AMBIL PROMO RP 49.000</strong> di atas.</li>
+                    <li>Klik tombol hijau <strong>AMBIL PROMO RP 29.000</strong> di atas.</li>
                     <li>Masukkan alamat email aktif Bunda/Ayah dengan benar.</li>
                     <li>Pilih metode pembayaran (ShopeePay, DANA, OVO, QRIS, dll).</li>
                     <li>Ceklis 2 kotak persetujuan keamanan.</li>
@@ -1741,33 +1469,14 @@
                     <li>Selesai! Cek kotak masuk <em>(Inbox/Spam)</em> email untuk membuka asetnya.</li>
                 </ol>
             </div>
-
-            <div class="support-box">
-                <div class="support-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                    </svg>
-                </div>
-                <div class="support-content">
-                    <strong>Butuh Bantuan atau Ada Kendala?</strong>
-                    <p>Ada pertanyaan seputar materi atau butuh panduan download file? Hubungi Customer Support kami:</p>
-                    <a href="https://wa.me/6285113655806?text=Halo%20Admin%20Omfenz%2C%20saya%20butuh%20bantuan%20terkait%20paket%2099.000%2B%2B%20Aktivitas%20Anak" class="support-wa-btn" target="_blank" rel="noopener noreferrer">
-                        <svg viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M6 19.5A9.5 9.5 0 1 0 6 4.5a9.5 9.5 0 0 0 0 15Z"></path>
-                            <path d="M8.8 15.2c.8.3 1.7.5 2.7.5 2.8 0 5-2.2 5-5 0-2.8-2.3-5-5.1-5-2.8 0-5 2.2-5 5 0 1.2.4 2.3 1.1 3.2l-.8 2.3 2.3-.8Z"></path>
-                        </svg>
-                        <span>Chat CS WhatsApp (0851-1365-5806)</span>
-                    </a>
-                </div>
-            </div>
         </section>
     </main>
 
     <div class="sticky-cta">
         <div class="sticky-cta-row">
             <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" style="flex: 1;"
-                onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 49000, currency: 'IDR'});">BELI
-                RP49.000</a>
+                onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 29000, currency: 'IDR'});">BELI
+                RP29.000</a>
             <button class="share-btn-sticky" type="button" data-share-trigger
                 aria-label="Bagikan halaman aktivitas anak">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -1779,7 +1488,7 @@
                 </svg>
             </button>
         </div>
-        <p class="sticky-note">Harga promo Rp49.000. Akses instan dikirim ke email.</p>
+        <p class="sticky-note">Harga promo Rp29.000. Akses instan dikirim ke email.</p>
     </div>
 
     <div class="share-backdrop" data-share-backdrop hidden></div>

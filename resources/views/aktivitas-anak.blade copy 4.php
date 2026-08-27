@@ -395,149 +395,12 @@
             font-size: 12px;
         }
 
-        .value-stack-box {
-            background: #ffffff;
-            border: 2px dashed #3b82f6;
-            border-radius: 18px;
-            padding: 22px 16px 18px;
-            margin: 24px 0 16px;
-            text-align: center;
-            box-shadow: 0 10px 25px rgba(59, 130, 246, .08);
-        }
-
-        .value-stack-badge {
-            background: linear-gradient(135deg, #1d4ed8, #2563eb);
-            color: #ffffff;
-            font-size: 13px;
-            font-weight: 900;
-            padding: 6px 16px;
-            border-radius: 999px;
-            display: inline-block;
-            margin-bottom: 8px;
-            letter-spacing: .3px;
-        }
-
-        .value-stack-sub {
-            color: #64748b;
-            font-size: 13px;
-            margin-bottom: 16px;
-            line-height: 1.4;
-        }
-
-        .value-stack-list {
-            display: flex;
-            flex-direction: column;
-            gap: 9px;
-            margin-bottom: 16px;
-        }
-
-        .value-stack-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 10px 12px;
-            gap: 10px;
-            text-align: left;
-        }
-
-        .value-stack-left {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-        }
-
-        .value-stack-check {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #dcfce7;
-            color: #15803d;
-            font-size: 12px;
-            font-weight: 900;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        .value-stack-left strong {
-            display: block;
-            color: #1e293b;
-            font-size: 13px;
-            line-height: 1.3;
-        }
-
-        .value-stack-left small {
-            display: block;
-            color: #64748b;
-            font-size: 11px;
-            line-height: 1.3;
-            margin-top: 2px;
-        }
-
-        .value-stack-price del {
-            color: #ef4444;
-            font-weight: 800;
-            font-size: 13px;
-            white-space: nowrap;
-        }
-
-        .value-stack-total {
-            border-top: 2px solid #e2e8f0;
-            padding-top: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 8px;
-        }
-
-        .value-total-label {
-            font-size: 12px;
-            font-weight: 900;
-            color: #334155;
-            text-transform: uppercase;
-        }
-
-        .value-total-cross del {
-            font-size: 17px;
-            font-weight: 900;
-            color: #dc2626;
-        }
-
-        .value-stack-discount-note {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-            color: #94a3b8;
-            font-size: 12px;
-            font-weight: 800;
-            text-decoration: line-through;
-            margin-bottom: 10px;
-            flex-wrap: wrap;
-        }
-
-        .value-stack-final-tag {
-            background: #fef2f2;
-            border: 1px solid #fecaca;
-            color: #b91c1c;
-            border-radius: 8px;
-            padding: 5px 12px;
-            font-size: 12px;
-            font-weight: 900;
-            display: inline-block;
-        }
-
         .hero-offer {
             background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
             border: 2px solid #bbf7d0;
             border-radius: 18px;
             padding: 18px;
-            margin: 14px 0 18px;
+            margin: 20px 0 18px;
             text-align: center;
             box-shadow: 0 16px 36px rgba(22, 101, 52, .12);
         }
@@ -1027,90 +890,6 @@
             color: #2d3748;
         }
 
-        .support-box {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 16px;
-            padding: 16px;
-            margin-top: 18px;
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            text-align: left;
-        }
-
-        .support-icon {
-            width: 42px;
-            height: 42px;
-            border-radius: 12px;
-            background: #dcfce7;
-            color: #16a34a;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .support-icon svg {
-            width: 22px;
-            height: 22px;
-            stroke: currentColor;
-            stroke-width: 2;
-            fill: none;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-
-        .support-content {
-            flex: 1;
-        }
-
-        .support-content strong {
-            display: block;
-            color: #1e293b;
-            font-size: 14px;
-            line-height: 1.35;
-            margin-bottom: 3px;
-        }
-
-        .support-content p {
-            color: #64748b;
-            font-size: 12.5px;
-            line-height: 1.45;
-            margin: 0 0 10px;
-        }
-
-        .support-wa-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-            background: #25d366;
-            color: #ffffff;
-            font-size: 12.5px;
-            font-weight: 800;
-            padding: 7px 14px;
-            border-radius: 999px;
-            text-decoration: none;
-            box-shadow: 0 4px 10px rgba(37, 211, 102, .25);
-            transition: all .2s ease;
-        }
-
-        .support-wa-btn:hover {
-            background: #1eb957;
-            color: #ffffff;
-            transform: translateY(-1px);
-        }
-
-        .support-wa-btn svg {
-            width: 15px;
-            height: 15px;
-            stroke: currentColor;
-            stroke-width: 2;
-            fill: none;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-
         .faq-list {
             display: grid;
             gap: 10px;
@@ -1568,96 +1347,6 @@
                     dibandingkan Virtual Account bank.</p>
             </div>
 
-            <div class="value-stack-box">
-                <div class="value-stack-badge">💰 TOTAL NILAI YANG BUNDA DAPATKAN</div>
-                <p class="value-stack-sub">Jika seluruh materi dan modul edukatif ini dibeli atau dicetak terpisah, nilainya mencapai:</p>
-
-                <div class="value-stack-list">
-                    <div class="value-stack-item">
-                        <div class="value-stack-left">
-                            <span class="value-stack-check">✓</span>
-                            <div>
-                                <strong>Kids Planners &amp; Habit Tracker</strong>
-                                <small>Melatih kemandirian &amp; disiplin harian anak sejak dini</small>
-                            </div>
-                        </div>
-                        <div class="value-stack-price"><del>Rp 79.000</del></div>
-                    </div>
-
-                    <div class="value-stack-item">
-                        <div class="value-stack-left">
-                            <span class="value-stack-check">✓</span>
-                            <div>
-                                <strong>Worksheet Calistung, Alfabet &amp; Angka (HD)</strong>
-                                <small>Menebalkan huruf, angka, berhitung, membaca &amp; teka-teki</small>
-                            </div>
-                        </div>
-                        <div class="value-stack-price"><del>Rp 99.000</del></div>
-                    </div>
-
-                    <div class="value-stack-item">
-                        <div class="value-stack-left">
-                            <span class="value-stack-check">✓</span>
-                            <div>
-                                <strong>Cerita Anak, Flashcard &amp; Poster Edukatif</strong>
-                                <small>Mengenal hewan, buah, sayur, profesi, kendaraan &amp; sains</small>
-                            </div>
-                        </div>
-                        <div class="value-stack-price"><del>Rp 89.000</del></div>
-                    </div>
-
-                    <div class="value-stack-item">
-                        <div class="value-stack-left">
-                            <span class="value-stack-check">✓</span>
-                            <div>
-                                <strong>Modul Origami &amp; Busy Book Interaktif</strong>
-                                <small>Melatih sensorik motorik halus lewat gunting &amp; tempel</small>
-                            </div>
-                        </div>
-                        <div class="value-stack-price"><del>Rp 79.000</del></div>
-                    </div>
-
-                    <div class="value-stack-item">
-                        <div class="value-stack-left">
-                            <span class="value-stack-check">✓</span>
-                            <div>
-                                <strong>Paket Mewarnai Dinosaurus &amp; Modul ala Kumon</strong>
-                                <small>Mengasah kreativitas, logika dasar &amp; fokus belajar anak</small>
-                            </div>
-                        </div>
-                        <div class="value-stack-price"><del>Rp 69.000</del></div>
-                    </div>
-
-                    <div class="value-stack-item">
-                        <div class="value-stack-left">
-                            <span class="value-stack-check">✓</span>
-                            <div>
-                                <strong>Bonus Spesial: Lisensi Jual Ulang (PLR)</strong>
-                                <small>Bebas dijual kembali ke teman/saudara, untung 100% milik Bunda</small>
-                            </div>
-                        </div>
-                        <div class="value-stack-price"><del>Rp 89.000</del></div>
-                    </div>
-                </div>
-
-                <div class="value-stack-total">
-                    <span class="value-total-label">TOTAL NILAI KESELURUHAN:</span>
-                    <span class="value-total-cross"><del>Rp 504.000</del></span>
-                </div>
-
-                <div class="value-stack-discount-note">
-                    <span>Bukan Rp 504.000</span>
-                    <span>•</span>
-                    <span>Bukan Rp 199.000</span>
-                    <span>•</span>
-                    <span>Bukan Rp 99.000</span>
-                </div>
-
-                <div class="value-stack-final-tag">
-                    👇 PROMO SPESIAL HARI INI CUMA:
-                </div>
-            </div>
-
             <div class="hero-offer">
                 <div class="rating-strip">
                     <span class="rating-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
@@ -1704,6 +1393,16 @@
                     atau tablet.</p>
             </div>
 
+            <div class="text-center my-4">
+                <p class="fw-bold mb-3 text-danger">Mulai isi waktu anak dengan aktivitas yang lebih bermanfaat hari
+                    ini.</p>
+                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button"
+                    onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 49000, currency: 'IDR'});">AMBIL
+                    PROMO RP 49.000</a>
+                <p class="small text-secondary mt-3 mb-0"><strong>Akses Instan:</strong> Selesai bayar, link produk
+                    otomatis terkirim ke email.</p>
+            </div>
+
             <div class="divider"></div>
 
             <h2 class="section-title">Pertanyaan yang Sering Ditanyakan:</h2>
@@ -1740,25 +1439,6 @@
                     <li>Klik <strong>Buy Now</strong> dan selesaikan pembayaran.</li>
                     <li>Selesai! Cek kotak masuk <em>(Inbox/Spam)</em> email untuk membuka asetnya.</li>
                 </ol>
-            </div>
-
-            <div class="support-box">
-                <div class="support-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                    </svg>
-                </div>
-                <div class="support-content">
-                    <strong>Butuh Bantuan atau Ada Kendala?</strong>
-                    <p>Ada pertanyaan seputar materi atau butuh panduan download file? Hubungi Customer Support kami:</p>
-                    <a href="https://wa.me/6285113655806?text=Halo%20Admin%20Omfenz%2C%20saya%20butuh%20bantuan%20terkait%20paket%2099.000%2B%2B%20Aktivitas%20Anak" class="support-wa-btn" target="_blank" rel="noopener noreferrer">
-                        <svg viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M6 19.5A9.5 9.5 0 1 0 6 4.5a9.5 9.5 0 0 0 0 15Z"></path>
-                            <path d="M8.8 15.2c.8.3 1.7.5 2.7.5 2.8 0 5-2.2 5-5 0-2.8-2.3-5-5.1-5-2.8 0-5 2.2-5 5 0 1.2.4 2.3 1.1 3.2l-.8 2.3 2.3-.8Z"></path>
-                        </svg>
-                        <span>Chat CS WhatsApp (0851-1365-5806)</span>
-                    </a>
-                </div>
             </div>
         </section>
     </main>

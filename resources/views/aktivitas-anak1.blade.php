@@ -1,0 +1,1703 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>99.000++ Lembar Aktivitas Anak - Omfenz Digital</title>
+    <meta name="description" content="99.000++ lembar aktivitas anak super lengkap, siap print, akses selamanya, dan bisa dijual lagi.">
+    <link rel="icon" type="image/png" href="{{ url('assets/brand/omfenz-logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ url('assets/brand/omfenz-logo.png') }}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        .p-2 { padding: .5rem !important; }
+        .mb-0 { margin-bottom: 0 !important; }
+        .mb-2 { margin-bottom: .5rem !important; }
+        .mb-3 { margin-bottom: 1rem !important; }
+        .mb-4 { margin-bottom: 1.5rem !important; }
+        .my-4 { margin-top: 1.5rem !important; margin-bottom: 1.5rem !important; }
+        .ps-3 { padding-left: 1rem !important; }
+        .text-center { text-align: center !important; }
+        .text-secondary { color: #64748b !important; }
+        .text-danger { color: #dc3545 !important; }
+        .fw-bold { font-weight: 700 !important; }
+        .fst-italic { font-style: italic !important; }
+        .small { font-size: .875em !important; }
+        .fs-6 { font-size: 1rem !important; }
+        .d-block { display: block !important; }
+        .rounded-4 { border-radius: 1rem !important; }
+        .overflow-hidden { overflow: hidden !important; }
+        .shadow-sm { box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important; }
+        .row { display: flex; flex-wrap: wrap; margin-right: -.5rem; margin-left: -.5rem; }
+        .row > * { width: 100%; max-width: 100%; padding-right: .5rem; padding-left: .5rem; }
+        .g-3 { row-gap: 1rem; }
+        .col-12 { flex: 0 0 auto; width: 100%; }
+        .mt-3 { margin-top: 1rem !important; }
+
+        .carousel { position: relative; }
+        .carousel-inner { position: relative; width: 100%; overflow: hidden; }
+        .carousel-item { position: relative; display: none; width: 100%; }
+        .carousel-item.active { display: block; }
+        .carousel-control-prev,
+        .carousel-control-next {
+            position: absolute;
+            top: 0;
+            bottom: 46px;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 14%;
+            padding: 0;
+            color: #ffffff;
+            text-align: center;
+            background: none;
+            border: 0;
+            opacity: .85;
+        }
+        .carousel-control-prev { left: 0; }
+        .carousel-control-next { right: 0; }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, .28);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .carousel-control-prev-icon::before { content: '\2039'; font-size: 32px; line-height: 1; }
+        .carousel-control-next-icon::before { content: '\203A'; font-size: 32px; line-height: 1; }
+        .carousel-indicators { display: flex; justify-content: center; align-items: center; }
+
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            margin: 0;
+            background: #f4f6f9;
+            color: #2d3748;
+            font-family: 'Nunito', 'Segoe UI', Arial, sans-serif;
+        }
+
+        .mobile-page {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            background: #ffffff;
+            min-height: 100vh;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+        }
+
+        .top-slider { background: #eef7ff; }
+
+        .top-slider img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .slider-number-indicators {
+            position: static;
+            margin: 12px 0 0;
+            gap: 8px;
+        }
+
+        .slider-number-indicators [data-bs-target] {
+            width: 34px;
+            height: 34px;
+            border: 0;
+            border-radius: 50%;
+            background: #e2e8f0;
+            color: #1a365d;
+            opacity: 1;
+            text-indent: 0;
+            font-weight: 900;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider-number-indicators .active {
+            background: linear-gradient(135deg, #2b6cb0, #38a169);
+            color: #ffffff;
+        }
+
+        .content-wrap {
+            padding: 28px 20px 154px;
+            line-height: 1.7;
+        }
+
+        .promo-badge {
+            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+            color: #9a3412;
+            padding: 10px 15px;
+            text-align: center;
+            font-weight: 900;
+            border-radius: 999px;
+            margin-bottom: 18px;
+            font-size: 14px;
+            line-height: 1.35;
+            letter-spacing: .4px;
+            border: 1px solid #fed7aa;
+        }
+
+        .main-title {
+            color: #1a365d;
+            text-align: center;
+            font-size: clamp(24px, 7vw, 34px);
+            line-height: 1.22;
+            font-weight: 900;
+            margin-bottom: 16px;
+        }
+
+        .main-title span {
+            color: #dd6b20;
+            font-size: clamp(19px, 5.6vw, 26px);
+            display: block;
+            margin-top: 8px;
+        }
+
+        .lead-copy {
+            font-size: 16px;
+            text-align: center;
+            color: #4a5568;
+            margin-bottom: 18px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 18px;
+            margin: 18px 0 20px;
+            box-shadow: 0 16px 34px rgba(194, 65, 12, .12);
+            border: 1px solid #fed7aa;
+            background: #fff7ed;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* SECTION TAG BADGES */
+        .section-tag-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            line-height: 1.25;
+        }
+        .section-tag-badge.badge-problem {
+            background: #fef2f2;
+            color: #b91c1c;
+            border: 1px solid #fecaca;
+        }
+        .section-tag-badge.badge-dream {
+            background: #f0fdf4;
+            color: #15803d;
+            border: 1px solid #bbf7d0;
+        }
+        .section-tag-badge.badge-fact {
+            background: #fffbeb;
+            color: #b45309;
+            border: 1px solid #fde68a;
+        }
+        .section-tag-badge.badge-solution {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+        }
+        .section-tag-badge.badge-features {
+            background: #faf5ff;
+            color: #7c3aed;
+            border: 1px solid #e9d5ff;
+        }
+        .section-tag-badge.badge-why {
+            background: #ecfeff;
+            color: #0e7490;
+            border: 1px solid #a5f3fc;
+        }
+        .section-tag-badge.badge-bonus {
+            background: #fff7ed;
+            color: #ea580c;
+            border: 1px solid #fed7aa;
+        }
+        .section-tag-badge.badge-testimonial {
+            background: #f0fdfa;
+            color: #0f766e;
+            border: 1px solid #99f6e4;
+        }
+        .section-tag-badge.badge-faq {
+            background: #f8fafc;
+            color: #475569;
+            border: 1px solid #cbd5e1;
+        }
+        .section-tag-badge.badge-order {
+            background: #f0fdf4;
+            color: #166534;
+            border: 1px solid #86efac;
+        }
+
+        /* STORYTELLING CARDS */
+        .story-section {
+            margin: 24px 0;
+        }
+        .story-heading {
+            font-size: clamp(20px, 5.5vw, 24px);
+            font-weight: 900;
+            color: #1e293b;
+            line-height: 1.3;
+            margin-bottom: 8px;
+        }
+        .story-subtext {
+            font-size: 14.5px;
+            color: #64748b;
+            margin-bottom: 16px;
+            line-height: 1.55;
+        }
+
+        .story-card-list {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            margin: 14px 0 20px;
+        }
+        .story-card {
+            border-radius: 14px;
+            padding: 13px 15px;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+        .story-card.pain-card {
+            background: #fff5f5;
+            border: 1px solid #fed7d7;
+            color: #742a2a;
+        }
+        .story-card.pain-card .story-icon {
+            background: #fed7d7;
+            color: #e53e3e;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-weight: 900;
+            font-size: 13px;
+            margin-top: 2px;
+        }
+        .story-card.dream-card {
+            background: #f0fff4;
+            border: 1px solid #c6f6d5;
+            color: #22543d;
+        }
+        .story-card.dream-card .story-icon {
+            background: #c6f6d5;
+            color: #2f855a;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-weight: 900;
+            font-size: 14px;
+            margin-top: 2px;
+        }
+        .story-card-content strong {
+            display: block;
+            font-size: 14px;
+            line-height: 1.35;
+            margin-bottom: 3px;
+        }
+        .story-card-content p {
+            font-size: 13px;
+            line-height: 1.5;
+            margin: 0;
+            color: inherit;
+            opacity: .95;
+        }
+
+        .fact-box {
+            background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+            border: 1px solid #fde68a;
+            border-radius: 16px;
+            padding: 18px;
+            margin: 20px 0 24px;
+            color: #78350f;
+        }
+        .fact-box h3 {
+            font-size: 17px;
+            font-weight: 900;
+            color: #92400e;
+            margin-bottom: 8px;
+            line-height: 1.35;
+        }
+        .fact-box p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0;
+            color: #78350f;
+        }
+
+        .hero-offer {
+            background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+            border: 2px solid #bbf7d0;
+            border-radius: 18px;
+            padding: 18px;
+            margin: 20px 0 18px;
+            text-align: center;
+            box-shadow: 0 16px 36px rgba(22, 101, 52, .12);
+        }
+
+        .hero-price-label {
+            color: #64748b;
+            font-size: 13px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .hero-price {
+            color: #c05621;
+            font-size: clamp(38px, 12vw, 56px);
+            font-weight: 900;
+            line-height: 1;
+            margin: 0 0 12px;
+        }
+
+        .rating-strip {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            border-radius: 999px;
+            color: #713f12;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            max-width: 100%;
+            padding: 7px 12px;
+            margin: 0 0 12px;
+            font-size: 13px;
+            font-weight: 900;
+            line-height: 1.25;
+        }
+
+        .rating-stars {
+            color: #f59e0b;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .countdown-box {
+            background: #fff1f2;
+            border: 1px solid #fecdd3;
+            border-radius: 14px;
+            color: #881337;
+            margin: 14px 0;
+            padding: 14px;
+            text-align: center;
+        }
+
+        .countdown-box strong {
+            color: #be123c;
+            display: block;
+            font-size: 15px;
+            line-height: 1.35;
+            margin-bottom: 5px;
+        }
+
+        .countdown-box p {
+            font-size: 14px;
+            line-height: 1.45;
+            margin: 0;
+        }
+
+        .countdown-timer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 12px 0;
+        }
+
+        .countdown-unit {
+            background: #ffffff;
+            border: 1px solid #fecdd3;
+            border-radius: 10px;
+            padding: 9px 4px;
+        }
+
+        .countdown-unit span {
+            color: #be123c;
+            display: block;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .countdown-unit small {
+            color: #9f1239;
+            display: block;
+            font-size: 11px;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-top: 4px;
+            text-transform: uppercase;
+        }
+
+        .countdown-note {
+            color: #9f1239;
+            display: block;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1.4;
+            margin-top: 4px;
+        }
+
+        .trust-strip {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 15px 0 0;
+        }
+
+        .trust-badges {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 14px 0;
+        }
+
+        .trust-badge {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 12px;
+            color: #14532d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            min-height: 52px;
+            padding: 9px 6px;
+            font-size: 11px;
+            font-weight: 900;
+            line-height: 1.25;
+        }
+
+        .trust-badge svg {
+            width: 16px;
+            height: 16px;
+            flex: 0 0 auto;
+            stroke: currentColor;
+            stroke-width: 2.4;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+
+        .trust-item {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 9px 6px;
+            color: #334155;
+            font-size: 12px;
+            font-weight: 900;
+            line-height: 1.25;
+        }
+
+        .mini-note {
+            color: #64748b;
+            font-size: 13px;
+            line-height: 1.45;
+            margin: 12px 0 0;
+        }
+
+        .cta-microcopy {
+            color: #475569;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1.45;
+            margin: 10px 0 0;
+        }
+
+        .proof-box {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 16px;
+            padding: 18px;
+            color: #0f172a;
+            margin: 20px 0;
+        }
+
+        .proof-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-top: 14px;
+        }
+
+        .proof-stat {
+            background: #ffffff;
+            border: 1px solid #dbeafe;
+            border-radius: 12px;
+            padding: 12px 8px;
+            text-align: center;
+        }
+
+        .proof-stat strong {
+            display: block;
+            color: #1d4ed8;
+            font-size: 18px;
+            line-height: 1.1;
+        }
+
+        .proof-stat span {
+            color: #64748b;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1.25;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #e2e8f0, transparent);
+            margin: 32px 0;
+        }
+
+        .section-title {
+            color: #1a365d;
+            font-size: 21px;
+            font-weight: 900;
+            margin-bottom: 16px;
+            display: block;
+            line-height: 1.3;
+        }
+
+        .testimonial-box {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 18px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        .testimonial-box::before {
+            content: '\201C';
+            position: absolute;
+            top: 2px;
+            left: 14px;
+            font-size: 60px;
+            color: #dbeafe;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        .testimonial-text {
+            color: #334155;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 1.55;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 12px;
+            padding-top: 10px;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .testimonial-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #bfdbfe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1e3a8a;
+            font-weight: 900;
+            font-size: 16px;
+        }
+        .testimonial-name {
+            font-weight: 800;
+            color: #1e293b;
+            font-size: 14px;
+        }
+        .testimonial-role {
+            color: #64748b;
+            font-size: 12px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            font-size: 15px;
+            color: #4a5568;
+        }
+
+        .feature-list li {
+            margin-bottom: 14px;
+            padding-left: 31px;
+            position: relative;
+        }
+
+        .feature-list span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #ebf8ff;
+            color: #2b6cb0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feature-list svg {
+            width: 14px;
+            height: 14px;
+            stroke: currentColor;
+            stroke-width: 2.4;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .benefit-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 16px;
+            height: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, .03);
+        }
+
+        .benefit-card p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #4a5568;
+        }
+
+        .benefit-card strong {
+            color: #2b6cb0;
+            display: block;
+            margin-bottom: 4px;
+            font-size: 15px;
+        }
+
+        .bonus-box {
+            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+            border: 2px dashed #fb923c;
+            border-radius: 16px;
+            padding: 18px;
+            margin: 24px 0 16px;
+        }
+
+        .bonus-box h4 {
+            color: #c2410c;
+            font-size: 16px;
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+
+        .bonus-box p {
+            color: #7c2d12;
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        .plr-box {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border: 2px dashed #4ade80;
+            border-radius: 16px;
+            padding: 18px;
+            margin-bottom: 24px;
+        }
+
+        .plr-box h4 {
+            color: #15803d;
+            font-size: 16px;
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+
+        .plr-box p {
+            color: #14532d;
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        .guarantee-box {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 12px 14px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 18px;
+            font-size: 13.5px;
+            color: #1e3a8a;
+            line-height: 1.5;
+        }
+
+        .payment-tip {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            border-radius: 12px;
+            padding: 12px 14px;
+            margin-bottom: 24px;
+            color: #78350f;
+            font-size: 13.5px;
+            line-height: 1.5;
+        }
+
+        .payment-tip strong {
+            display: block;
+            margin-bottom: 4px;
+            color: #92400e;
+        }
+
+        .price-box {
+            background: #ffffff;
+            border: 2px solid #fed7aa;
+            border-radius: 20px;
+            padding: 24px 20px;
+            text-align: center;
+            box-shadow: 0 14px 30px rgba(194, 65, 12, .1);
+            position: relative;
+            margin: 28px 0;
+        }
+
+        .price-label {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #c05621;
+            color: #ffffff;
+            padding: 4px 16px;
+            border-radius: 999px;
+            font-weight: 900;
+            font-size: 14px;
+            letter-spacing: .7px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .normal-price {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #a0aec0;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .promo-price {
+            font-size: clamp(42px, 14vw, 64px);
+            font-weight: 900;
+            color: #c05621;
+            margin: 5px 0 15px;
+            line-height: 1;
+        }
+
+        .trust-pill {
+            max-width: 100%;
+            font-size: 12px;
+            line-height: 1.35;
+            white-space: normal;
+            background: #edf2f7;
+            color: #4a5568;
+            display: inline-block;
+            padding: 7px 14px;
+            border-radius: 999px;
+            margin: 0;
+            font-weight: 900;
+        }
+
+        .cta-button {
+            width: 100%;
+            min-height: 58px;
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: #ffffff;
+            padding: 17px 22px;
+            text-decoration: none;
+            font-size: clamp(17px, 5.2vw, 22px);
+            font-weight: 900;
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 20px rgba(56, 161, 105, .3);
+            transition: transform .2s ease, box-shadow .2s ease;
+            letter-spacing: .2px;
+            text-align: center;
+            line-height: 1.25;
+            overflow-wrap: anywhere;
+        }
+
+        .cta-button:hover {
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 14px 26px rgba(56, 161, 105, .36);
+        }
+
+        .order-box {
+            background: #f7fafc;
+            padding: 22px;
+            border-radius: 14px;
+            font-size: 14px;
+            color: #4a5568;
+            border: 1px dashed #cbd5e0;
+            overflow-wrap: anywhere;
+        }
+
+        .order-box strong { color: #2d3748; }
+
+        .faq-list {
+            display: grid;
+            gap: 10px;
+            margin-top: 4px;
+        }
+
+        .faq-item {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 14px;
+            background: #ffffff;
+        }
+
+        .faq-item strong {
+            display: block;
+            color: #1e3a8a;
+            line-height: 1.35;
+            margin-bottom: 4px;
+        }
+
+        .faq-item p {
+            color: #475569;
+            font-size: 14px;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        .sticky-cta {
+            position: fixed;
+            left: 50%;
+            bottom: 0;
+            width: 100%;
+            max-width: 700px;
+            transform: translateX(-50%);
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, .94);
+            border-top: 1px solid #e2e8f0;
+            backdrop-filter: blur(10px);
+            padding: 11px 14px 13px;
+            z-index: 20;
+        }
+
+        .sticky-cta .cta-button {
+            min-height: 54px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+
+        .sticky-note {
+            color: #475569;
+            font-size: 11px;
+            font-weight: 800;
+            line-height: 1.35;
+            margin: 6px 0 0;
+            text-align: center;
+        }
+
+        .sticky-cta-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .share-btn-sticky {
+            width: 54px;
+            height: 54px;
+            flex-shrink: 0;
+            border: 1px solid #cbd5e1;
+            border-radius: 999px;
+            background: #f8fafc;
+            color: #334155;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all .2s ease;
+        }
+
+        .share-btn-sticky:hover {
+            background: #e2e8f0;
+            color: #0f172a;
+        }
+
+        .share-btn-sticky svg {
+            width: 22px;
+            height: 22px;
+            stroke: currentColor;
+            stroke-width: 2.2;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .share-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, .45);
+            z-index: 36;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .2s ease;
+        }
+
+        .share-backdrop.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .share-sheet {
+            position: fixed;
+            left: 12px;
+            right: 12px;
+            bottom: calc(88px + env(safe-area-inset-bottom));
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 44px rgba(15, 23, 42, .22);
+            padding: 16px;
+            z-index: 37;
+            transform: translateY(18px);
+            opacity: 0;
+            pointer-events: none;
+            transition: transform .2s ease, opacity .2s ease;
+        }
+
+        .share-sheet.active {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .share-sheet-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .share-sheet-title {
+            color: #1e293b;
+            font-size: 16px;
+            font-weight: 900;
+        }
+
+        .share-sheet-close {
+            border: 0;
+            background: #f1f5f9;
+            color: #475569;
+            border-radius: 999px;
+            width: 36px;
+            height: 36px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .share-option {
+            width: 100%;
+            border: 1px solid #e2e8f0;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 800;
+            color: #1f2937;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .share-option:last-child {
+            margin-bottom: 0;
+        }
+
+        .share-option-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            background: #f8fafc;
+            color: #2563eb;
+        }
+
+        .share-option-icon svg {
+            width: 18px;
+            height: 18px;
+            stroke: currentColor;
+            stroke-width: 2;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .share-option small {
+            display: block;
+            color: #64748b;
+            font-size: 12px;
+            font-weight: 700;
+            margin-top: 2px;
+        }
+
+        @media (max-width: 360px) {
+            .top-slider { padding: 6px !important; }
+            .content-wrap { padding: 24px 14px 154px; }
+            .slider-number-indicators [data-bs-target] {
+                width: 30px;
+                height: 30px;
+                font-size: 13px;
+            }
+            .price-box { padding-inline: 14px; }
+            .trust-pill { font-size: 11px; }
+            .trust-strip,
+            .trust-badges,
+            .proof-grid { grid-template-columns: 1fr; }
+            .rating-strip { border-radius: 14px; }
+            .sticky-cta { padding-inline: 10px; }
+        }
+
+        @media (min-width: 576px) {
+            .content-wrap { padding: 35px 25px 158px; }
+        }
+    </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2123472395268686');
+    fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+    <!-- Meta Pixel Code -->
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2123472395268686&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <main class="mobile-page">
+        <section class="top-slider p-2 p-sm-3">
+            <div id="aktivitasSlider" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                <div class="carousel-inner rounded-4 overflow-hidden shadow-sm">
+                    <div class="carousel-item active">
+                        <picture>
+                            <source srcset="{{ url('assets/aktivitas-anak/slider-baru-1.webp') }}" type="image/webp">
+                            <img src="{{ url('assets/aktivitas-anak/slider-baru-1.webp') }}" alt="Promo 99.000 lembar aktivitas anak siap cetak harga Rp49.000" width="900" height="900" fetchpriority="high">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source srcset="{{ url('assets/aktivitas-anak/slider-baru-2.webp') }}" type="image/webp">
+                            <img src="{{ url('assets/aktivitas-anak/slider-baru-2.webp') }}" alt="Isi bundle super lengkap 99.000 lembar aktivitas anak siap cetak" width="900" height="900" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#aktivitasSlider" data-bs-slide="prev" aria-label="Slide sebelumnya">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#aktivitasSlider" data-bs-slide="next" aria-label="Slide berikutnya">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="carousel-indicators slider-number-indicators">
+                    <button type="button" data-bs-target="#aktivitasSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">1</button>
+                    <button type="button" data-bs-target="#aktivitasSlider" data-bs-slide-to="1" aria-label="Slide 2">2</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-wrap">
+            <div class="promo-badge">PROMO DIGITAL HARI INI: DARI Rp99.000 JADI Rp49.000</div>
+
+            <h1 class="main-title">
+                99.000++ Lembar Aktivitas Anak Siap Cetak
+                <span>Bantu Anak Belajar, Menulis, Berhitung &amp; Fokus Tanpa Terus Main Gadget</span>
+            </h1>
+
+            <p class="lead-copy">
+                Paket digital super lengkap untuk Bunda &amp; Ayah yang ingin punya stok aktivitas edukatif anak di rumah tanpa harus beli buku satu-satu.
+            </p>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/hbT_80wq1zQ?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="hero-offer">
+                <div class="rating-strip">
+                    <span class="rating-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span>Dipilih untuk aktivitas belajar anak di rumah</span>
+                </div>
+                <div class="hero-price-label">Sekali Bayar, Akses Selamanya</div>
+                <p class="hero-price">Rp 49.000</p>
+                <div class="countdown-box" data-countdown>
+                    <strong>Promo Diskon Rp50.000 Berakhir Dalam:</strong>
+                    <p>Ambil sebelum timer habis agar harga spesial Rp49.000 tetap aktif hari ini.</p>
+                    <div class="countdown-timer" aria-label="Sisa waktu promo hari ini">
+                        <div class="countdown-unit"><span data-countdown-hours>00</span><small>Jam</small></div>
+                        <div class="countdown-unit"><span data-countdown-minutes>00</span><small>Menit</small></div>
+                        <div class="countdown-unit"><span data-countdown-seconds>00</span><small>Detik</small></div>
+                    </div>
+                    <span class="countdown-note">Setelah promo berakhir, harga dapat kembali ke harga normal Rp99.000.</span>
+                </div>
+                <div class="trust-badges">
+                    <div class="trust-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3z"></path><path d="M9 12l2 2 4-5"></path></svg><span>Pembayaran Aman 100%</span></div>
+                    <div class="trust-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span>Garansi Akses Selamanya</span></div>
+                    <div class="trust-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H5.5L4 17.5V4z"></path><path d="M8 8h8"></path><path d="M8 12h5"></path></svg><span>Dibantu Jika Link Bermasalah</span></div>
+                </div>
+                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 49000, currency: 'IDR'});">AMBIL PROMO RP 49.000</a>
+                <p class="cta-microcopy">Akses instan langsung dikirim ke email. Bebas virus, siap cetak, dan bisa dibuka dari HP/laptop.</p>
+                <div class="trust-strip">
+                    <div class="trust-item">Akses Instan</div>
+                    <div class="trust-item">Siap Cetak</div>
+                    <div class="trust-item">Bisa Dijual Lagi</div>
+                </div>
+                <p class="mini-note">Selesai bayar, link produk otomatis dikirim ke email. Bisa dibuka dari HP, laptop, atau tablet.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- SECTION 1: MASALAH / PROBLEM -->
+            <div class="story-section">
+                <span class="section-tag-badge badge-problem">😓 Masalah yang Sering Dialami Bunda &amp; Ayah</span>
+                <h2 class="story-heading">Anak Minta HP Terus... Bunda Kehabisan Ide Mau Kasih Aktivitas Apa?</h2>
+                <p class="story-subtext">Pola yang sama terus berulang setiap hari bikin Bunda stres, lelah, dan serba salah:</p>
+
+                <div class="story-card-list">
+                    <div class="story-card pain-card">
+                        <div class="story-icon">✕</div>
+                        <div class="story-card-content">
+                            <strong>Kecanduan Layar HP &amp; Video Pendek</strong>
+                            <p>Mau makan harus nonton, bangun tidur cari HP. Kalau diminta, anak langsung tantrum &amp; menangis histeris.</p>
+                        </div>
+                    </div>
+                    <div class="story-card pain-card">
+                        <div class="story-icon">✕</div>
+                        <div class="story-card-content">
+                            <strong>Cepat Bosan &amp; Sulit Fokus</strong>
+                            <p>Beli buku atau mainan mahal di toko buku, baru dimainkan 1–2 kali sudah dicuekin dan dibiarkan berantakan.</p>
+                        </div>
+                    </div>
+                    <div class="story-card pain-card">
+                        <div class="story-icon">✕</div>
+                        <div class="story-card-content">
+                            <strong>Kelelahan &amp; Drama Marah-Marah</strong>
+                            <p>Bunda lelah harus selalu memerintah dan memaksa anak belajar tanpa ada media aktivitas yang menyenangkan.</p>
+                        </div>
+                    </div>
+                    <div class="story-card pain-card">
+                        <div class="story-icon">✕</div>
+                        <div class="story-card-content">
+                            <strong>Download Lembar Gratisan di Internet?</strong>
+                            <p>Kualitasnya buram/pecah saat diprint, materinya acak-acakan, dan menghabiskan banyak waktu mencarinya satu per satu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- SECTION 2: BAYANGKAN / FUTURE PACING -->
+            <div class="story-section">
+                <span class="section-tag-badge badge-dream">✨ Bayangkan Suasana Rumah Bunda...</span>
+                <h2 class="story-heading">Anak Duduk Anteng Berjam-jam, Senang Belajar &amp; Kreatif Tanpa HP</h2>
+                <p class="story-subtext">Bukan karena dipaksa atau dimarahi, tapi karena materinya beneran seru dan bervariasi setiap hari:</p>
+
+                <div class="story-card-list">
+                    <div class="story-card dream-card">
+                        <div class="story-icon">✓</div>
+                        <div class="story-card-content">
+                            <strong>Anak Anteng &amp; Asyik Mewarnai, Tracing &amp; Puzzle</strong>
+                            <p>Pagi atau sore hari anak sibuk berkarya sendiri sambil tersenyum bangga menunjukkan hasilnya ke Bunda.</p>
+                        </div>
+                    </div>
+                    <div class="story-card dream-card">
+                        <div class="story-icon">✓</div>
+                        <div class="story-card-content">
+                            <strong>Fokus, Motorik Halus &amp; Logika Anak Tumbuh Cepat</strong>
+                            <p>Materi modular melatih konsentrasi, ketelitian menulis, berhitung, dan kesiapan masuk sekolah (TK/SD) dengan percaya diri.</p>
+                        </div>
+                    </div>
+                    <div class="story-card dream-card">
+                        <div class="story-icon">✓</div>
+                        <div class="story-card-content">
+                            <strong>Bunda Punya 'Bank Aktivitas' Seumur Hidup</strong>
+                            <p>Kapan pun anak bosan, tinggal buka Google Drive, pilih tema yang disukai, dan print 1–2 lembar dalam 1 menit!</p>
+                        </div>
+                    </div>
+                    <div class="story-card dream-card">
+                        <div class="story-icon">✓</div>
+                        <div class="story-card-content">
+                            <strong>Rumah Lebih Tenang &amp; Bonding Keluarga Terasa Hangat</strong>
+                            <p>Waktu luang terisi dengan aktivitas edukatif yang mendidik, tanpa drama rebutan smartphone lagi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 3: FAKTA PENTING -->
+            <div class="fact-box">
+                <span class="section-tag-badge badge-fact">💡 Fakta yang Jarang Disadari</span>
+                <h3>Anak Sebenarnya Tidak Malas Belajar. Mereka Hanya Butuh Media yang Seru!</h3>
+                <p>Di usia emas <em>(golden age)</em>, otak anak menyerap stimulasi visual &amp; kinestetik 3x lebih cepat melalui lembar aktivitas fisik (menggambar, menggunting, menempel) dibanding hanya menatap layar kaca pasif. Saat aktivitasnya menyenangkan, anak akan belajar dengan sendirinya tanpa perlu disuruh berkali-kali.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- SECTION 4: SOLUSI -->
+            <div class="story-section">
+                <span class="section-tag-badge badge-solution">🚀 Solusi Praktis &amp; Hemat</span>
+                <h2 class="story-heading">Koleksi 99.000++ Lembar Aktivitas Siap Cetak Kapan Saja</h2>
+                <p class="story-subtext">Paket digital super komprehensif yang dirancang untuk menemani tumbuh kembang anak dari balita hingga sekolah dasar.</p>
+
+                <div class="proof-box">
+                    <strong>Bukan sekadar lembar belajar biasa.</strong> Di dalamnya ada ribuan kategori aktivitas yang bisa disesuaikan dengan usia dan minat anak.
+                    <div class="proof-grid">
+                        <div class="proof-stat">
+                            <strong>99.000+</strong>
+                            <span>Halaman Aktivitas</span>
+                        </div>
+                        <div class="proof-stat">
+                            <strong>HD Print</strong>
+                            <span>Tajam &amp; Jelas</span>
+                        </div>
+                        <div class="proof-stat">
+                            <strong>Akses</strong>
+                            <span>Selamanya</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- SECTION 5: TESTIMONI -->
+            <div class="story-section">
+                <span class="section-tag-badge badge-testimonial">💬 Apa Kata Bunda yang Sudah Beli?</span>
+                <h2 class="section-title">Pengalaman Nyata Para Orang Tua:</h2>
+
+                <div class="testimonial-box">
+                    <div class="testimonial-text">
+                        "Alhamdulillah sejak ngeprint ini, anakku anteng 2 jam main sambil belajar. Biasanya nangis minta nonton Youtube. Isinya beneran rapi banget di Google Drive, gampang milihnya!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">BZ</div>
+                        <div>
+                            <div class="testimonial-name">Bunda Zahra</div>
+                            <div class="testimonial-role">Ibu Rumah Tangga (Anak 4 &amp; 6 Tahun)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-box">
+                    <div class="testimonial-text">
+                        "Harganya nggak masuk akal sih ini murah banget. Aku ke percetakan cuma print 10 lembar sehari, sisanya diliat dari iPad buat flashcard. Sangat ngebantu kalau kehabisan ide mau main apa."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">BN</div>
+                        <div>
+                            <div class="testimonial-name">Bunda Novita</div>
+                            <div class="testimonial-role">Working Mom (Anak 5 Tahun)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- SECTION 6: MATERI LENGKAP -->
+            <div class="story-section">
+                <span class="section-tag-badge badge-features">📦 Materi Lengkap yang Didapat</span>
+                <h2 class="section-title">Kategori Materi Super Lengkap di Dalamnya:</h2>
+                <ul class="feature-list">
+                    <li><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19.5V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-1.5z"></path><path d="M8 7h6"></path><path d="M8 11h7"></path></svg></span><strong>Kids Planners:</strong> Melatih kemandirian dan manajemen waktu anak sejak dini.</li>
+                    <li><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19.5V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-1.5z"></path><path d="M8 7h6"></path><path d="M8 11h7"></path></svg></span><strong>Cerita Anak, Flashcard &amp; Poster:</strong> Visual menarik untuk memaksimalkan daya ingat dan imajinasi.</li>
+                    <li><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19h16"></path><path d="M7 16l5-12 5 12"></path><path d="M9 11h6"></path></svg></span><strong>Bahasa Inggris &amp; Menulis:</strong> Latihan menebalkan huruf, angka, mewarnai, hingga <em>puzzle</em> asik.</li>
+                    <li><span aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"></circle><circle cx="6" cy="18" r="2"></circle><path d="M20 4 8 15"></path><path d="M8 9l12 11"></path></svg></span><strong>Origami &amp; Busy Book:</strong> Melatih motorik halus anak lewat aktivitas seru menggunting dan menempel.</li>
+                    <li><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4"></path><path d="M15 3a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4"></path><path d="M9 7h6"></path><path d="M9 12h6"></path><path d="M9 17h6"></path></svg></span><strong>Worksheet Komprehensif:</strong> Alfabet, Matematika, Mencocokkan, Teka-teki, Sains &amp; Membaca.</li>
+                    <li><span aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a14 14 0 0 1 0 18"></path><path d="M12 3a14 14 0 0 0 0 18"></path></svg></span><strong>Mengenal Lingkungan:</strong> Hewan, Buah, Sayur, Profesi, Waktu, Kendaraan, dll.</li>
+                    <li class="fst-italic text-secondary">...dan ribuan aktivitas seru lainnya!</li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- SECTION 7: MENGAPA HARUS PUNYA -->
+            <div class="story-section">
+                <span class="section-tag-badge badge-why">🌟 Keunggulan Paket</span>
+                <h2 class="section-title">Mengapa Harus Punya Paket Ini?</h2>
+                <div class="row g-3 mb-4">
+                    <div class="col-12 col-sm-6"><div class="benefit-card"><p><strong>Praktis untuk Orang Tua</strong><br>Tinggal pilih materi, cetak, lalu pakai untuk aktivitas anak di rumah.</p></div></div>
+                    <div class="col-12 col-sm-6"><div class="benefit-card"><p><strong>Anak Tidak Cepat Bosan</strong><br>Materinya banyak, jadi aktivitas bisa diganti sesuai mood dan usia anak.</p></div></div>
+                    <div class="col-12 col-sm-6"><div class="benefit-card"><p><strong>Lebih Hemat</strong><br>Tidak perlu sering beli buku aktivitas satuan atau cari worksheet gratis yang acak-acakan.</p></div></div>
+                    <div class="col-12 col-sm-6"><div class="benefit-card"><p><strong>Peluang Tambahan</strong><br>Karena ada hak PLR, file dapat dipakai untuk kebutuhan pribadi atau dijual kembali.</p></div></div>
+                </div>
+            </div>
+
+            <!-- SECTION 8: BONUS & PLR -->
+            <div class="story-section">
+                <span class="section-tag-badge badge-bonus">🎁 Bonus Eksklusif Termasuk</span>
+                <div class="bonus-box">
+                    <h4>BONUS SPESIAL HARI INI:</h4>
+                    <p class="mb-0">Termasuk Modul Kumon, Buku Mewarnai Dinosaurus, Kumpulan Cerita Anak, E-Book Edukatif, dan bonus tambahan untuk aktivitas keluarga di rumah.</p>
+                </div>
+
+                <div class="plr-box">
+                    <h4>🎁 BONUS KEJUTAN: BISA DIJUAL LAGI!</h4>
+                    <p class="mb-0">Paket ini berlisensi PLR (Private Label Rights). Selain dipakai sendiri, Bunda bebas menjual ulang ribuan file ini ke teman atau saudara. <strong>Untungnya 100% buat Bunda!</strong></p>
+                </div>
+
+                <div class="guarantee-box">
+                    <strong>Aman setelah pembayaran:</strong> jika link produk tidak masuk email atau file sulit diakses, tim kami bantu sampai produk bisa dibuka.
+                </div>
+
+                <div class="payment-tip">
+                    <strong>Tips Pembayaran</strong>
+                    <p>Pilih QRIS, ShopeePay, OVO, atau DANA agar biaya admin lebih ringan. Biasanya metode ini lebih hemat dibandingkan Virtual Account bank.</p>
+                </div>
+            </div>
+
+            <!-- SECTION 9: PRICING BOX -->
+            <div class="price-box">
+                <div class="price-label">PROMO AKTIF</div>
+                <p class="normal-price">Harga Normal: <del>Rp 99.000</del></p>
+                <p class="promo-price">Rp 49.000</p>
+                <p class="fw-bold text-secondary mb-3">Sekali bayar, akses selamanya, bisa dipakai berulang.</p>
+                <p class="trust-pill">AKSES INSTAN &nbsp; | &nbsp; SIAP CETAK &nbsp; | &nbsp; BISA DIJUAL LAGI</p>
+            </div>
+
+            <div class="text-center my-4">
+                <p class="fw-bold mb-3 text-danger">Mulai isi waktu anak dengan aktivitas yang lebih bermanfaat hari ini.</p>
+                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 49000, currency: 'IDR'});">AMBIL PROMO RP 49.000</a>
+                <p class="small text-secondary mt-3 mb-0"><strong>Akses Instan:</strong> Selesai bayar, link produk otomatis terkirim ke email.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- SECTION 10: FAQ -->
+            <div class="story-section">
+                <span class="section-tag-badge badge-faq">❓ Tanya Jawab</span>
+                <h2 class="section-title">Pertanyaan yang Sering Ditanyakan:</h2>
+                <div class="faq-list mb-4">
+                    <div class="faq-item">
+                        <strong>Apakah memorinya besar? Bikin HP penuh?</strong>
+                        <p>Sama sekali tidak! File tersimpan rapi di Google Drive kami. Bunda tidak perlu download semuanya. Cukup buka linknya dan download 1-2 lembar yang mau diprint hari ini.</p>
+                    </div>
+                    <div class="faq-item">
+                        <strong>Nge-print 99.000 lembar bikin bangkrut beli tinta?</strong>
+                        <p>Tidak harus diprint semua bund 😊. Ini adalah "stok seumur hidup". Print 1-2 lembar sehari saja. Materi seperti flashcard dan poster juga bisa langsung dilihat dari HP/Tablet.</p>
+                    </div>
+                    <div class="faq-item">
+                        <strong>Apakah gambarnya pecah kalau diprint?</strong>
+                        <p>Tidak. File-file kami beresolusi tinggi (HD). Terlihat tajam dan cerah saat dicetak di kertas A4 standar sekalipun.</p>
+                    </div>
+                    <div class="faq-item">
+                        <strong>Benarkah bisa dijual lagi? (PLR)</strong>
+                        <p>Betul! Bunda mendapat lisensi untuk menjual kembali file-file ini berkali-kali tanpa harus bagi hasil dengan kami.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 11: ORDER STEPS -->
+            <div class="order-box">
+                <span class="section-tag-badge badge-order mb-2">🛒 Cara Pemesanan Mudah</span>
+                <strong class="d-block fs-6 mb-3">Langkah Pemesanan Sangat Praktis:</strong>
+                <ol class="mb-0 ps-3">
+                    <li>Klik tombol hijau <strong>AMBIL PROMO RP 49.000</strong> di atas.</li>
+                    <li>Masukkan alamat email aktif Bunda/Ayah dengan benar.</li>
+                    <li>Pilih metode pembayaran (ShopeePay, DANA, OVO, QRIS, dll).</li>
+                    <li>Ceklis 2 kotak persetujuan keamanan.</li>
+                    <li>Klik <strong>Buy Now</strong> dan selesaikan pembayaran.</li>
+                    <li>Selesai! Cek kotak masuk <em>(Inbox/Spam)</em> email untuk membuka asetnya.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <div class="sticky-cta">
+        <div class="sticky-cta-row">
+            <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" style="flex: 1;" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 49000, currency: 'IDR'});">BELI RP49.000</a>
+            <button class="share-btn-sticky" type="button" data-share-trigger aria-label="Bagikan halaman aktivitas anak">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="19" r="3"></circle>
+                    <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
+                    <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
+                </svg>
+            </button>
+        </div>
+        <p class="sticky-note">Harga promo Rp49.000. Akses instan dikirim ke email.</p>
+    </div>
+
+    <div class="share-backdrop" data-share-backdrop hidden></div>
+    <div class="share-sheet" id="shareSheet" role="dialog" aria-label="Pilihan berbagi">
+        <div class="share-sheet-header">
+            <div class="share-sheet-title">Bagikan ke keluarga</div>
+            <button class="share-sheet-close" type="button" data-share-close aria-label="Tutup">×</button>
+        </div>
+        <button class="share-option" type="button" data-share-whatsapp>
+            <span class="share-option-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 19.5A9.5 9.5 0 1 0 6 4.5a9.5 9.5 0 0 0 0 15Z"></path>
+                    <path d="M8.8 15.2c.8.3 1.7.5 2.7.5 2.8 0 5-2.2 5-5 0-2.8-2.3-5-5.1-5-2.8 0-5 2.2-5 5 0 1.2.4 2.3 1.1 3.2l-.8 2.3 2.3-.8Z"></path>
+                </svg>
+            </span>
+            <span>WhatsApp <small>Bagikan ke keluarga atau teman</small></span>
+        </button>
+        <button class="share-option" type="button" data-share-copy>
+            <span class="share-option-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+            </span>
+            <span>Salin tautan <small>Tempel link ke chat atau media sosial</small></span>
+        </button>
+        <button class="share-option" type="button" data-share-native style="display: none;">
+            <span class="share-option-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3v10"></path>
+                    <path d="m8 7 4-4 4 4"></path>
+                    <path d="M5 13h14"></path>
+                    <path d="M6 19h12"></path>
+                </svg>
+            </span>
+            <span>Bagikan browser <small>Gunakan fitur berbagi sistem</small></span>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var slider = document.getElementById('aktivitasSlider');
+            if (!slider) return;
+
+            var items = Array.prototype.slice.call(slider.querySelectorAll('.carousel-item'));
+            var buttons = Array.prototype.slice.call(slider.querySelectorAll('[data-bs-slide-to]'));
+            var prev = slider.querySelector('[data-bs-slide="prev"]');
+            var next = slider.querySelector('[data-bs-slide="next"]');
+            var active = Math.max(0, items.findIndex(function (item) { return item.classList.contains('active'); }));
+
+            function show(index) {
+                active = (index + items.length) % items.length;
+                items.forEach(function (item, itemIndex) {
+                    item.classList.toggle('active', itemIndex === active);
+                });
+                buttons.forEach(function (button, buttonIndex) {
+                    var isActive = buttonIndex === active;
+                    button.classList.toggle('active', isActive);
+                    if (isActive) {
+                        button.setAttribute('aria-current', 'true');
+                    } else {
+                        button.removeAttribute('aria-current');
+                    }
+                });
+            }
+
+            buttons.forEach(function (button, index) {
+                button.addEventListener('click', function () { show(index); });
+            });
+
+            if (prev) prev.addEventListener('click', function () { show(active - 1); });
+            if (next) next.addEventListener('click', function () { show(active + 1); });
+
+            show(active);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var timers = Array.prototype.slice.call(document.querySelectorAll('[data-countdown]'));
+            if (!timers.length) return;
+
+            function pad(value) {
+                return String(value).padStart(2, '0');
+            }
+
+            function updateCountdown() {
+                var now = new Date();
+                var end = new Date(now);
+                end.setHours(23, 59, 59, 999);
+
+                var diff = Math.max(0, end.getTime() - now.getTime());
+                var hours = Math.floor(diff / 3600000);
+                var minutes = Math.floor((diff % 3600000) / 60000);
+                var seconds = Math.floor((diff % 60000) / 1000);
+
+                timers.forEach(function (timer) {
+                    var hourEl = timer.querySelector('[data-countdown-hours]');
+                    var minuteEl = timer.querySelector('[data-countdown-minutes]');
+                    var secondEl = timer.querySelector('[data-countdown-seconds]');
+
+                    if (hourEl) hourEl.textContent = pad(hours);
+                    if (minuteEl) minuteEl.textContent = pad(minutes);
+                    if (secondEl) secondEl.textContent = pad(seconds);
+                });
+            }
+
+            updateCountdown();
+            window.setInterval(updateCountdown, 1000);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var trigger = document.querySelector('[data-share-trigger]');
+            var sheet = document.getElementById('shareSheet');
+            var backdrop = document.querySelector('[data-share-backdrop]');
+            var closeButton = document.querySelector('[data-share-close]');
+            var whatsappButton = document.querySelector('[data-share-whatsapp]');
+            var copyButton = document.querySelector('[data-share-copy]');
+            var nativeButton = document.querySelector('[data-share-native]');
+            var pageUrl = '{{ url("/aktivitas-anak") }}';
+            var shareTitle = document.title;
+            var shareText = 'Lihat paket 99.000++ lembar aktivitas anak siap cetak yang cocok untuk belajar sambil bermain.';
+
+            function openSheet() {
+                if (!sheet) return;
+                sheet.classList.add('active');
+                if (backdrop) {
+                    backdrop.classList.add('active');
+                    backdrop.hidden = false;
+                }
+            }
+
+            function closeSheet() {
+                if (!sheet) return;
+                sheet.classList.remove('active');
+                if (backdrop) {
+                    backdrop.classList.remove('active');
+                    backdrop.hidden = true;
+                }
+            }
+
+            if (trigger) {
+                trigger.addEventListener('click', openSheet);
+            }
+
+            if (closeButton) {
+                closeButton.addEventListener('click', closeSheet);
+            }
+
+            if (backdrop) {
+                backdrop.addEventListener('click', closeSheet);
+            }
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape') {
+                    closeSheet();
+                }
+            });
+
+            if (whatsappButton) {
+                whatsappButton.addEventListener('click', function () {
+                    var message = encodeURIComponent(shareText + ' ' + pageUrl);
+                    window.open('https://wa.me/?text=' + message, '_blank', 'noopener,noreferrer');
+                    closeSheet();
+                });
+            }
+
+            if (copyButton) {
+                copyButton.addEventListener('click', function () {
+                    var copiedText = pageUrl;
+                    var originalLabel = copyButton.innerHTML;
+
+                    function fallbackCopy(text) {
+                        var input = document.createElement('textarea');
+                        input.value = text;
+                        input.setAttribute('readonly', '');
+                        input.style.position = 'fixed';
+                        input.style.left = '-9999px';
+                        document.body.appendChild(input);
+                        input.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(input);
+                    }
+
+                    function markCopied() {
+                        copyButton.innerHTML = '<span>Link tersalin!</span>';
+                        window.setTimeout(function () {
+                            copyButton.innerHTML = originalLabel;
+                        }, 1800);
+                    }
+
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(copiedText).then(markCopied).catch(function () {
+                            fallbackCopy(copiedText);
+                            markCopied();
+                        });
+                    } else {
+                        fallbackCopy(copiedText);
+                        markCopied();
+                    }
+
+                    closeSheet();
+                });
+            }
+
+            if (nativeButton && navigator.share) {
+                nativeButton.style.display = 'flex';
+                nativeButton.addEventListener('click', function () {
+                    if (navigator.share) {
+                        navigator.share({
+                            title: shareTitle,
+                            text: shareText,
+                            url: pageUrl
+                        }).catch(function () {});
+                    }
+                    closeSheet();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
