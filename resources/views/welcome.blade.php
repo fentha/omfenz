@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="id">
 <head>
     <meta charset="utf-8">
@@ -179,14 +179,33 @@
             </a>
         </section>
 
-        <footer class="text-center mt-5">
-            <div class="footer-links d-flex justify-content-center gap-4 mb-3">
-                <a href="{{ url('/instagram') }}">Instagram</a>
-                <a href="{{ url('/youtube') }}">YouTube</a>
-            </div>
+        <footer class="mt-5 pt-4 pb-4 border-top" style="text-align: center; font-size: 0.9rem; color: #4a5568;">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row justify-content-between text-start mb-3 gap-4">
+                    <div>
+                        <strong class="d-block mb-2" style="color: #2d3748;">Hubungi Kami</strong>
+                        Omfenz Digital<br>
+                        Email: info@omfenz.com<br>
+                        Telepon/WA: 0851-1365-5806<br>
+                        Alamat: Perum Gejawan Indah J/153 Balecatur, Gamping, Sleman
+                    </div>
+                    <div class="text-sm-end">
+                        <strong class="d-block mb-2" style="color: #2d3748;">Kebijakan & Ketentuan</strong>
+                        <a href="{{ url('/syarat-ketentuan') }}" class="text-decoration-none" style="color: #4a5568;">Syarat & Ketentuan</a><br>
+                        <a href="{{ url('/refund-policy') }}" class="text-decoration-none" style="color: #4a5568;">Kebijakan Pengembalian Dana (Refund Policy)</a><br>
+                        <a href="{{ url('/faq') }}" class="text-decoration-none" style="color: #4a5568;">FAQ (Pertanyaan Umum)</a><br>
+                        <a href="{{ url('/kontak') }}" class="text-decoration-none" style="color: #4a5568;">Kontak Kami</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links d-flex justify-content-center gap-4 mb-3 mt-4 pt-3 border-top">
+                    <a href="{{ url('/instagram') }}">Instagram</a>
+                    <a href="{{ url('/youtube') }}">YouTube</a>
+                </div>
 
-            <div class="copyright">
-                &copy; {{ date('Y') }} Omfenz Digital. All rights reserved.
+                <div class="copyright text-center" style="font-size: 0.8rem;">
+                    &copy; {{ date('Y') }} Omfenz Digital. Hak Cipta Dilindungi.
+                </div>
             </div>
         </footer>
     </main>

@@ -1398,8 +1398,8 @@
                 <picture>
                     <source srcset="{{ url('assets/aktivitas-anak/banner-utama.webp') }}" type="image/webp">
                     <img src="{{ url('assets/aktivitas-anak/banner-utama.webp') }}"
-                        alt="99.000++ Lembar Aktivitas Anak Siap Cetak Rp49.000" width="1080"
-                        height="1080" fetchpriority="high">
+                        alt="99.000++ Lembar Aktivitas Anak Siap Cetak Rp49.000" width="1080" height="1080"
+                        fetchpriority="high">
                 </picture>
             </div>
         </section>
@@ -1540,7 +1540,8 @@
                 </div>
                 <div class="col-12 col-sm-6">
                     <div class="benefit-card">
-                        <p><strong>Bisa Cetak Berulang</strong><br>File digital bisa diprint ulang kapan saja tanpa batas. Satu file, pakai terus sampai anak besar.</p>
+                        <p><strong>Bisa Cetak Berulang</strong><br>File digital bisa diprint ulang kapan saja tanpa
+                            batas. Satu file, pakai terus sampai anak besar.</p>
                     </div>
                 </div>
             </div>
@@ -1570,7 +1571,8 @@
 
             <div class="value-stack-box">
                 <div class="value-stack-badge">💰 TOTAL NILAI YANG BUNDA DAPATKAN</div>
-                <p class="value-stack-sub">Jika seluruh materi dan modul edukatif ini dibeli atau dicetak terpisah, nilainya mencapai:</p>
+                <p class="value-stack-sub">Jika seluruh materi dan modul edukatif ini dibeli atau dicetak terpisah,
+                    nilainya mencapai:</p>
 
                 <div class="value-stack-list">
                     <div class="value-stack-item">
@@ -1693,25 +1695,30 @@
                 <div class="card shadow-sm border-0 mt-4 mb-3" id="checkout-form-section">
                     <div class="card-body p-4 text-start" style="background-color: #ffffff; border-radius: 12px;">
                         <h4 class="fw-bold mb-3 text-center" style="color: #2d3748;">Isi Data Pengiriman</h4>
-                        @if(session('error'))
+                        @if (session('error'))
                             <div class="alert alert-danger">{{ session('error') }}</div>
                         @endif
                         <form action="{{ url('/checkout') }}" method="POST">
                             @csrf
                             <div class="mb-3">
                                 <label class="form-label fw-bold">Nama Lengkap</label>
-                                <input type="text" name="name" class="form-control form-control-lg" required placeholder="Contoh: Bunda Ayu">
+                                <input type="text" name="name" class="form-control form-control-lg" required
+                                    placeholder="Contoh: Bunda Ayu">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label fw-bold">Alamat Email Aktif</label>
-                                <input type="email" name="email" class="form-control form-control-lg" required placeholder="Contoh: ayu@gmail.com">
-                                <div class="form-text" style="color: #e53e3e; font-weight: bold; font-size: 0.85rem;">Pastikan email aktif karena akses akan dikirim ke sini.</div>
+                                <input type="email" name="email" class="form-control form-control-lg" required
+                                    placeholder="Contoh: ayu@gmail.com">
+                                <div class="form-text" style="color: #e53e3e; font-weight: bold; font-size: 0.85rem;">
+                                    Pastikan email aktif karena akses akan dikirim ke sini.</div>
                             </div>
                             <div class="mb-4">
                                 <label class="form-label fw-bold">Nomor WhatsApp</label>
-                                <input type="text" name="phone" class="form-control form-control-lg" required placeholder="Contoh: 08123456789">
+                                <input type="text" name="phone" class="form-control form-control-lg" required
+                                    placeholder="Contoh: 08123456789">
                             </div>
-                            <button type="submit" class="cta-button w-100" style="border:none; margin-top: 10px;" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 49000, currency: 'IDR'});">
+                            <button type="submit" class="cta-button w-100" style="border:none; margin-top: 10px;"
+                                onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 49000, currency: 'IDR'});">
                                 LANJUT PEMBAYARAN RP 49.000
                             </button>
                         </form>
@@ -1769,22 +1776,61 @@
             <div class="support-box">
                 <div class="support-icon">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        <path
+                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                        </path>
                     </svg>
                 </div>
                 <div class="support-content">
                     <strong>Butuh Bantuan atau Ada Kendala?</strong>
-                    <p>Ada pertanyaan seputar materi atau butuh panduan download file? Hubungi Customer Support kami:</p>
-                    <a href="https://wa.me/6285113655806?text=Halo%20Admin%20Omfenz%2C%20saya%20butuh%20bantuan%20terkait%20paket%2099.000%2B%2B%20Aktivitas%20Anak" class="support-wa-btn" target="_blank" rel="noopener noreferrer">
+                    <p>Ada pertanyaan seputar materi atau butuh panduan download file? Hubungi Customer Support kami:
+                    </p>
+                    <a href="https://wa.me/6285113655806?text=Halo%20Admin%20Omfenz%2C%20saya%20butuh%20bantuan%20terkait%20paket%2099.000%2B%2B%20Aktivitas%20Anak"
+                        class="support-wa-btn" target="_blank" rel="noopener noreferrer">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M6 19.5A9.5 9.5 0 1 0 6 4.5a9.5 9.5 0 0 0 0 15Z"></path>
-                            <path d="M8.8 15.2c.8.3 1.7.5 2.7.5 2.8 0 5-2.2 5-5 0-2.8-2.3-5-5.1-5-2.8 0-5 2.2-5 5 0 1.2.4 2.3 1.1 3.2l-.8 2.3 2.3-.8Z"></path>
+                            <path
+                                d="M8.8 15.2c.8.3 1.7.5 2.7.5 2.8 0 5-2.2 5-5 0-2.8-2.3-5-5.1-5-2.8 0-5 2.2-5 5 0 1.2.4 2.3 1.1 3.2l-.8 2.3 2.3-.8Z">
+                            </path>
                         </svg>
                         <span>Chat CS WhatsApp (0851-1365-5806)</span>
                     </a>
                 </div>
             </div>
         </section>
+
+        <!-- FOOTER UNTUK VERIFIKASI IPAYMU -->
+        <footer class="mt-5 pt-4 pb-4 border-top"
+            style="background-color: #f8fafc; text-align: center; font-size: 0.9rem; color: #4a5568;">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row justify-content-between text-start mb-3 gap-4">
+                    <div>
+                        <strong class="d-block mb-2" style="color: #2d3748;">Hubungi Kami</strong>
+                        Omfenz Digital<br>
+                        Email: info@omfenz.com<br>
+                        Telepon/WA: 0851-1365-5806<br>
+                        Alamat: Perum Gejawan Indah J/153 Balecatur, Gamping, Sleman
+                    </div>
+                    <div class="text-sm-end">
+                        <strong class="d-block mb-2" style="color: #2d3748;">Kebijakan & Ketentuan</strong>
+                        <a href="{{ url('/syarat-ketentuan') }}" class="text-decoration-none"
+                            style="color: #4a5568;">Syarat & Ketentuan</a><br>
+                        <a href="{{ url('/refund-policy') }}" class="text-decoration-none"
+                            style="color: #4a5568;">Kebijakan Pengembalian Dana (Refund Policy)</a><br>
+                        <a href="{{ url('/faq') }}" class="text-decoration-none" style="color: #4a5568;">FAQ
+                            (Pertanyaan Umum)</a><br>
+                        <a href="{{ url('/kontak') }}" class="text-decoration-none" style="color: #4a5568;">Kontak
+                            Kami</a>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <div class="text-center pt-3 border-top" style="font-size: 0.8rem;">
+                    &copy; {{ date('Y') }} Omfenz Digital. Hak Cipta Dilindungi.
+                </div>
+            </div>
+        </footer>
     </main>
 
     <div class="sticky-cta">
@@ -2035,6 +2081,7 @@
             }
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
