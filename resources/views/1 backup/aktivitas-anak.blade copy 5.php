@@ -1690,33 +1690,9 @@
                             <path d="M8 12h5"></path>
                         </svg><span>Dibantu Jika Link Bermasalah</span></div>
                 </div>
-                <div class="card shadow-sm border-0 mt-4 mb-3" id="checkout-form-section">
-                    <div class="card-body p-4 text-start" style="background-color: #ffffff; border-radius: 12px;">
-                        <h4 class="fw-bold mb-3 text-center" style="color: #2d3748;">Isi Data Pengiriman</h4>
-                        @if(session('error'))
-                            <div class="alert alert-danger">{{ session('error') }}</div>
-                        @endif
-                        <form action="{{ url('/checkout') }}" method="POST">
-                            @csrf
-                            <div class="mb-3">
-                                <label class="form-label fw-bold">Nama Lengkap</label>
-                                <input type="text" name="name" class="form-control form-control-lg" required placeholder="Contoh: Bunda Ayu">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label fw-bold">Alamat Email Aktif</label>
-                                <input type="email" name="email" class="form-control form-control-lg" required placeholder="Contoh: ayu@gmail.com">
-                                <div class="form-text" style="color: #e53e3e; font-weight: bold; font-size: 0.85rem;">Pastikan email aktif karena akses akan dikirim ke sini.</div>
-                            </div>
-                            <div class="mb-4">
-                                <label class="form-label fw-bold">Nomor WhatsApp</label>
-                                <input type="text" name="phone" class="form-control form-control-lg" required placeholder="Contoh: 08123456789">
-                            </div>
-                            <button type="submit" class="cta-button w-100" style="border:none; margin-top: 10px;" onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 49000, currency: 'IDR'});">
-                                LANJUT PEMBAYARAN RP 49.000
-                            </button>
-                        </form>
-                    </div>
-                </div>
+                <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button"
+                    onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 49000, currency: 'IDR'});">AMBIL
+                    PROMO RP 49.000</a>
                 <p class="cta-microcopy">Akses instan langsung dikirim ke email. Bebas virus, siap cetak, dan bisa
                     dibuka dari HP/laptop.</p>
                 <div class="trust-strip">
@@ -1789,7 +1765,7 @@
 
     <div class="sticky-cta">
         <div class="sticky-cta-row">
-            <a href="#checkout-form-section" class="cta-button" style="flex: 1;"
+            <a href="https://lynk.id/omfenz/47wq5y2gqqm9/checkout" class="cta-button" style="flex: 1;"
                 onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 49000, currency: 'IDR'});">BELI
                 RP49.000</a>
             <button class="share-btn-sticky" type="button" data-share-trigger
