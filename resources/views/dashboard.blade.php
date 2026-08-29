@@ -1,154 +1,186 @@
-<x-app-layout>
-    <x-slot name="header">
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <div>
-                <h2 class="font-bold text-2xl text-gray-800 leading-tight">
-                    {{ __('Admin Dashboard') }}
-                </h2>
-                <p class="text-sm text-gray-500 mt-1">Selamat datang kembali, <span class="font-semibold text-indigo-600">{{ Auth::user()->name }}</span>!</p>
-            </div>
-            <div>
-                <a href="{{ route('orders.index') }}" class="inline-flex items-center px-4 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-sm font-semibold shadow-sm transition duration-150">
-                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                    </svg>
-                    Lihat Semua Pesanan
-                </a>
-            </div>
-        </div>
-    </x-slot>
+@extends('layouts.admin')
 
-    <div class="py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-            
-            <!-- Summary Stats Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                <!-- Total Orders -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
-                    <div>
-                        <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">Total Pesanan</p>
-                        <p class="text-2xl font-black text-gray-900 mt-1">{{ number_format($totalOrders) }}</p>
-                    </div>
-                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                        </svg>
-                    </div>
+@section('title', 'Dashboard')
+@section('page-title', 'Dashboard Ringkasan')
+
+@section('content')
+<div class="container-fluid p-0">
+    
+    <!-- Top Welcome Card -->
+    <div class="card card-custom border-0 bg-primary text-white mb-4 overflow-hidden position-relative" style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);">
+        <div class="card-body p-4 position-relative z-1">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <span class="badge bg-white text-primary fw-bold mb-2">Panel Kontrol Omfenz</span>
+                    <h3 class="fw-bold mb-1">Halo, {{ Auth::user()->name }}! 👋</h3>
+                    <p class="text-white-50 mb-0">Selamat datang di sistem manajemen penjualan Omfenz Digital. Pantau pesanan dan transaksi pelanggan secara praktis.</p>
                 </div>
-
-                <!-- Total Success -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
-                    <div>
-                        <p class="text-xs font-semibold uppercase tracking-wider text-emerald-600">Pesanan Lunas</p>
-                        <p class="text-2xl font-black text-emerald-600 mt-1">{{ number_format($totalSuccess) }}</p>
-                    </div>
-                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                </div>
-
-                <!-- Total Pending -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
-                    <div>
-                        <p class="text-xs font-semibold uppercase tracking-wider text-amber-600">Pending</p>
-                        <p class="text-2xl font-black text-amber-600 mt-1">{{ number_format($totalPending) }}</p>
-                    </div>
-                    <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                </div>
-
-                <!-- Total Revenue -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
-                    <div>
-                        <p class="text-xs font-semibold uppercase tracking-wider text-indigo-600">Total Omset</p>
-                        <p class="text-2xl font-black text-indigo-600 mt-1">Rp {{ number_format($totalRevenue, 0, ',', '.') }}</p>
-                    </div>
-                    <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Recent Orders Card -->
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                <div class="p-6 border-b border-gray-100 flex items-center justify-between">
-                    <div>
-                        <h3 class="font-bold text-lg text-gray-800">5 Pesanan Terakhir</h3>
-                        <p class="text-xs text-gray-400 mt-0.5">Transaksi masuk terbaru dari pembeli</p>
-                    </div>
-                    <a href="{{ route('orders.index') }}" class="text-sm font-semibold text-indigo-600 hover:text-indigo-700 inline-flex items-center">
-                        Buka Kelola Pesanan
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                        </svg>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <a href="{{ route('orders.index') }}" class="btn btn-light text-primary fw-semibold px-3 py-2 rounded-3 shadow-sm">
+                        <i class="bi bi-cart-check me-1"></i> Kelola Semua Pesanan
                     </a>
                 </div>
+            </div>
+        </div>
+        <!-- Decorative background icon -->
+        <i class="bi bi-graph-up-arrow position-absolute text-white opacity-10" style="font-size: 10rem; right: -20px; bottom: -35px;"></i>
+    </div>
 
-                <div class="overflow-x-auto">
-                    <table class="min-w-full divide-y divide-gray-200 text-left text-sm">
-                        <thead class="bg-gray-50/80 text-gray-500 font-semibold text-xs uppercase tracking-wider">
-                            <tr>
-                                <th scope="col" class="px-6 py-3.5">ID & Waktu</th>
-                                <th scope="col" class="px-6 py-3.5">Pelanggan</th>
-                                <th scope="col" class="px-6 py-3.5">Nominal</th>
-                                <th scope="col" class="px-6 py-3.5">Status</th>
-                                <th scope="col" class="px-6 py-3.5 text-right">Detail</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-100 bg-white">
-                            @forelse ($recentOrders as $order)
-                                <tr class="hover:bg-gray-50/60 transition">
-                                    <td class="px-6 py-4 whitespace-nowrap">
-                                        <div class="font-bold text-gray-900">#{{ $order->id }}</div>
-                                        <div class="text-xs text-gray-400">{{ $order->created_at->diffForHumans() }}</div>
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <div class="font-semibold text-gray-900">{{ $order->name }}</div>
-                                        <div class="text-xs text-gray-500">{{ $order->email }} • {{ $order->phone }}</div>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap font-bold text-gray-900">
-                                        Rp {{ number_format($order->amount, 0, ',', '.') }}
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap">
-                                        @if ($order->status === 'success' || $order->status === 'berhasil')
-                                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
-                                                Sukses
-                                            </span>
-                                        @elseif ($order->status === 'pending')
-                                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800">
-                                                Pending
-                                            </span>
-                                        @else
-                                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-800">
-                                                {{ ucfirst($order->status) }}
-                                            </span>
-                                        @endif
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-right text-xs">
-                                        <a href="{{ route('orders.index', ['search' => $order->id]) }}" class="font-semibold text-indigo-600 hover:text-indigo-800">
-                                            Kelola &rarr;
-                                        </a>
-                                    </td>
-                                </tr>
-                            @empty
-                                <tr>
-                                    <td colspan="5" class="px-6 py-8 text-center text-gray-400">
-                                        Belum ada data transaksi pesanan.
-                                    </td>
-                                </tr>
-                            @endforelse
-                        </tbody>
-                    </table>
+    <!-- Summary Stats Cards -->
+    <div class="row g-3 mb-4">
+        
+        <!-- Total Orders -->
+        <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card card-custom h-100 p-3">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <span class="text-muted small text-uppercase fw-semibold">Total Pesanan</span>
+                        <h3 class="fw-bold text-dark my-1">{{ number_format($totalOrders) }}</h3>
+                        <span class="text-muted small">Semua data pesanan</span>
+                    </div>
+                    <div class="stat-card-icon bg-primary-subtle text-primary">
+                        <i class="bi bi-bag-check-fill"></i>
+                    </div>
                 </div>
             </div>
+        </div>
 
+        <!-- Total Success -->
+        <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card card-custom h-100 p-3">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <span class="text-success small text-uppercase fw-bold">Pesanan Lunas</span>
+                        <h3 class="fw-bold text-success my-1">{{ number_format($totalSuccess) }}</h3>
+                        <span class="text-success small"><i class="bi bi-check-circle me-1"></i>Transaksi selesai</span>
+                    </div>
+                    <div class="stat-card-icon bg-success-subtle text-success">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Pending -->
+        <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card card-custom h-100 p-3">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <span class="text-warning small text-uppercase fw-bold">Pending</span>
+                        <h3 class="fw-bold text-warning my-1">{{ number_format($totalPending) }}</h3>
+                        <span class="text-muted small"><i class="bi bi-clock-history me-1"></i>Menunggu bayar</span>
+                    </div>
+                    <div class="stat-card-icon bg-warning-subtle text-warning">
+                        <i class="bi bi-hourglass-split"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Revenue -->
+        <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card card-custom h-100 p-3">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <span class="text-primary small text-uppercase fw-bold">Total Omset</span>
+                        <h4 class="fw-bold text-dark my-1">Rp {{ number_format($totalRevenue, 0, ',', '.') }}</h4>
+                        <span class="text-muted small">Dari pesanan sukses</span>
+                    </div>
+                    <div class="stat-card-icon bg-info-subtle text-info">
+                        <i class="bi bi-cash-stack"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Recent Orders Table Card -->
+    <div class="card card-custom border-0 mb-4">
+        <div class="card-header bg-white border-bottom py-3 px-4 d-flex align-items-center justify-content-between">
+            <div>
+                <h6 class="fw-bold text-dark m-0">5 Pesanan Terkini</h6>
+                <small class="text-muted">Transaksi terbaru yang masuk ke sistem</small>
+            </div>
+            <a href="{{ route('orders.index') }}" class="btn btn-sm btn-outline-primary fw-semibold rounded-3">
+                Lihat Lengkap <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light text-muted text-uppercase small">
+                        <tr>
+                            <th class="ps-4">ID & Waktu</th>
+                            <th>Pelanggan</th>
+                            <th>Kontak</th>
+                            <th>Nominal</th>
+                            <th>Status</th>
+                            <th class="pe-4 text-end">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        @forelse ($recentOrders as $order)
+                            @php
+                                $phoneClean = preg_replace('/[^0-9]/', '', $order->phone);
+                                $phoneWa = str_starts_with($phoneClean, '0') ? '62' . substr($phoneClean, 1) : $phoneClean;
+                            @endphp
+                            <tr>
+                                <td class="ps-4">
+                                    <span class="fw-bold text-dark">#{{ $order->id }}</span>
+                                    <div class="text-muted small" style="font-size: 0.75rem;">
+                                        {{ $order->created_at->format('d/m/Y H:i') }}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="fw-semibold text-dark">{{ $order->name }}</div>
+                                    <div class="text-muted small">{{ $order->email }}</div>
+                                </td>
+                                <td>
+                                    <span class="small font-monospace">{{ $order->phone }}</span>
+                                    <div>
+                                        <a href="https://wa.me/{{ $phoneWa }}?text=Halo%20Kak%20{{ urlencode($order->name) }},%20kami%20dari%20Omfenz%20Digital%20mengonfirmasi%20Order%20ID%20%23{{ $order->id }}." target="_blank" class="badge bg-success-subtle text-success text-decoration-none border border-success-subtle">
+                                            <i class="bi bi-whatsapp me-1"></i>WA
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="fw-bold text-dark">Rp {{ number_format($order->amount, 0, ',', '.') }}</span>
+                                </td>
+                                <td>
+                                    @if ($order->status === 'success' || $order->status === 'berhasil')
+                                        <span class="badge bg-success-subtle text-success border border-success-subtle badge-status">
+                                            <i class="bi bi-check-circle-fill me-1"></i>Lunas / Sukses
+                                        </span>
+                                    @elseif ($order->status === 'pending')
+                                        <span class="badge bg-warning-subtle text-warning border border-warning-subtle badge-status">
+                                            <i class="bi bi-hourglass-split me-1"></i>Pending
+                                        </span>
+                                    @else
+                                        <span class="badge bg-danger-subtle text-danger border border-danger-subtle badge-status">
+                                            {{ ucfirst($order->status) }}
+                                        </span>
+                                    @endif
+                                </td>
+                                <td class="pe-4 text-end">
+                                    <a href="{{ route('orders.index', ['search' => $order->id]) }}" class="btn btn-sm btn-light border fw-semibold">
+                                        Detail &rarr;
+                                    </a>
+                                </td>
+                            </tr>
+                        @empty
+                            <tr>
+                                <td colspan="6" class="text-center py-5 text-muted">
+                                    <i class="bi bi-inbox fs-1 d-block mb-2 text-secondary opacity-50"></i>
+                                    Belum ada transaksi pesanan yang tercatat.
+                                </td>
+                            </tr>
+                        @endforelse
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-</x-app-layout>
+
+</div>
+@endsection

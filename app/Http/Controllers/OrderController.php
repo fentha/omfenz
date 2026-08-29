@@ -7,6 +7,7 @@ use App\Mail\OrderSuccessMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Http;
 
 class OrderController extends Controller
 {
@@ -60,25 +61,107 @@ class OrderController extends Controller
     {
         $request->validate([
             'status' => 'required|in:pending,success,failed',
-            'send_email' => 'nullable|boolean',
         ]);
 
         $oldStatus = $order->status;
         $order->status = $request->status;
         $order->save();
 
-        // If status changed to success and send_email is requested
-        if ($request->status === 'success' && $request->boolean('send_email')) {
+        // If changed to success, send access email
+        if ($request->status === 'success' && $oldStatus !== 'success') {
             try {
                 Mail::to($order->email)->send(new OrderSuccessMail($order));
                 Log::info("Manual email success sent to: {$order->email}");
             } catch (\Exception $e) {
                 Log::error("Failed sending email to {$order->email}: " . $e->getMessage());
-                return back()->with('warning', "Status pesanan diubah, namun gagal mengirim email: " . $e->getMessage());
+                return back()->with('warning', "Status pesanan diubah ke SUKSES, tetapi pengiriman email gagal: " . $e->getMessage());
             }
         }
 
         return back()->with('success', "Status pesanan #{$order->id} berhasil diubah menjadi " . strtoupper($order->status));
+    }
+
+    /**
+     * Sync and check order status directly with iPaymu API.
+     */
+    public function syncStatus(Order $order)
+    {
+        $va = env('IPAYMU_VA');
+        $apiKey = env('IPAYMU_KEY');
+        $url = env('IPAYMU_ENV') == 'sandbox'
+            ? 'https://sandbox.ipaymu.com/api/v2/transaction'
+            : 'https://my.ipaymu.com/api/v2/transaction';
+
+        if (!$order->ipaymu_trx_id && !$order->id) {
+            return back()->with('error', "Order #{$order->id} belum memiliki ID Transaksi Gateway.");
+        }
+
+        // Siapkan request parameter untuk cek transaksi iPaymu
+        $body = [
+            'transactionId' => (int) ($order->ipaymu_trx_id ?? 0),
+        ];
+
+        // Jika tidak ada trx_id, coba cari berdasarkan session / reference
+        if (!$order->ipaymu_trx_id) {
+            $body = [
+                'account' => $va,
+            ];
+        }
+
+        $bodyEncrypt = hash('sha256', json_encode($body, JSON_UNESCAPED_SLASHES));
+        $stringToSign = "POST:" . $va . ":" . $bodyEncrypt . ":" . $apiKey;
+        $signature = hash_hmac('sha256', $stringToSign, $apiKey);
+
+        try {
+            $response = Http::withHeaders([
+                'Content-Type' => 'application/json',
+                'va' => $va,
+                'signature' => $signature,
+            ])->post($url, $body);
+
+            $result = $response->json();
+            Log::info("iPaymu Check Transaction Response for Order #{$order->id}:", $result ?? []);
+
+            if ($response->successful() && isset($result['Data'])) {
+                $data = $result['Data'];
+                $statusVal = strtolower((string) ($data['Status'] ?? $data['StatusDescription'] ?? ''));
+                $statusCode = $data['StatusCode'] ?? $data['Status'] ?? null;
+
+                // Cek status dari response iPaymu
+                if ($statusCode == 1 || in_array($statusVal, ['berhasil', 'success', 'paid', 'settlement', 'lunas', '1'])) {
+                    $order->status = 'success';
+                    if (isset($data['TransactionId'])) {
+                        $order->ipaymu_trx_id = $data['TransactionId'];
+                    }
+                    $order->save();
+
+                    // Kirim email akses jika belum terkirim
+                    try {
+                        Mail::to($order->email)->send(new OrderSuccessMail($order));
+                    } catch (\Exception $e) {
+                        Log::error("Sync email error: " . $e->getMessage());
+                    }
+
+                    return back()->with('success', "iPaymu API: Transaksi #{$order->id} SUKSES / LUNAS. Status berhasil disinkronkan!");
+                } elseif ($statusCode == 0 || in_array($statusVal, ['pending', 'menunggu pembayaran', '0'])) {
+                    $order->status = 'pending';
+                    $order->save();
+                    return back()->with('warning', "iPaymu API: Transaksi #{$order->id} masih PENDING (Menunggu Pembayaran).");
+                } elseif (in_array($statusCode, [2, 3]) || in_array($statusVal, ['expired', 'batal', 'gagal', 'failed', 'cancel'])) {
+                    $order->status = 'failed';
+                    $order->save();
+                    return back()->with('error', "iPaymu API: Transaksi #{$order->id} GAGAL / KEDALUWARSA (Status: {$statusVal}).");
+                } else {
+                    return back()->with('warning', "iPaymu Response: " . ($data['StatusDescription'] ?? json_encode($data)));
+                }
+            }
+
+            $errorMsg = $result['Message'] ?? 'Tidak dapat memperoleh status dari server iPaymu.';
+            return back()->with('error', "Gagal cek API iPaymu: {$errorMsg}");
+        } catch (\Exception $e) {
+            Log::error("iPaymu Sync Exception: " . $e->getMessage());
+            return back()->with('error', "Koneksi ke iPaymu error: " . $e->getMessage());
+        }
     }
 
     /**

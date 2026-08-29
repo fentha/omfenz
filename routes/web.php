@@ -61,6 +61,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // Orders Management
     Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
     Route::patch('/orders/{order}/status', [OrderController::class, 'updateStatus'])->name('orders.updateStatus');
+    Route::post('/orders/{order}/sync', [OrderController::class, 'syncStatus'])->name('orders.syncStatus');
     Route::post('/orders/{order}/resend-email', [OrderController::class, 'resendEmail'])->name('orders.resendEmail');
     Route::delete('/orders/{order}', [OrderController::class, 'destroy'])->name('orders.destroy');
 
