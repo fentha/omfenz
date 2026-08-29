@@ -1718,7 +1718,7 @@
                                 LANJUT PEMBAYARAN RP 49.000
                             </button>
                             <div class="mt-2 text-center" style="font-size: 0.8rem; color: #166534;">
-                                💡 <strong>Tips Hemat:</strong> Pilih <strong>QRIS</strong> saat bayar untuk biaya admin paling murah &amp; ringan.
+                                💡 <strong>Rekomendasi:</strong> Pilih <strong>QRIS</strong> saat bayar untuk proses instan tanpa tambahan biaya apapun.
                             </div>
                         </form>
                         <script>
@@ -1779,8 +1779,8 @@
                     <li><strong>Selesai!</strong> Link akses Google Drive (99.000++ aktivitas anak) langsung otomatis dikirim ke email Bunda detik itu juga.</li>
                 </ol>
                 <div class="p-2 px-3 rounded-3 mt-3" style="background: #f0fdf4; border: 1px dashed #16a34a; font-size: 0.85rem; color: #166534;">
-                    <strong>💡 Tips Pembayaran Hemat:</strong><br>
-                    Pilih <strong>QRIS</strong> (bisa discan dari m-Banking BCA, Mandiri, BRI, BNI, DANA, GoPay, OVO, ShopeePay, dll) agar <strong>biaya admin lebih ringan & paling murah</strong> dibandingkan Virtual Account bank.
+                    <strong>💡 Rekomendasi Pembayaran:</strong><br>
+                    Pilih <strong>QRIS</strong> (bisa discan dari m-Banking BCA, Mandiri, BRI, BNI, DANA, GoPay, OVO, ShopeePay, dll) untuk <strong>proses verifikasi instan tanpa tambahan biaya apapun.</strong>
                 </div>
             </div>
 
