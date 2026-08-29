@@ -14,6 +14,10 @@ Route::get('/aktivitas-anak', function () {
     return view('aktivitas-anak');
 });
 
+Route::get('/aktivitas-anak/dev', function () {
+    return view('aktivitas-anak-dev');
+});
+
 Route::get('/aktivitas-anak-dev', function () {
     return view('aktivitas-anak-dev');
 });
