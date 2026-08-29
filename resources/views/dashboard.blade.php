@@ -124,6 +124,20 @@
                             @php
                                 $phoneClean = preg_replace('/[^0-9]/', '', $order->phone);
                                 $phoneWa = str_starts_with($phoneClean, '0') ? '62' . substr($phoneClean, 1) : $phoneClean;
+
+                                if ($order->status === 'success' || $order->status === 'berhasil') {
+                                    $waText = "Halo Kak/Bunda " . $order->name . ", terima kasih banyak atas pesanannya di Omfenz Digital! 🎉\n\n"
+                                        . "Pembayaran untuk *Order #" . $order->id . " (Paket 99.000++ Aktivitas Anak)* sudah *LUNAS/BERHASIL*. Link akses Google Drive telah kami kirimkan ke email *" . $order->email . "*.\n\n"
+                                        . "Apakah materinya sudah berhasil dibuka di email? Jika ada kendala download atau butuh panduan cetak, jangan sungkan hubungi kami di sini ya. Selamat mendampingi si kecil belajar & bermain seru! 😊✨";
+                                } else {
+                                    $payLink = $order->payment_url ?: url('/aktivitas-anak');
+                                    $waText = "Halo Kak/Bunda " . $order->name . ", terima kasih sudah memesan *Paket 99.000++ Lembar Aktivitas Anak (Akses Selamanya)* di Omfenz Digital (Order #" . $order->id . "). 😊\n\n"
+                                        . "Kami lihat statusnya masih menunggu pembayaran. Apakah tadi ada kendala saat memilih metode pembayaran (QRIS, Transfer Bank/VA, atau E-Wallet)?\n\n"
+                                        . "Untuk memudahkan, Bunda bisa langsung menyelesaikan pembayaran melalui tautan resmi ini ya:\n"
+                                        . "👉 " . $payLink . "\n\n"
+                                        . "Setelah pembayaran selesai, link akses Google Drive berisi ribuan materi printable siap cetak langsung otomatis dikirim ke email *" . $order->email . "*.\n\n"
+                                        . "Jika butuh bantuan atau panduan bayar, balas chat ini ya Bunda/Kak. Kami siap bantu! 🙏";
+                                }
                             @endphp
                             <tr>
                                 <td class="ps-4">
@@ -135,8 +149,8 @@
                                 <td>
                                     <div class="fw-semibold text-dark">{{ $order->name }}</div>
                                     <div class="text-muted small">{{ $order->email }}</div>
-                                    <a href="https://wa.me/{{ $phoneWa }}?text=Halo%20Kak%20{{ urlencode($order->name) }},%20kami%20dari%20Omfenz%20Digital%20mengonfirmasi%20Order%20ID%20%23{{ $order->id }}." target="_blank" class="badge bg-success-subtle text-success text-decoration-none border border-success-subtle mt-0.5" style="font-size: 0.7rem;">
-                                        <i class="bi bi-whatsapp me-1"></i>{{ $order->phone }}
+                                    <a href="https://wa.me/{{ $phoneWa }}?text={{ urlencode($waText) }}" target="_blank" class="badge {{ $order->status === 'pending' ? 'bg-success text-white' : 'bg-success-subtle text-success' }} text-decoration-none border border-success-subtle mt-1" style="font-size: 0.72rem;">
+                                        <i class="bi bi-whatsapp me-1"></i>{{ $order->status === 'pending' ? 'Follow Up WA' : 'Chat WA' }} ({{ $order->phone }})
                                     </a>
                                 </td>
                                 <td>
