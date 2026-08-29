@@ -1206,8 +1206,8 @@
         .share-backdrop {
             position: fixed;
             inset: 0;
-            background: rgba(15, 23, 42, .45);
-            z-index: 36;
+            background: rgba(15, 23, 42, .4);
+            z-index: 99;
             opacity: 0;
             pointer-events: none;
             transition: opacity .2s ease;
@@ -1222,12 +1222,12 @@
             position: fixed;
             left: 12px;
             right: 12px;
-            bottom: calc(88px + env(safe-area-inset-bottom));
+            bottom: calc(24px + env(safe-area-inset-bottom));
             background: #ffffff;
             border-radius: 20px;
             box-shadow: 0 20px 44px rgba(15, 23, 42, .22);
             padding: 16px;
-            z-index: 37;
+            z-index: 100;
             transform: translateY(18px);
             opacity: 0;
             pointer-events: none;
