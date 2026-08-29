@@ -1698,7 +1698,8 @@
                         @if (session('error'))
                             <div class="alert alert-danger">{{ session('error') }}</div>
                         @endif
-                        <form action="{{ url('/checkout/dev') }}" method="POST" onsubmit="return handleCheckoutSubmit(this);">
+                        <form action="{{ url('/checkout/dev') }}" method="POST"
+                            onsubmit="return handleCheckoutSubmit(this);">
                             @csrf
                             <div class="mb-3">
                                 <label class="form-label fw-bold">Nama Lengkap</label>
@@ -1717,7 +1718,8 @@
                                 <input type="text" name="phone" class="form-control form-control-lg" required
                                     placeholder="Contoh: 08123456789">
                             </div>
-                            <button type="submit" id="btn-checkout" class="cta-button w-100" style="border:none; margin-top: 10px;"
+                            <button type="submit" id="btn-checkout" class="cta-button w-100"
+                                style="border:none; margin-top: 10px;"
                                 onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 49000, currency: 'IDR'});">
                                 LANJUT PEMBAYARAN RP 49.000
                             </button>
@@ -1768,6 +1770,17 @@
                     <p>Betul! Bunda mendapat lisensi untuk menjual kembali file-file ini berkali-kali tanpa harus bagi
                         hasil dengan kami.</p>
                 </div>
+            </div>
+
+            <div class="order-box">
+                <strong class="d-block fs-6 mb-3">Cara Pemesanan Sangat Mudah & Otomatis:</strong>
+                <ol class="mb-0 ps-3">
+                    <li>Isi formulir pemesanan di atas (<strong>Nama, Email Aktif &amp; No. WhatsApp</strong>).</li>
+                    <li>Klik tombol hijau <strong>LANJUT PEMBAYARAN RP 49.000</strong>.</li>
+                    <li>Pilih metode pembayaran favorit (<strong>QRIS, Virtual Account Bank, E-Wallet, atau Minimarket</strong>).</li>
+                    <li>Selesaikan pembayaran sesuai petunjuk yang muncul di layar.</li>
+                    <li><strong>Selesai!</strong> Link akses Google Drive (99.000++ aktivitas anak) langsung otomatis dikirim ke email Bunda detik itu juga.</li>
+                </ol>
             </div>
 
             <div class="support-box">
