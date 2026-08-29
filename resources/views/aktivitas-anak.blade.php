@@ -254,7 +254,7 @@
         }
 
         .content-wrap {
-            padding: 28px 20px 154px;
+            padding: 28px 20px 24px;
             line-height: 1.7;
         }
 
@@ -1809,8 +1809,8 @@
         </section>
 
         <!-- FOOTER UNTUK VERIFIKASI IPAYMU -->
-        <footer class="mt-5 pt-4 pb-4 border-top"
-            style="background-color: #f8fafc; text-align: center; font-size: 0.9rem; color: #4a5568;">
+        <footer class="pt-4 border-top"
+            style="background-color: #f8fafc; text-align: center; font-size: 0.9rem; color: #4a5568; padding-bottom: 100px;">
             <div class="container">
                 <div class="d-flex flex-column flex-sm-row justify-content-between text-start mb-3 gap-4">
                     <div>
@@ -1833,9 +1833,7 @@
                     </div>
                 </div>
 
-                <br>
-                <br>
-                <div class="text-center pt-3 border-top" style="font-size: 0.8rem;">
+                <div class="text-center pt-3 mt-3 border-top" style="font-size: 0.8rem;">
                     &copy; {{ date('Y') }} Omfenz Digital. Hak Cipta Dilindungi.
                 </div>
             </div>
