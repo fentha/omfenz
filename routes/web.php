@@ -40,8 +40,10 @@ Route::get('/refund-policy', function () {
 
 // Checkout & Payment Callbacks
 Route::post('/checkout', [PaymentController::class, 'checkout'])->name('checkout');
+Route::post('/checkout/dev', [PaymentController::class, 'checkoutDev'])->name('checkout.dev.slash');
 Route::post('/checkout-dev', [PaymentController::class, 'checkoutDev'])->name('checkout.dev');
 Route::post('/payment/callback', [PaymentController::class, 'callback'])->name('payment.callback');
+Route::post('/payment/callback/dev', [PaymentController::class, 'callbackDev'])->name('payment.callback.dev');
 Route::get('/payment/success', [PaymentController::class, 'success'])->name('payment.success');
 
 // Admin Authenticated Dashboard & Orders
