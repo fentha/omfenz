@@ -1698,7 +1698,7 @@
                         @if (session('error'))
                             <div class="alert alert-danger">{{ session('error') }}</div>
                         @endif
-                        <form action="{{ url('/checkout') }}" method="POST" onsubmit="return handleCheckoutSubmit(this);">
+                        <form action="{{ url('/checkout/dev') }}" method="POST" onsubmit="return handleCheckoutSubmit(this);">
                             @csrf
                             <div class="mb-3">
                                 <label class="form-label fw-bold">Nama Lengkap</label>

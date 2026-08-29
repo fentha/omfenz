@@ -18,3 +18,8 @@ Route::view('/faq', 'faq');
 Route::view('/syarat-ketentuan', 'syarat-ketentuan');
 Route::view('/refund-policy', 'refund-policy');
 Route::view('/kontak', 'kontak');
+
+// Dev Routes untuk iPaymu Sandbox
+Route::view('/aktivitas-anak/dev', 'aktivitas-anak-dev');
+Route::post('/checkout/dev', [\App\Http\Controllers\PaymentController::class, 'checkoutDev']);
+Route::post('/payment/callback/dev', [\App\Http\Controllers\PaymentController::class, 'callbackDev']);
