@@ -50,7 +50,7 @@ class PaymentController extends Controller
             : 'https://my.ipaymu.com/api/v2/payment';
 
         $body = [
-            'product' => ['Paket 99.000++ Aktivitas Anak'],
+            'product' => ['Paket 99.000++ Aktivitas Anak (Akses Selamanya)'],
             'qty' => ['1'],
             'price' => [$amount],
             'description' => ['Akses Selamanya 99.000++ Lembar Aktivitas Anak Siap Cetak'],
@@ -199,7 +199,7 @@ class PaymentController extends Controller
         $url = 'https://sandbox.ipaymu.com/api/v2/payment';
 
         $body = [
-            'product' => ['Paket 99.000++ Aktivitas Anak'],
+            'product' => ['Paket 99.000++ Aktivitas Anak (Akses Selamanya)'],
             'qty' => ['1'],
             'price' => [$amount],
             'description' => ['Akses Selamanya 99.000++ Lembar Aktivitas Anak Siap Cetak'],
