@@ -1770,18 +1770,6 @@
                 </div>
             </div>
 
-            <div class="order-box">
-                <strong class="d-block fs-6 mb-3">Cara Pemesanan Sangat Mudah:</strong>
-                <ol class="mb-0 ps-3">
-                    <li>Klik tombol hijau <strong>AMBIL PROMO RP 49.000</strong> di atas.</li>
-                    <li>Masukkan alamat email aktif Bunda/Ayah dengan benar.</li>
-                    <li>Pilih metode pembayaran (ShopeePay, DANA, OVO, QRIS, dll).</li>
-                    <li>Ceklis 2 kotak persetujuan keamanan.</li>
-                    <li>Klik <strong>Buy Now</strong> dan selesaikan pembayaran.</li>
-                    <li>Selesai! Cek kotak masuk <em>(Inbox/Spam)</em> email untuk membuka asetnya.</li>
-                </ol>
-            </div>
-
             <div class="support-box">
                 <div class="support-icon">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
