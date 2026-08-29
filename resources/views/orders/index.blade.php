@@ -112,12 +112,12 @@
             <table class="table table-hover align-middle mb-0">
                 <thead class="table-light text-muted text-uppercase small">
                     <tr>
-                        <th class="ps-4">ID & Tanggal</th>
+                        <th class="ps-4">ID & Tanggal Buat</th>
                         <th>Pelanggan</th>
                         <th>WhatsApp / HP</th>
-                        <th>Nominal</th>
-                        <th>Status</th>
-                        <th>Gateway Trx</th>
+                        <th>Metode Bayar</th>
+                        <th>Nominal, Fee & Net</th>
+                        <th>Status & Waktu Bayar</th>
                         <th class="pe-4 text-center">Kelola Status & Aksi</th>
                     </tr>
                 </thead>
@@ -150,7 +150,29 @@
                                 </a>
                             </td>
 
-                            <!-- Amount -->
+                            <!-- Payment Method & Gateway Info -->
+                            <td>
+                                @if($order->payment_method)
+                                    <span class="badge bg-dark-subtle text-dark border mb-1" style="font-size: 0.75rem;">
+                                        <i class="bi bi-credit-card me-1"></i>{{ $order->payment_method }}
+                                    </span>
+                                @else
+                                    <span class="badge bg-light text-muted border mb-1" style="font-size: 0.72rem;">Belum Bayar</span>
+                                @endif
+
+                                @if($order->ipaymu_trx_id)
+                                    <div class="text-dark small font-monospace" style="font-size: 0.72rem;">TRX: {{ $order->ipaymu_trx_id }}</div>
+                                @endif
+                                @if($order->payment_url)
+                                    <div>
+                                        <a href="{{ $order->payment_url }}" target="_blank" class="small text-primary text-decoration-none d-inline-flex align-items-center gap-1 mt-0.5" style="font-size: 0.75rem;">
+                                            <span>Link Bayar</span> <i class="bi bi-box-arrow-up-right"></i>
+                                        </a>
+                                    </div>
+                                @endif
+                            </td>
+
+                            <!-- Amount, Fee & Net Amount -->
                             <td>
                                 <div class="fw-bold text-dark">Rp {{ number_format($order->amount, 0, ',', '.') }}</div>
                                 @if($order->fee > 0 || $order->net_amount)
@@ -158,10 +180,12 @@
                                         <span>Fee: Rp {{ number_format($order->fee, 0, ',', '.') }}</span><br>
                                         <span class="text-success fw-semibold">Net: Rp {{ number_format($order->net_amount ?? ($order->amount - $order->fee), 0, ',', '.') }}</span>
                                     </div>
+                                @else
+                                    <div class="text-muted" style="font-size: 0.72rem;">Fee: Rp 0</div>
                                 @endif
                             </td>
 
-                            <!-- Status Badge -->
+                            <!-- Status Badge & Paid At -->
                             <td>
                                 @if ($order->status === 'success' || $order->status === 'berhasil')
                                     <span class="badge bg-success-subtle text-success border border-success-subtle badge-status">
@@ -178,28 +202,13 @@
                                 @endif
 
                                 @if($order->paid_at)
-                                    <div class="text-muted small mt-1" style="font-size: 0.72rem;">
-                                        <i class="bi bi-calendar2-check text-success me-1"></i>{{ $order->paid_at->format('d/m/Y H:i') }}
+                                    <div class="text-success small mt-1 fw-medium" style="font-size: 0.72rem;">
+                                        <i class="bi bi-calendar2-check me-1"></i>{{ $order->paid_at->format('d/m/Y H:i') }} WIB
                                     </div>
-                                @endif
-                            </td>
-
-                            <!-- Gateway Info -->
-                            <td>
-                                @if($order->payment_method)
-                                    <span class="badge bg-dark-subtle text-dark border mb-1" style="font-size: 0.72rem;">
-                                        <i class="bi bi-credit-card me-1"></i>{{ $order->payment_method }}
-                                    </span>
-                                @endif
-                                @if($order->ipaymu_trx_id)
-                                    <div class="text-dark small font-monospace">TRX: {{ $order->ipaymu_trx_id }}</div>
-                                @endif
-                                @if($order->payment_url)
-                                    <a href="{{ $order->payment_url }}" target="_blank" class="small text-primary text-decoration-none d-inline-flex align-items-center gap-1 mt-0.5">
-                                        <span>Link Bayar</span> <i class="bi bi-box-arrow-up-right"></i>
-                                    </a>
-                                @elseif(!$order->payment_method && !$order->ipaymu_trx_id)
-                                    <span class="text-muted small">-</span>
+                                @else
+                                    <div class="text-muted small mt-1" style="font-size: 0.72rem;">
+                                        <i class="bi bi-clock me-1"></i>Belum Lunas
+                                    </div>
                                 @endif
                             </td>
 

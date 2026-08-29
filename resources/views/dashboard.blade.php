@@ -111,11 +111,11 @@
                 <table class="table table-hover align-middle mb-0">
                     <thead class="table-light text-muted text-uppercase small">
                         <tr>
-                            <th class="ps-4">ID & Waktu</th>
+                            <th class="ps-4">ID & Waktu Buat</th>
                             <th>Pelanggan</th>
-                            <th>Kontak</th>
-                            <th>Nominal</th>
-                            <th>Status</th>
+                            <th>Metode Bayar</th>
+                            <th>Nominal & Net</th>
+                            <th>Status & Waktu Bayar</th>
                             <th class="pe-4 text-end">Aksi</th>
                         </tr>
                     </thead>
@@ -129,23 +129,36 @@
                                 <td class="ps-4">
                                     <span class="fw-bold text-dark">#{{ $order->id }}</span>
                                     <div class="text-muted small" style="font-size: 0.75rem;">
-                                        {{ $order->created_at->format('d/m/Y H:i') }}
+                                        {{ $order->created_at->format('d/m/Y H:i') }} WIB
                                     </div>
                                 </td>
                                 <td>
                                     <div class="fw-semibold text-dark">{{ $order->name }}</div>
                                     <div class="text-muted small">{{ $order->email }}</div>
+                                    <a href="https://wa.me/{{ $phoneWa }}?text=Halo%20Kak%20{{ urlencode($order->name) }},%20kami%20dari%20Omfenz%20Digital%20mengonfirmasi%20Order%20ID%20%23{{ $order->id }}." target="_blank" class="badge bg-success-subtle text-success text-decoration-none border border-success-subtle mt-0.5" style="font-size: 0.7rem;">
+                                        <i class="bi bi-whatsapp me-1"></i>{{ $order->phone }}
+                                    </a>
                                 </td>
                                 <td>
-                                    <span class="small font-monospace">{{ $order->phone }}</span>
-                                    <div>
-                                        <a href="https://wa.me/{{ $phoneWa }}?text=Halo%20Kak%20{{ urlencode($order->name) }},%20kami%20dari%20Omfenz%20Digital%20mengonfirmasi%20Order%20ID%20%23{{ $order->id }}." target="_blank" class="badge bg-success-subtle text-success text-decoration-none border border-success-subtle">
-                                            <i class="bi bi-whatsapp me-1"></i>WA
-                                        </a>
-                                    </div>
+                                    @if($order->payment_method)
+                                        <span class="badge bg-dark-subtle text-dark border mb-0.5" style="font-size: 0.75rem;">
+                                            <i class="bi bi-credit-card me-1"></i>{{ $order->payment_method }}
+                                        </span>
+                                    @else
+                                        <span class="text-muted small">-</span>
+                                    @endif
+                                    @if($order->ipaymu_trx_id)
+                                        <div class="text-secondary font-monospace" style="font-size: 0.72rem;">TRX: {{ $order->ipaymu_trx_id }}</div>
+                                    @endif
                                 </td>
                                 <td>
-                                    <span class="fw-bold text-dark">Rp {{ number_format($order->amount, 0, ',', '.') }}</span>
+                                    <div class="fw-bold text-dark">Rp {{ number_format($order->amount, 0, ',', '.') }}</div>
+                                    @if($order->fee > 0 || $order->net_amount)
+                                        <div class="text-muted" style="font-size: 0.72rem;">
+                                            <span>Fee: Rp {{ number_format($order->fee, 0, ',', '.') }}</span><br>
+                                            <span class="text-success fw-semibold">Net: Rp {{ number_format($order->net_amount ?? ($order->amount - $order->fee), 0, ',', '.') }}</span>
+                                        </div>
+                                    @endif
                                 </td>
                                 <td>
                                     @if ($order->status === 'success' || $order->status === 'berhasil')
@@ -161,10 +174,16 @@
                                             {{ ucfirst($order->status) }}
                                         </span>
                                     @endif
+
+                                    @if($order->paid_at)
+                                        <div class="text-muted small mt-1" style="font-size: 0.72rem;">
+                                            <i class="bi bi-calendar2-check text-success me-1"></i>Bayar: {{ $order->paid_at->format('d/m/Y H:i') }} WIB
+                                        </div>
+                                    @endif
                                 </td>
                                 <td class="pe-4 text-end">
                                     <a href="{{ route('orders.index', ['search' => $order->id]) }}" class="btn btn-sm btn-light border fw-semibold">
-                                        Detail &rarr;
+                                        Kelola &rarr;
                                     </a>
                                 </td>
                             </tr>
