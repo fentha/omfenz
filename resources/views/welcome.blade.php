@@ -198,12 +198,7 @@
                     </div>
                 </div>
                 
-                <div class="footer-links d-flex justify-content-center gap-4 mb-3 mt-4 pt-3 border-top">
-                    <a href="{{ url('/instagram') }}">Instagram</a>
-                    <a href="{{ url('/youtube') }}">YouTube</a>
-                </div>
-
-                <div class="copyright text-center" style="font-size: 0.8rem;">
+                <div class="copyright text-center pt-3 mt-3 border-top" style="font-size: 0.8rem;">
                     &copy; {{ date('Y') }} Omfenz Digital. Hak Cipta Dilindungi.
                 </div>
             </div>
