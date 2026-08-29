@@ -133,6 +133,20 @@ class OrderController extends Controller
                     if (isset($data['TransactionId'])) {
                         $order->ipaymu_trx_id = $data['TransactionId'];
                     }
+                    if (isset($data['Via']) || isset($data['Channel']) || isset($data['PaymentMethod'])) {
+                        $via = $data['Via'] ?? '';
+                        $channel = $data['Channel'] ?? $data['PaymentMethod'] ?? '';
+                        $order->payment_method = trim(($via ? strtoupper($via) . ' ' : '') . strtoupper($channel));
+                    }
+                    if (isset($data['Fee'])) {
+                        $order->fee = (float) $data['Fee'];
+                    }
+                    if (isset($data['PaidOff'])) {
+                        $order->net_amount = (float) $data['PaidOff'];
+                    }
+                    if (isset($data['PaidAt']) || isset($data['PaidDate'])) {
+                        $order->paid_at = \Carbon\Carbon::parse($data['PaidAt'] ?? $data['PaidDate']);
+                    }
                     $order->save();
 
                     // Kirim email akses jika belum terkirim

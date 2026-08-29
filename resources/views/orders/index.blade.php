@@ -152,7 +152,13 @@
 
                             <!-- Amount -->
                             <td>
-                                <span class="fw-bold text-dark">Rp {{ number_format($order->amount, 0, ',', '.') }}</span>
+                                <div class="fw-bold text-dark">Rp {{ number_format($order->amount, 0, ',', '.') }}</div>
+                                @if($order->fee > 0 || $order->net_amount)
+                                    <div class="text-muted" style="font-size: 0.72rem;">
+                                        <span>Fee: Rp {{ number_format($order->fee, 0, ',', '.') }}</span><br>
+                                        <span class="text-success fw-semibold">Net: Rp {{ number_format($order->net_amount ?? ($order->amount - $order->fee), 0, ',', '.') }}</span>
+                                    </div>
+                                @endif
                             </td>
 
                             <!-- Status Badge -->
@@ -170,10 +176,21 @@
                                         <i class="bi bi-x-circle me-1"></i>{{ ucfirst($order->status) }}
                                     </span>
                                 @endif
+
+                                @if($order->paid_at)
+                                    <div class="text-muted small mt-1" style="font-size: 0.72rem;">
+                                        <i class="bi bi-calendar2-check text-success me-1"></i>{{ $order->paid_at->format('d/m/Y H:i') }}
+                                    </div>
+                                @endif
                             </td>
 
                             <!-- Gateway Info -->
                             <td>
+                                @if($order->payment_method)
+                                    <span class="badge bg-dark-subtle text-dark border mb-1" style="font-size: 0.72rem;">
+                                        <i class="bi bi-credit-card me-1"></i>{{ $order->payment_method }}
+                                    </span>
+                                @endif
                                 @if($order->ipaymu_trx_id)
                                     <div class="text-dark small font-monospace">TRX: {{ $order->ipaymu_trx_id }}</div>
                                 @endif
@@ -181,7 +198,7 @@
                                     <a href="{{ $order->payment_url }}" target="_blank" class="small text-primary text-decoration-none d-inline-flex align-items-center gap-1 mt-0.5">
                                         <span>Link Bayar</span> <i class="bi bi-box-arrow-up-right"></i>
                                     </a>
-                                @else
+                                @elseif(!$order->payment_method && !$order->ipaymu_trx_id)
                                     <span class="text-muted small">-</span>
                                 @endif
                             </td>

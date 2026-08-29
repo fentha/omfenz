@@ -108,10 +108,22 @@ class PaymentController extends Controller
             return response()->json(['message' => 'Order not found'], 404);
         }
 
-        if ($status == 'berhasil') {
+        if ($status == 'berhasil' || $request->status_code == 1) {
+            $via = $request->via ? strtoupper($request->via) : '';
+            $channel = $request->channel ? strtoupper($request->channel) : '';
+            $paymentMethod = trim(($via ? $via . ' ' : '') . $channel);
+
+            $fee = (float) ($request->fee ?? 0);
+            $netAmount = isset($request->paid_off) ? (float) $request->paid_off : ($order->amount - $fee);
+            $paidAt = $request->paid_at ? \Carbon\Carbon::parse($request->paid_at) : now();
+
             $order->update([
                 'status' => 'success',
                 'ipaymu_trx_id' => $trx_id,
+                'payment_method' => $paymentMethod ?: ($order->payment_method ?? null),
+                'fee' => $fee,
+                'net_amount' => $netAmount,
+                'paid_at' => $paidAt,
             ]);
             
             // Kirim email akses produk ke pembeli
@@ -242,10 +254,22 @@ class PaymentController extends Controller
             return response()->json(['message' => 'Order not found'], 404);
         }
 
-        if ($status == 'berhasil') {
+        if ($status == 'berhasil' || $request->status_code == 1) {
+            $via = $request->via ? strtoupper($request->via) : '';
+            $channel = $request->channel ? strtoupper($request->channel) : '';
+            $paymentMethod = trim(($via ? $via . ' ' : '') . $channel);
+
+            $fee = (float) ($request->fee ?? 0);
+            $netAmount = isset($request->paid_off) ? (float) $request->paid_off : ($order->amount - $fee);
+            $paidAt = $request->paid_at ? \Carbon\Carbon::parse($request->paid_at) : now();
+
             $order->update([
                 'status' => 'success',
                 'ipaymu_trx_id' => $trx_id,
+                'payment_method' => $paymentMethod ?: ($order->payment_method ?? null),
+                'fee' => $fee,
+                'net_amount' => $netAmount,
+                'paid_at' => $paidAt,
             ]);
             
             // Kirim email akses produk ke pembeli
