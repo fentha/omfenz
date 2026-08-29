@@ -159,7 +159,7 @@
                             <!-- Phone & WhatsApp -->
                             <td>
                                 <div class="font-monospace small text-dark mb-1">{{ $order->phone }}</div>
-                                <a href="https://wa.me/{{ $phoneWa }}?text={{ urlencode($waText) }}" target="_blank" class="btn btn-sm {{ $order->status === 'pending' ? 'btn-success text-white' : 'btn-outline-success' }} py-0 px-2 rounded-2" style="font-size: 0.75rem;" title="Kirim Pesan WhatsApp">
+                                <a href="https://api.whatsapp.com/send?phone={{ $phoneWa }}&text={!! rawurlencode($waText) !!}" target="_blank" class="btn btn-sm {{ $order->status === 'pending' ? 'btn-success text-white' : 'btn-outline-success' }} py-0 px-2 rounded-2" style="font-size: 0.75rem;" title="Kirim Pesan WhatsApp">
                                     <i class="bi bi-whatsapp me-1"></i>{{ $order->status === 'pending' ? 'Follow Up WA' : 'Chat WA' }}
                                 </a>
                             </td>

@@ -149,7 +149,7 @@
                                 <td>
                                     <div class="fw-semibold text-dark">{{ $order->name }}</div>
                                     <div class="text-muted small">{{ $order->email }}</div>
-                                    <a href="https://wa.me/{{ $phoneWa }}?text={{ urlencode($waText) }}" target="_blank" class="badge {{ $order->status === 'pending' ? 'bg-success text-white' : 'bg-success-subtle text-success' }} text-decoration-none border border-success-subtle mt-1" style="font-size: 0.72rem;">
+                                    <a href="https://api.whatsapp.com/send?phone={{ $phoneWa }}&text={!! rawurlencode($waText) !!}" target="_blank" class="badge {{ $order->status === 'pending' ? 'bg-success text-white' : 'bg-success-subtle text-success' }} text-decoration-none border border-success-subtle mt-1" style="font-size: 0.72rem;">
                                         <i class="bi bi-whatsapp me-1"></i>{{ $order->status === 'pending' ? 'Follow Up WA' : 'Chat WA' }} ({{ $order->phone }})
                                     </a>
                                 </td>
