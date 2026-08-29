@@ -1563,12 +1563,6 @@
                 tim kami bantu sampai produk bisa dibuka.
             </div>
 
-            <div class="payment-tip">
-                <strong>Tips Pembayaran</strong>
-                <p>Pilih QRIS, ShopeePay, OVO, atau DANA agar biaya admin lebih ringan. Biasanya metode ini lebih hemat
-                    dibandingkan Virtual Account bank.</p>
-            </div>
-
             <div class="value-stack-box">
                 <div class="value-stack-badge">💰 TOTAL NILAI YANG BUNDA DAPATKAN</div>
                 <p class="value-stack-sub">Jika seluruh materi dan modul edukatif ini dibeli atau dicetak terpisah,
