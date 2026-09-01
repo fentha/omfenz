@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\OrderSuccessMail;
+use App\Mail\AdminNewOrderMail;
 
 class PaymentController extends Controller
 {
@@ -41,6 +42,14 @@ class PaymentController extends Controller
             'amount' => $amount,
             'status' => 'pending',
         ]);
+
+        // Kirim email notifikasi ke admin
+        try {
+            Mail::to('fenthalari@gmail.com')->send(new AdminNewOrderMail($order));
+            Log::info('Email notifikasi admin terkirim untuk order: ' . $order->id);
+        } catch (\Exception $e) {
+            Log::error('Gagal kirim email notifikasi admin: ' . $e->getMessage());
+        }
 
         // Siapkan parameter untuk iPaymu
         $va = env('IPAYMU_VA');
@@ -192,6 +201,14 @@ class PaymentController extends Controller
             'amount' => $amount,
             'status' => 'pending',
         ]);
+
+        // Kirim email notifikasi ke admin (Dev)
+        try {
+            Mail::to('fenthalari@gmail.com')->send(new AdminNewOrderMail($order));
+            Log::info('DEV Email notifikasi admin terkirim untuk order: ' . $order->id);
+        } catch (\Exception $e) {
+            Log::error('DEV Gagal kirim email notifikasi admin: ' . $e->getMessage());
+        }
 
         // Sandbox iPaymu
         $va = '0000005643661105';
