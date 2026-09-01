@@ -1720,6 +1720,23 @@
                             <div class="mt-2 text-center" style="font-size: 0.8rem; color: #166534;">
                                 💡 <strong>Rekomendasi:</strong> Pilih <strong>QRIS</strong> saat bayar untuk proses instan tanpa tambahan biaya apapun.
                             </div>
+
+                            {{-- Logo Metode Pembayaran --}}
+                            <div class="mt-3 text-center">
+                                <p style="font-size: 0.75rem; color: #6b7280; margin-bottom: 8px;">Tersedia metode pembayaran:</p>
+                                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px;">
+                                    <span style="display:inline-flex;align-items:center;background:#E41E26;color:#fff;font-weight:800;font-size:0.65rem;padding:3px 7px;border-radius:5px;letter-spacing:0.5px;">QRIS</span>
+                                    <span style="display:inline-flex;align-items:center;background:#108FE9;color:#fff;font-weight:700;font-size:0.65rem;padding:3px 7px;border-radius:5px;">DANA</span>
+                                    <span style="display:inline-flex;align-items:center;background:#EE4D2D;color:#fff;font-weight:700;font-size:0.65rem;padding:3px 7px;border-radius:5px;">ShopeePay</span>
+                                    <span style="display:inline-flex;align-items:center;background:#006EB8;color:#fff;font-weight:700;font-size:0.65rem;padding:3px 7px;border-radius:5px;">BCA</span>
+                                    <span style="display:inline-flex;align-items:center;background:#003D7C;color:#fff;font-weight:700;font-size:0.65rem;padding:3px 7px;border-radius:5px;">Mandiri</span>
+                                    <span style="display:inline-flex;align-items:center;background:#003087;color:#fff;font-weight:700;font-size:0.65rem;padding:3px 7px;border-radius:5px;">BRI</span>
+                                    <span style="display:inline-flex;align-items:center;background:#F37021;color:#fff;font-weight:700;font-size:0.65rem;padding:3px 7px;border-radius:5px;">BNI</span>
+                                    <span style="display:inline-flex;align-items:center;background:#4A7C59;color:#fff;font-weight:700;font-size:0.65rem;padding:3px 7px;border-radius:5px;">BSI</span>
+                                    <span style="display:inline-flex;align-items:center;background:#EE1C25;color:#fff;font-weight:700;font-size:0.65rem;padding:3px 7px;border-radius:5px;">Indomaret</span>
+                                    <span style="display:inline-flex;align-items:center;background:#EF3124;color:#fff;font-weight:700;font-size:0.65rem;padding:3px 7px;border-radius:5px;">Alfamart</span>
+                                </div>
+                            </div>
                         </form>
                         <script>
                             function handleCheckoutSubmit(form) {
