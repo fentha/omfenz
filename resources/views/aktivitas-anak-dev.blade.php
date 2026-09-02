@@ -216,14 +216,64 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
         }
 
-        .top-slider {
-            background: #eef7ff;
+        .hero-section {
+            background: linear-gradient(180deg, #eef7ff 0%, #ffffff 100%);
+            padding-bottom: 25px !important;
+            text-align: center;
         }
 
-        .top-slider img {
-            width: 100%;
-            height: auto;
+        .hero-badge {
+            display: inline-block;
+            background: #ffedd5;
+            color: #ea580c;
+            font-size: 13px;
+            font-weight: 900;
+            padding: 6px 16px;
+            border-radius: 999px;
+            letter-spacing: 0.5px;
+            border: 1px solid #fed7aa;
+            margin-bottom: 12px;
+        }
+
+        .hero-title {
+            color: #1a365d;
+            font-size: clamp(32px, 8vw, 42px);
+            font-weight: 900;
+            line-height: 1.15;
+            margin-top: 0;
+            margin-bottom: 12px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .hero-title span {
+            color: #dd6b20;
+            font-size: clamp(22px, 6vw, 28px);
             display: block;
+            margin-top: 8px;
+        }
+
+        .hero-subtitle {
+            color: #475569;
+            font-size: clamp(16px, 4.5vw, 18px);
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 auto 20px;
+            max-width: 90%;
+        }
+
+        .hero-image-wrap {
+            position: relative;
+            margin-top: 10px;
+            padding: 0 20px;
+        }
+
+        .hero-mockup {
+            max-width: 320px;
+            width: 85%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            filter: drop-shadow(0 15px 25px rgba(0,0,0,0.15));
         }
 
         .slider-number-indicators {
@@ -1393,26 +1443,26 @@
             src="https://www.facebook.com/tr?id=2123472395268686&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
     <main class="mobile-page">
-        <section class="top-slider p-2 p-sm-3">
-            <div class="rounded-4 overflow-hidden shadow-sm">
-                <picture>
-                    <source srcset="{{ url('assets/aktivitas-anak/banner-utama.webp') }}" type="image/webp">
-                    <img src="{{ url('assets/aktivitas-anak/banner-utama.webp') }}"
-                        alt="99.000++ Lembar Aktivitas Anak Siap Cetak Rp49.000" width="1080" height="1080"
-                        fetchpriority="high">
-                </picture>
+        <section class="hero-section p-3 p-sm-4">
+            <div class="hero-content mt-2 mt-sm-3">
+                <div class="hero-badge">BEST SELLER 2026 🔥</div>
+                <h1 class="hero-title">
+                    99.000++ Lembar<br>Aktivitas Anak
+                    <span>Super Lengkap & Siap Cetak</span>
+                </h1>
+                <p class="hero-subtitle">Bantu Anak Belajar Menulis, Berhitung & Fokus Tanpa Terus Main Gadget!</p>
+            </div>
+            <div class="hero-image-wrap">
+                <img src="{{ url('assets/aktivitas-anak/mockup-buku.webp') }}" 
+                     alt="Mockup Buku 99.000++ Lembar Aktivitas Anak" 
+                     class="hero-mockup">
             </div>
         </section>
 
-        <section class="content-wrap">
+        <section class="content-wrap pt-4">
             <div class="promo-badge">PROMO SPESIAL HARI INI: HEMAT HINGGA 67%!</div>
 
-            <h1 class="main-title">
-                99.000++ Lembar Aktivitas Anak Siap Cetak
-                <span>Bantu Anak Belajar, Menulis, Berhitung &amp; Fokus Tanpa Terus Main Gadget</span>
-            </h1>
-
-            <div class="problem-box">
+            <div class="problem-box mt-2">
                 <strong>Kalau anak cepat bosan belajar, bukan berarti anaknya malas.</strong><br>
                 Seringnya anak hanya butuh aktivitas yang lebih variatif, berwarna, dan terasa seperti bermain. Paket
                 ini membantu orang tua punya banyak pilihan materi tanpa harus cari file satu per satu.
