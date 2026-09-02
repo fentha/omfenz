@@ -99,7 +99,7 @@
     <div class="card card-custom border-0 mb-4">
         <div class="card-header bg-white border-bottom py-3 px-4 d-flex align-items-center justify-content-between">
             <div>
-                <h6 class="fw-bold text-dark m-0">5 Pesanan Terkini</h6>
+                <h6 class="fw-bold text-dark m-0">Pesanan Terkini</h6>
                 <small class="text-muted">Transaksi terbaru yang masuk ke sistem</small>
             </div>
             <a href="{{ route('orders.index') }}" class="btn btn-sm btn-outline-primary fw-semibold rounded-3">
