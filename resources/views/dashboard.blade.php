@@ -126,17 +126,17 @@
                                 $phoneWa = str_starts_with($phoneClean, '0') ? '62' . substr($phoneClean, 1) : $phoneClean;
 
                                 if ($order->status === 'success' || $order->status === 'berhasil') {
-                                    $waText = "Halo Kak/Bunda " . $order->name . ", terima kasih banyak atas pesanannya di Omfenz Digital! 🎉\n\n"
+                                    $waText = "Halo Kak " . $order->name . ", terima kasih banyak atas pesanannya di Omfenz Digital! 🎉\n\n"
                                         . "Pembayaran untuk *Order #" . $order->id . " (Paket 99.000++ Aktivitas Anak)* sudah *LUNAS/BERHASIL*. Link akses Google Drive telah kami kirimkan ke email *" . $order->email . "*.\n\n"
-                                        . "Apakah materinya sudah berhasil dibuka di email? Jika ada kendala download atau butuh panduan cetak, jangan sungkan hubungi kami di sini ya. Selamat mendampingi si kecil belajar & bermain seru! 😊✨";
+                                        . "Apakah materinya sudah berhasil dibuka di email? Jika ada kendala download atau butuh panduan cetak, jangan sungkan hubungi kami di sini ya. Selamat mendampingi si kecil belajar dan bermain seru! 😊✨";
                                 } else {
                                     $payLink = $order->payment_url ?: url('/aktivitas-anak');
-                                    $waText = "Halo Kak/Bunda " . $order->name . ", terima kasih sudah memesan *Paket 99.000++ Lembar Aktivitas Anak (Akses Selamanya)* di Omfenz Digital (Order #" . $order->id . "). 😊\n\n"
-                                        . "Kami lihat statusnya masih menunggu pembayaran. Apakah tadi ada kendala saat memilih metode pembayaran (QRIS, Transfer Bank/VA, atau E-Wallet)?\n\n"
-                                        . "Untuk memudahkan, Bunda bisa langsung menyelesaikan pembayaran melalui tautan resmi ini ya:\n"
+                                    $waText = "Halo Kak " . $order->name . ", salam kenal! 😊 Terima kasih sudah memesan *Paket Aktivitas Anak* (Order #" . $order->id . "). Wah, si kecil pasti bakal senang nih main dan belajar pakai materinya!\n\n"
+                                        . "Kami cek pesanannya masih menunggu pembayaran nih Kak. Apakah ada kendala saat memilih metode bayar? Jangan sungkan kabari kami ya kalau butuh bantuan. 🙏\n\n"
+                                        . "Kakak bisa langsung melanjutkan pembayaran melalui tautan resmi ini:\n"
                                         . "👉 " . $payLink . "\n\n"
-                                        . "Setelah pembayaran selesai, link akses Google Drive berisi ribuan materi printable siap cetak langsung otomatis dikirim ke email *" . $order->email . "*.\n\n"
-                                        . "Jika butuh bantuan atau panduan bayar, balas chat ini ya Bunda/Kak. Kami siap bantu! 🙏";
+                                        . "Link akses Google Drive otomatis terkirim ke email *" . $order->email . "* ya Kak setelah pembayaran lunas.\n\n"
+                                        . "Ditunggu kabarnya, semoga harinya menyenangkan! 🤗";
                                 }
                             @endphp
                             <tr>
