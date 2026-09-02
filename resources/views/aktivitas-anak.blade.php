@@ -1817,7 +1817,7 @@
                         @if (session('error'))
                             <div class="alert alert-danger">{{ session('error') }}</div>
                         @endif
-                        <form action="{{ url('/checkout/dev') }}" method="POST"
+                        <form action="{{ route('checkout') }}" method="POST"
                             onsubmit="return handleCheckoutSubmit(this);">
                             @csrf
                             <div class="mb-3">
