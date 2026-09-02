@@ -1409,6 +1409,68 @@
                 padding: 35px 25px 158px;
             }
         }
+
+        .trust-counter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 12px 18px;
+            border-radius: 999px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            animation: pulse-soft 2s infinite;
+        }
+
+        @keyframes pulse-soft {
+            0% { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+            50% { box-shadow: 0 4px 15px -1px rgba(56, 161, 105, 0.2); }
+            100% { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        }
+
+        .avatar-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .avatar-group .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 900;
+            color: #ffffff;
+            margin-left: -10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .avatar-group .avatar:first-child {
+            margin-left: 0;
+        }
+
+        .bg-pink { background: #ec4899; }
+        .bg-purple { background: #8b5cf6; }
+        .bg-teal { background: #14b8a6; }
+        .bg-orange { background: #f97316; }
+
+        .trust-text {
+            font-size: 13px;
+            color: #475569;
+            line-height: 1.3;
+            text-align: left;
+        }
+
+        .trust-text strong {
+            color: #0f172a;
+            font-size: 14px;
+        }
+
     </style>
 
     <!-- Meta Pixel Code -->
@@ -1460,6 +1522,19 @@
         </section>
 
         <section class="content-wrap pt-4">
+            <div class="trust-counter">
+                <div class="avatar-group">
+                    <div class="avatar bg-pink">R</div>
+                    <div class="avatar bg-purple">N</div>
+                    <div class="avatar bg-teal">F</div>
+                    <div class="avatar bg-orange">+</div>
+                </div>
+                <div class="trust-text">
+                    Sudah dipercaya oleh<br>
+                    <strong>2.500+ Bunda di Indonesia</strong>
+                </div>
+            </div>
+
             <div class="promo-badge">PROMO SPESIAL HARI INI: HEMAT HINGGA 67%!</div>
 
             <div class="problem-box mt-2">
