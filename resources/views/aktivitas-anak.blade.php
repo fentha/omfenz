@@ -1961,8 +1961,7 @@
                         <strong class="d-block mb-2" style="color: #2d3748;">Hubungi Kami</strong>
                         Omfenz Digital<br>
                         Email: info@omfenz.com<br>
-                        Telepon/WA: 0851-1365-5806<br>
-                        Alamat: Perum Gejawan Indah J/153 Balecatur, Gamping, Sleman
+                        Telepon/WA: 0851-1365-5806
                     </div>
                     <div class="text-sm-end">
                         <strong class="d-block mb-2" style="color: #2d3748;">Kebijakan & Ketentuan</strong>
