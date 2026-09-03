@@ -1985,8 +1985,7 @@
 
     <div class="sticky-cta">
         <div class="sticky-cta-row">
-            <a href="#checkout-form-section" class="cta-button" style="flex: 1;"
-                onclick="if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', {value: 49000, currency: 'IDR'});">BELI
+            <a href="#checkout-form-section" class="cta-button" style="flex: 1;">BELI
                 RP49.000</a>
             <button class="share-btn-sticky" type="button" data-share-trigger
                 aria-label="Bagikan halaman aktivitas anak">
